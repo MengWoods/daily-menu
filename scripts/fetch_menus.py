@@ -33,18 +33,29 @@ TIMEOUT = 20
 # (regex pattern, emoji) — checked in order, first match per category wins, duplicates removed.
 EMOJI_RULES = [
     (r"(?<!k)kana(?!nmun)|chicken|broiler|kalkkuna|turkey", "🐔"),
-    (r"(?<!rans)kala(?!kkuna)|\bfish\b|lohi|lohta|salmon|trout|siika|\bcod\b|silli|herring|tonnikala|tuna", "🐟"),
+    (r"koipi|drumstick|chicken leg", "🍗"),
+    (r"(?<!rans)kala(?!kkuna)|\bfish\b|lohi|lohta|salmon|taimen|trout|siika|\bcod\b|silli|herring|tonnikala|tuna", "🐟"),
     (r"katkarapu|shrimp|prawn|äyriäis|seafood", "🍤"),
     (r"keitto|\bsoup\b", "🍲"),
     (r"riisi|\brice\b", "🍚"),
     (r"kasvis|kasviks|vihannek|vegetable|veggie", "🥦"),
     (r"salaatti|\bsalad\b", "🥗"),
     (r"peruna|\bpotato\b", "🥔"),
-    (r"porsas|possu|\bpork\b", "🐖"),
-    (r"nauta|naudan|jauheliha|härkä(?!is)|\bbeef\b", "🐄"),
+    (r"porkkan|\bcarrot\b", "🥕"),
+    (r"porsas|possu|pekoni|bacon|kink[ku]|\bham\b|\bpork\b", "🐖"),
+    (r"nauta|naudan|jauheliha|vasikan|\bveal\b|härkä(?!is)|\bbeef\b", "🥩"),
+    (r"lammas|lampaan|karitsa|\blamb\b", "🐑"),
+    (r"liha(?!ndon)|meatball|\bmeat\b", "🍖"),
+    (r"makkara|sausage|nakki", "🌭"),
     (r"muna(?!koiso)|\begg\b", "🥚"),
     (r"pasta|spagetti|spaghetti", "🍝"),
+    (r"leipä|sämpylä|patonki|\bbread\b|\broll\b", "🍞"),
     (r"juusto|\bcheese\b", "🧀"),
+    (r"sieni|mushroom|kantarelli|herkkusieni", "🍄"),
+    (r"tomaatti|\btomato\b", "🍅"),
+    (r"sitruuna|\blemon\b|\blime\b", "🍋"),
+    (r"grilli|grillattu|paisti|\broast\w*|grilled", "🔥"),
+    (r"jäätelö|ice.?cream|sorbetti|parfait", "🍦"),
     (r"jälkiruoka|kakku|dessert|\bcake\b", "🍰"),
 ]
 
@@ -293,14 +304,14 @@ def build_markdown(restaurants: list[dict], today: datetime) -> str:
         "",
     ]
 
-    for cfg in restaurants:
+    for idx, cfg in enumerate(restaurants, start=1):
         name = cfg.get("name", "Restaurant")
         emoji = cfg.get("emoji", "🍴")
         url = cfg.get("url", "#")
         parser_name = cfg.get("parser", "manual")
         parser = PARSERS.get(parser_name, parse_manual)
 
-        lines.append(f"## {emoji} [{name}]({url})")
+        lines.append(f"## {idx}. {emoji} [{name}]({url})")
         lines.append("")
         try:
             dishes = parser(cfg, today)
