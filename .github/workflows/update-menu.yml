@@ -1,0 +1,44 @@
+name: Update daily lunch menu
+
+on:
+  schedule:
+    # 05:30 UTC on weekdays ≈ 07:30–08:30 Europe/Helsinki (EET/EEST) — before noon lunch.
+    - cron: "30 5 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-daily-menu
+  cancel-in-progress: true
+
+jobs:
+  update-menu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch menus and generate page
+        run: python scripts/fetch_menus.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add MENU.md index.html
+          if git diff --cached --quiet; then
+            echo "No menu changes to commit."
+          else
+            git commit -m "Update daily menu $(date -u +%Y-%m-%d)"
+            git push
+          fi

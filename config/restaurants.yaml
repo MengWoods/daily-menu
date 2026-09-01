@@ -1,0 +1,57 @@
+# Daily Menu — restaurant configuration
+#
+# Edit this file to add, remove, or change restaurants. Each entry needs:
+#   name    - display name shown on the page
+#   url     - link to the restaurant's own lunch menu page (shown to users)
+#   parser  - which scraping strategy to use (see scripts/fetch_menus.py)
+#   emoji   - (optional) icon shown next to the restaurant name
+#
+# Supported parser values:
+#   comfort_sello     - sello.fi restaurant pages (date-keyed HTML blocks)
+#   ravintola_factory - ravintolafactory.com lounasravintolat pages
+#   kathmandu         - kathmandupalace.fi Elementor accordion (fixed weekly menu)
+#   vermo             - vermo.fi restaurant sub-pages (day headings in one text block)
+#   lounastaja        - sites using the lounastaja.app widget (e.g. ravintolabase.fi)
+#                        requires extra fields: widget_id, api_key
+#   jamix             - sites using the Jamix Aromi menu widget (e.g. juvenes.fi)
+#                        requires extra fields: jamix_customer, jamix_kitchen
+#   manual            - fallback: just show the link, no scraping
+#
+# If a restaurant's website changes layout, its parser may need updating in
+# scripts/fetch_menus.py — but you can always set parser: manual to keep the
+# link showing while a new parser is written.
+
+restaurants:
+  - name: "Comfort Hotel Sello"
+    emoji: "🏨"
+    url: "https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola"
+    parser: "comfort_sello"
+
+  - name: "Ravintola Factory Leppävaara"
+    emoji: "🏭"
+    url: "https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/"
+    parser: "ravintola_factory"
+
+  - name: "Kathmandu Palace"
+    emoji: "🍛"
+    url: "http://kathmandupalace.fi/en/lunch/?lang=en"
+    parser: "kathmandu"
+
+  - name: "Ravintola Vermo (Ravilla)"
+    emoji: "🏇"
+    url: "https://vermo.fi/fi-fi/ravintolat/lounas/174/"
+    parser: "vermo"
+
+  - name: "Ravintola Base"
+    emoji: "🍽️"
+    url: "https://ravintolabase.fi/lounas/"
+    parser: "lounastaja"
+    widget_id: "CzN0GQ9rD5S6o7IiP9gy"
+    api_key: "53495fb8-35e8-4dd9-a758-abff56a2a296"
+
+  - name: "Restaurant & Café SooS"
+    emoji: "🎓"
+    url: "https://juvenes.fi/en/restaurant-cafe-soos/"
+    parser: "jamix"
+    jamix_customer: 93077
+    jamix_kitchen: 66
