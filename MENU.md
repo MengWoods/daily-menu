@@ -2,7 +2,7 @@
 
 **Tiistai 01.09.2026** (Tuesday)
 
-_Last updated: 2026-09-01 12:26 (Europe/Helsinki)_
+_Last updated: 2026-09-01 12:47 (Europe/Helsinki)_
 
 ## 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -54,7 +54,7 @@ _Last updated: 2026-09-01 12:26 (Europe/Helsinki)_
 
 ## 🎓 [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
+- Lunch Soup: Pureed Leek and Potato Soup 🍲 🥔
 - Cozy: Bolognese Sauce, Spaghetti, Parmesan cheese chips 🍝 🧀
 - Roots: Härkis Sweet Potato Casserole, Aioli 🥔
 - Favourite Plate: Chicken Fillet, Tzatziki, Mediterranean Potato Salad made from Roasted Potatoes 🐔 🥗 🥔
-- Lunch Soup: Pureed Leek and Potato Soup 🍲 🥔

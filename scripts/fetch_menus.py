@@ -61,6 +61,12 @@ def add_emojis(line: str) -> str:
     return f"{line} {' '.join(found)}"
 
 
+# Matches the trailing run of emoji appended by add_emojis(), so the HTML build
+# step can move it into its own right-aligned column.
+_ALL_EMOJI = sorted({emoji for _, emoji in EMOJI_RULES}, key=len, reverse=True)
+TRAILING_EMOJI_RE = re.compile(r"(?:\s*(?:" + "|".join(re.escape(e) for e in _ALL_EMOJI) + r"))+\s*$")
+
+
 def now_helsinki() -> datetime:
     return datetime.now(TZ)
 
@@ -307,8 +313,48 @@ def build_markdown(restaurants: list[dict], today: datetime) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+def restructure_html(body_html: str) -> str:
+    """Group each restaurant's heading+list into a card, and split the trailing
+    emoji hints of each dish line into their own right-aligned column."""
+    soup = BeautifulSoup(body_html, "html.parser")
+
+    for li in soup.find_all("li"):
+        inner = li.decode_contents()
+        match = TRAILING_EMOJI_RE.search(inner)
+        if match and match.group(0).strip():
+            dish_html, tags_text = inner[: match.start()].rstrip(), match.group(0).strip()
+        else:
+            dish_html, tags_text = inner.strip(), ""
+        li.clear()
+        dish_span = soup.new_tag("span", **{"class": "dish"})
+        for node in list(BeautifulSoup(dish_html, "html.parser").contents):
+            dish_span.append(node)
+        li.append(dish_span)
+        if tags_text:
+            tags_span = soup.new_tag("span", **{"class": "tags"})
+            tags_span.string = tags_text
+            li.append(tags_span)
+
+    top_level_tags = soup.find_all(recursive=False)
+    grid = soup.new_tag("div", **{"class": "restaurants-grid"})
+    i = 0
+    while i < len(top_level_tags):
+        tag = top_level_tags[i]
+        if tag.name == "h2":
+            card = soup.new_tag("section", **{"class": "restaurant-card"})
+            card.append(tag.extract())
+            if i + 1 < len(top_level_tags) and top_level_tags[i + 1].name == "ul":
+                card.append(top_level_tags[i + 1].extract())
+                i += 1
+            grid.append(card)
+        i += 1
+    soup.append(grid)
+    return str(soup)
+
+
 def build_html(markdown_text: str, today: datetime) -> str:
     body = md.markdown(markdown_text, extensions=["extra", "sane_lists"])
+    body = restructure_html(body)
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
     updated = today.strftime("%Y-%m-%d %H:%M")
     return template.replace("{{BODY}}", body).replace("{{UPDATED}}", updated)
