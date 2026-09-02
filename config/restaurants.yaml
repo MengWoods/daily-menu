@@ -33,7 +33,7 @@ restaurants:
     parser: "ravintola_factory"
 
   - name: "Kathmandu Palace"
-    emoji: "🍛"
+    emoji: "🇳🇵"
     url: "http://kathmandupalace.fi/en/lunch/?lang=en"
     parser: "kathmandu"
 
@@ -50,7 +50,7 @@ restaurants:
     api_key: "53495fb8-35e8-4dd9-a758-abff56a2a296"
 
   - name: "Restaurant & Café SooS"
-    emoji: "🎓"
+    emoji: "☕"
     url: "https://juvenes.fi/en/restaurant-cafe-soos/"
     parser: "jamix"
     jamix_customer: 93077
