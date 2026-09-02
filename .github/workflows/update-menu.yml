@@ -2,8 +2,10 @@ name: Update daily lunch menu
 
 on:
   schedule:
-    # 05:30 UTC on weekdays ≈ 07:30–08:30 Europe/Helsinki (EET/EEST) — before noon lunch.
-    - cron: "30 5 * * 1-5"
+    # 22:30 UTC = 00:30–01:30 Europe/Helsinki (EET/EEST), allowing for scheduler delays.
+    - cron: "30 22 * * 1-5"
+    # 03:30 UTC on weekdays ≈ 05:30–06:30 Europe/Helsinki (EET/EEST), catching menus published later.
+    - cron: "30 3 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
