@@ -2,7 +2,7 @@
 
 **Keskiviikko 02.09.2026** (Wednesday)
 
-_Last updated: 2026-09-02 10:14 (Europe/Helsinki)_
+_Last updated: 2026-09-02 12:47 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
