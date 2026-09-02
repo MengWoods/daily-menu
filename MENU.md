@@ -2,7 +2,7 @@
 
 **Keskiviikko 02.09.2026** (Wednesday)
 
-_Last updated: 2026-09-02 07:19 (Europe/Helsinki)_
+_Last updated: 2026-09-02 07:24 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -58,5 +58,5 @@ _Last updated: 2026-09-02 07:19 (Europe/Helsinki)_
 - Cozy: Basmati Rice 🍚
 - Cozy: Palermo Chicken Pasta Casserole 🐔 🍝
 - Roots: Mapo Tofu, Tofu in Peanut Sauce, Basmati Rice 🍚 🌰
-- Favourite Plate: Chicken Fillet, Tzatziki, Mediterranean Potato Salad made from Roasted Potatoes 🐔 🥗 🥔 🔥
 - Lunch Soup: Shrimp and Coconut Soup 🍤 🍲 🌰
+- Favourite Plate: Chicken Fillet, Tzatziki, Mediterranean Potato Salad made from Roasted Potatoes 🐔 🥗 🥔 🔥
