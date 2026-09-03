@@ -2,7 +2,7 @@
 
 **Torstai 03.09.2026** (Thursday)
 
-_Last updated: 2026-09-03 11:17 (Europe/Helsinki)_
+_Last updated: 2026-09-03 12:36 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -34,25 +34,38 @@ _Last updated: 2026-09-03 11:17 (Europe/Helsinki)_
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
-- Kana-mangosalaatti (L, G) — 14,00 € 🐔 🥗 🥭
-- Pasta Carbonara (L, G*) — 14,00 € 🍝
-- Hernekeittoa, Pannari sisältyy keittolounaaseen, muille +2 € (L, G) — 12,00 € 🍲
-- Kreikkalainen kalapata (L, G) — 14,00 € 🐟
-- Kermainen jauheliha-juureskastike (L, G) — 14,00 € 🥩 🍖
-- Vihersalaatti — 8,00 € 🥗
-- Kermainen rapukeitto — 13,00 € 🍲
-- Caprese parmankinkulla ja pinjansiemenillä — 12,00 € 🐖
-- Caesar-salaatit: Pariloitua kanaa / Vuohenjuustoa / Halloumijuustoa / Scampit — 16,00 € 🐔 🧀
-- Kana-vuohenjuustoburgeri: Pariloitua broileria, paistettua vuohenjuustoa, majoneesia, salaattia, semikuivattua tomaattia, paahdettua paprikaa, pestoa ja ranskalaiset — 18,00 € 🐔 🍟 🥗 🍔 🧀 🍅
-- Paistettua kotimaista taimenta, kantarellimuhennosta, Annabelle perunaa, haudutettua fenkolia ja porkkanaa — 28,00 € 🐟 🥔 🥕 🍄‍🟫
-- Leivitetty vasikanleike, choronkastiketta ja herne-perunamuhennosta — 28,00 € 🥔 🥩
-- Ohukaiset, omenasosetta ja vaniljakermaa — 10,00 € 🥞
-- Jäätelö tai sorbettipallo — 6,00 € 🍦
-- Menu — 48,00 €
+- Lautasannos
+    - Kana-mangosalaatti (L, G) — 14,00 € 🐔 🥗 🥭
+    - Pasta Carbonara (L, G*) — 14,00 € 🍝
+- Keittolounas
+    - Hernekeittoa, Pannari sisältyy keittolounaaseen, muille +2 € (L, G) — 12,00 € 🍲
+- Buffetlounas
+    - Kreikkalainen kalapata (L, G) — 14,00 € 🐟
+    - Kermainen jauheliha-juureskastike (L, G) — 14,00 € 🥩 🍖
+- A la carte - alkuruoka
+    - Vihersalaatti — 8,00 € 🥗
+    - Kermainen rapukeitto — 13,00 € 🍲
+    - Caprese parmankinkulla ja pinjansiemenillä — 12,00 € 🐖
+- A la carte - pääruoka
+    - Caesar-salaatit: Pariloitua kanaa / Vuohenjuustoa / Halloumijuustoa / Scampit — 16,00 € 🐔 🧀
+    - Kana-vuohenjuustoburgeri: Pariloitua broileria, paistettua vuohenjuustoa, majoneesia, salaattia, semikuivattua tomaattia, paahdettua paprikaa, pestoa ja ranskalaiset — 18,00 € 🐔 🍟 🥗 🍔 🧀 🍅
+    - Paistettua kotimaista taimenta, kantarellimuhennosta, Annabelle perunaa, haudutettua fenkolia ja porkkanaa — 28,00 € 🐟 🥔 🥕 🍄‍🟫
+    - Leivitetty vasikanleike, choronkastiketta ja herne-perunamuhennosta — 28,00 € 🥔 🥩
+- A la carte - jälkiruoka
+    - Ohukaiset, omenasosetta ja vaniljakermaa — 10,00 € 🥞
+    - Jäätelö tai sorbettipallo — 6,00 € 🍦
+- Menu
+    - Menu — 48,00 €
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
-- Lunch Soup: Vegan feta tomato soup, Bread Croutons 🍲 🍞 🍅
-- Cozy: Dukkah Chicken, Lime sour cream sauce, Bulgur 🐔 🍋
-- Roots: Tomato Härkis Lasagna 🫘 🍅
-- Favourite Plate: Roasted Salmon, Tzatziki, Mediterranean Potato Salad made from Roasted Potatoes 🐟 🥗 🥔 🔥
+- Lounas
+    - Cozy: Dukkah Chicken, Lime sour cream sauce, Bulgur 🐔 🍋
+    - Roots: Tomato Härkis Lasagna 🫘 🍅
+    - Sides: Roasted Eggplant And Pomegranate 🔥
+    - Dessert: Fruit Salad 🥗 🍰
+- My Plate
+    - Favourite Plate: Roasted Salmon, Tzatziki, Mediterranean Potato Salad made from Roasted Potatoes 🐟 🥗 🥔 🔥
+- Salad and soup
+    - Lunch Soup: Vegan feta tomato soup, Bread Croutons 🍲 🍞 🍅
+    - My Salad: Plentiful salad buffet 🥗

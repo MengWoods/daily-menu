@@ -133,8 +133,29 @@
     padding-left: 8px;
     text-align: right;
   }
-  li:first-of-type { border-top: 1px solid var(--border); }
-  ul li:last-child { border-radius: 0 0 10px 10px; }
+  .restaurant-card > ul > li:first-of-type { border-top: 1px solid var(--border); }
+  .restaurant-card > ul > li:last-child { border-radius: 0 0 10px 10px; }
+
+  li.category-item {
+    display: block;
+    padding: 10px 14px 4px;
+  }
+  li.category-item::before { content: none; }
+  .category-label {
+    display: block;
+    font-weight: 700;
+    color: var(--accent-2);
+    margin-bottom: 6px;
+  }
+  ul.sub-list {
+    margin: 0;
+    padding: 0 0 6px;
+  }
+  ul.sub-list li {
+    border: none;
+    background: transparent;
+    padding: 4px 0 4px 16px;
+  }
   footer {
     margin-top: 36px;
     color: var(--muted);

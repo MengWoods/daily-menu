@@ -232,7 +232,9 @@ def parse_vermo(cfg: dict, today: datetime) -> list[str]:
     return lines
 
 
-def parse_lounastaja(cfg: dict, today: datetime) -> list[str]:
+def parse_lounastaja(cfg: dict, today: datetime) -> list[tuple[str | None, list[str]]]:
+    """Returns dish lines grouped by the widget's own `lunchType` category
+    (e.g. Buffetlounas, Keittolounas, Lautasannos), preserving first-seen order."""
     api_url = f"https://lounastaja.app/api/v1/widget/{cfg['api_key']}/{cfg['widget_id']}"
     data = fetch_json(api_url)
     days = data.get("data", {}).get("week", {}).get("days", [])
@@ -241,8 +243,9 @@ def parse_lounastaja(cfg: dict, today: datetime) -> list[str]:
     if day is None:
         raise ValueError("today's menu day not found")
     if day.get("isClosed"):
-        return ["Closed today — see website for details"]
-    lines = []
+        return [(None, ["Closed today — see website for details"])]
+    groups: list[tuple[str, list[str]]] = []
+    group_index: dict[str, int] = {}
     for lunch in day.get("lunches", []):
         name = (lunch.get("title") or {}).get("fi") or (lunch.get("title") or {}).get("en")
         if not name:
@@ -255,39 +258,47 @@ def parse_lounastaja(cfg: dict, today: datetime) -> list[str]:
             line += f" ({', '.join(abbrevs)})"
         if price:
             line += f" — {price} {unit}".rstrip()
-        lines.append(line)
-    if not lines:
+        category = lunch.get("lunchType") or "Lounas"
+        if category not in group_index:
+            group_index[category] = len(groups)
+            groups.append((category, []))
+        groups[group_index[category]][1].append(line)
+    if not groups:
         raise ValueError("no lunches listed for today")
-    return lines
+    return groups
 
 
-JAMIX_SKIP_OPTIONS = {"BREAKFAST", "DESSERT", "SIDES", "MY SALAD", "INFO!", "CLOSED"}
-
-
-def parse_jamix(cfg: dict, today: datetime) -> list[str]:
+def parse_jamix(cfg: dict, today: datetime) -> list[tuple[str | None, list[str]]]:
+    """Returns dish lines grouped by the Jamix `menuTypeName` category
+    (e.g. Salad and soup, Lounas, My Plate), preserving first-seen order.
+    Options with no menu items (e.g. an empty breakfast slot) are skipped."""
     api_url = f"https://fi.jamix.cloud/apps/menuservice/rest/haku/menu/{cfg['jamix_customer']}/{cfg['jamix_kitchen']}"
     kitchens = fetch_json(api_url)
     date_num = int(today.strftime("%Y%m%d"))
-    lines = []
+    groups: list[tuple[str, list[str]]] = []
+    group_index: dict[str, int] = {}
     for kitchen in kitchens:
         for menu_type in kitchen.get("menuTypes", []):
+            category = (menu_type.get("menuTypeName") or "").strip() or "Lounas"
             for menu in menu_type.get("menus", []):
                 for day in menu.get("days", []):
                     if day.get("date") != date_num:
                         continue
                     for option in day.get("mealoptions", []):
                         opt_name = (option.get("name") or "").strip()
-                        if opt_name.upper() in JAMIX_SKIP_OPTIONS:
-                            continue
                         item_names = [mi.get("name", "").strip() for mi in option.get("menuItems", [])]
                         item_names = [n for n in item_names if n and n != "***"]
                         if not item_names:
                             continue
                         prefix = f"{opt_name.title()}: " if opt_name else ""
-                        lines.append(f"{prefix}{', '.join(item_names)}")
-    if not lines:
+                        line = f"{prefix}{', '.join(item_names)}"
+                        if category not in group_index:
+                            group_index[category] = len(groups)
+                            groups.append((category, []))
+                        groups[group_index[category]][1].append(line)
+    if not groups:
         raise ValueError("no lunch items found for today")
-    return lines
+    return groups
 
 
 def parse_manual(cfg: dict, today: datetime) -> list[str]:
@@ -309,6 +320,14 @@ def load_config() -> list[dict]:
     with open(CONFIG_PATH, encoding="utf-8") as f:
         data = yaml.safe_load(f)
     return data.get("restaurants", [])
+
+
+def normalize_groups(result: list) -> list[tuple[str | None, list[str]]]:
+    """Parsers may return a flat list[str] (no categories) or an already
+    grouped list[(category, [dishes])]; make it uniformly the latter."""
+    if result and isinstance(result[0], tuple):
+        return result
+    return [(None, result)]
 
 
 def build_markdown(restaurants: list[dict], today: datetime) -> str:
@@ -336,9 +355,15 @@ def build_markdown(restaurants: list[dict], today: datetime) -> str:
         lines.append(f"## {idx}. {emoji} [{name}]({url})")
         lines.append("")
         try:
-            dishes = parser(cfg, today)
-            for dish in dishes:
-                lines.append(f"- {add_emojis(dish)}")
+            groups = normalize_groups(parser(cfg, today))
+            for category, dish_lines in groups:
+                if category:
+                    lines.append(f"- {category}")
+                    for dish in dish_lines:
+                        lines.append(f"    - {add_emojis(dish)}")
+                else:
+                    for dish in dish_lines:
+                        lines.append(f"- {add_emojis(dish)}")
         except Exception as exc:  # noqa: BLE001 - best effort per restaurant
             lines.append(f"- ⚠️ Menu unavailable right now — see the [website]({url}) directly. ({exc})")
         lines.append("")
@@ -347,11 +372,15 @@ def build_markdown(restaurants: list[dict], today: datetime) -> str:
 
 
 def restructure_html(body_html: str) -> str:
-    """Group each restaurant's heading+list into a card, and split the trailing
-    emoji hints of each dish line into their own right-aligned column."""
+    """Group each restaurant's heading+list into a card, split the trailing
+    emoji hints of each dish line into their own right-aligned column, and
+    turn a nested <ul> inside an <li> into a category label + sub-list."""
     soup = BeautifulSoup(body_html, "html.parser")
 
+    # Dish rows (no nested list): split off trailing emoji tags.
     for li in soup.find_all("li"):
+        if li.find("ul") is not None:
+            continue
         inner = li.decode_contents()
         match = TRAILING_EMOJI_RE.search(inner)
         if match and match.group(0).strip():
@@ -367,6 +396,21 @@ def restructure_html(body_html: str) -> str:
             tags_span = soup.new_tag("span", **{"class": "tags"})
             tags_span.string = tags_text
             li.append(tags_span)
+
+    # Category rows: <li>Label<ul>...</ul></li> -> labeled group with sub-list.
+    for li in soup.find_all("li"):
+        nested_ul = li.find("ul")
+        if nested_ul is None:
+            continue
+        nested_ul.extract()
+        label_text = li.get_text(" ", strip=True)
+        li.clear()
+        li["class"] = li.get("class", []) + ["category-item"]
+        label_span = soup.new_tag("span", **{"class": "category-label"})
+        label_span.string = label_text
+        li.append(label_span)
+        nested_ul["class"] = nested_ul.get("class", []) + ["sub-list"]
+        li.append(nested_ul)
 
     top_level_tags = soup.find_all(recursive=False)
     grid = soup.new_tag("div", **{"class": "restaurants-grid"})

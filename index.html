@@ -133,8 +133,29 @@
     padding-left: 8px;
     text-align: right;
   }
-  li:first-of-type { border-top: 1px solid var(--border); }
-  ul li:last-child { border-radius: 0 0 10px 10px; }
+  .restaurant-card > ul > li:first-of-type { border-top: 1px solid var(--border); }
+  .restaurant-card > ul > li:last-child { border-radius: 0 0 10px 10px; }
+
+  li.category-item {
+    display: block;
+    padding: 10px 14px 4px;
+  }
+  li.category-item::before { content: none; }
+  .category-label {
+    display: block;
+    font-weight: 700;
+    color: var(--accent-2);
+    margin-bottom: 6px;
+  }
+  ul.sub-list {
+    margin: 0;
+    padding: 0 0 6px;
+  }
+  ul.sub-list li {
+    border: none;
+    background: transparent;
+    padding: 4px 0 4px 16px;
+  }
   footer {
     margin-top: 36px;
     color: var(--muted);
@@ -156,7 +177,7 @@
   <div class="wrap">
 <h1>🍱 Daily Lunch Menu — Leppävaara, Espoo</h1>
 <p><strong>Torstai 03.09.2026</strong> (Thursday)</p>
-<p><em>Last updated: 2026-09-03 11:17 (Europe/Helsinki)</em></p>
+<p><em>Last updated: 2026-09-03 12:36 (Europe/Helsinki)</em></p>
 
 
 
@@ -189,26 +210,49 @@
 <li><span class="dish">YKSITYISTILAISUUS</span></li>
 <li><span class="dish">Lounas suljettu</span></li>
 </ul></section><section class="restaurant-card"><h2>5. 🍽️ <a href="https://ravintolabase.fi/lounas/">Ravintola Base</a></h2><ul>
+<li class="category-item"><span class="category-label">Lautasannos</span><ul class="sub-list">
 <li><span class="dish">Kana-mangosalaatti (L, G) — 14,00 €</span><span class="tags">🐔 🥗 🥭</span></li>
 <li><span class="dish">Pasta Carbonara (L, G*) — 14,00 €</span><span class="tags">🍝</span></li>
+</ul></li>
+<li class="category-item"><span class="category-label">Keittolounas</span><ul class="sub-list">
 <li><span class="dish">Hernekeittoa, Pannari sisältyy keittolounaaseen, muille +2 € (L, G) — 12,00 €</span><span class="tags">🍲</span></li>
+</ul></li>
+<li class="category-item"><span class="category-label">Buffetlounas</span><ul class="sub-list">
 <li><span class="dish">Kreikkalainen kalapata (L, G) — 14,00 €</span><span class="tags">🐟</span></li>
 <li><span class="dish">Kermainen jauheliha-juureskastike (L, G) — 14,00 €</span><span class="tags">🥩 🍖</span></li>
+</ul></li>
+<li class="category-item"><span class="category-label">A la carte - alkuruoka</span><ul class="sub-list">
 <li><span class="dish">Vihersalaatti — 8,00 €</span><span class="tags">🥗</span></li>
 <li><span class="dish">Kermainen rapukeitto — 13,00 €</span><span class="tags">🍲</span></li>
 <li><span class="dish">Caprese parmankinkulla ja pinjansiemenillä — 12,00 €</span><span class="tags">🐖</span></li>
+</ul></li>
+<li class="category-item"><span class="category-label">A la carte - pääruoka</span><ul class="sub-list">
 <li><span class="dish">Caesar-salaatit: Pariloitua kanaa / Vuohenjuustoa / Halloumijuustoa / Scampit — 16,00 €</span><span class="tags">🐔 🧀</span></li>
 <li><span class="dish">Kana-vuohenjuustoburgeri: Pariloitua broileria, paistettua vuohenjuustoa, majoneesia, salaattia, semikuivattua tomaattia, paahdettua paprikaa, pestoa ja ranskalaiset — 18,00 €</span><span class="tags">🐔 🍟 🥗 🍔 🧀 🍅</span></li>
 <li><span class="dish">Paistettua kotimaista taimenta, kantarellimuhennosta, Annabelle perunaa, haudutettua fenkolia ja porkkanaa — 28,00 €</span><span class="tags">🐟 🥔 🥕 🍄‍🟫</span></li>
 <li><span class="dish">Leivitetty vasikanleike, choronkastiketta ja herne-perunamuhennosta — 28,00 €</span><span class="tags">🥔 🥩</span></li>
+</ul></li>
+<li class="category-item"><span class="category-label">A la carte - jälkiruoka</span><ul class="sub-list">
 <li><span class="dish">Ohukaiset, omenasosetta ja vaniljakermaa — 10,00 €</span><span class="tags">🥞</span></li>
 <li><span class="dish">Jäätelö tai sorbettipallo — 6,00 €</span><span class="tags">🍦</span></li>
+</ul></li>
+<li class="category-item"><span class="category-label">Menu</span><ul class="sub-list">
 <li><span class="dish">Menu — 48,00 €</span></li>
+</ul></li>
 </ul></section><section class="restaurant-card"><h2>6. ☕ <a href="https://juvenes.fi/en/restaurant-cafe-soos/">Restaurant &amp; Café SooS</a></h2><ul>
-<li><span class="dish">Lunch Soup: Vegan feta tomato soup, Bread Croutons</span><span class="tags">🍲 🍞 🍅</span></li>
+<li class="category-item"><span class="category-label">Lounas</span><ul class="sub-list">
 <li><span class="dish">Cozy: Dukkah Chicken, Lime sour cream sauce, Bulgur</span><span class="tags">🐔 🍋</span></li>
 <li><span class="dish">Roots: Tomato Härkis Lasagna</span><span class="tags">🫘 🍅</span></li>
+<li><span class="dish">Sides: Roasted Eggplant And Pomegranate</span><span class="tags">🔥</span></li>
+<li><span class="dish">Dessert: Fruit Salad</span><span class="tags">🥗 🍰</span></li>
+</ul></li>
+<li class="category-item"><span class="category-label">My Plate</span><ul class="sub-list">
 <li><span class="dish">Favourite Plate: Roasted Salmon, Tzatziki, Mediterranean Potato Salad made from Roasted Potatoes</span><span class="tags">🐟 🥗 🥔 🔥</span></li>
+</ul></li>
+<li class="category-item"><span class="category-label">Salad and soup</span><ul class="sub-list">
+<li><span class="dish">Lunch Soup: Vegan feta tomato soup, Bread Croutons</span><span class="tags">🍲 🍞 🍅</span></li>
+<li><span class="dish">My Salad: Plentiful salad buffet</span><span class="tags">🥗</span></li>
+</ul></li>
 </ul></section></div>
     <footer>Generated automatically on weekday mornings.</footer>
   </div>

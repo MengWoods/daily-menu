@@ -3,9 +3,9 @@ name: Update daily lunch menu
 on:
   schedule:
     # 22:37 UTC = 00:37–01:37 Europe/Helsinki (EET/EEST), allowing for scheduler delays.
-    - cron: "37 22 * * 0-4"
-    # 03:43 UTC on weekdays ≈ 05:43–06:43 Europe/Helsinki (EET/EEST), catching menus published later.
-    - cron: "43 3 * * 1-5"
+    - cron: "37 22 * * 0-5"
+    # 01:43 UTC on weekdays ≈ 03:43–04:43 Europe/Helsinki (EET/EEST), catching menus published later.
+    - cron: "43 1 * * 1-6"
   workflow_dispatch: {}
 
 permissions:
