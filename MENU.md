@@ -2,7 +2,7 @@
 
 **Perjantai 04.09.2026** (Friday)
 
-_Last updated: 2026-09-04 03:18 (Europe/Helsinki)_
+_Last updated: 2026-09-04 10:52 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -18,7 +18,13 @@ _Last updated: 2026-09-04 03:18 (Europe/Helsinki)_
 
 ## 3. 🇳🇵 [Kathmandu Palace](http://kathmandupalace.fi/en/lunch/?lang=en)
 
-- ⚠️ Menu unavailable right now — see the [website](http://kathmandupalace.fi/en/lunch/?lang=en) directly. (HTTPConnectionPool(host='kathmandupalace.fi', port=80): Max retries exceeded with url: /en/lunch/?lang=en (Caused by NewConnectionError("HTTPConnection(host='kathmandupalace.fi', port=80): Failed to establish a new connection: [Errno 101] Network is unreachable")))
+- 1.TOFU CHILLI (L,G) 🌶️🌶️🌶️ 12,50€ — Tofu and capsicum, onion, tomato in cumin soy-chilli sauce. 🍅
+- 2.SAHI PANEER (G) 13,00€ — Paneer and honey in creamy tomato sauce
+- 3.CHICKEN KORMA  (L,G) 13,50€ — Chicken fillet and cashew nuts in creamy coconut tomato curry sauce 🐔 🌰
+- 4.LAMB CURRY (L,G) 🌶️ 13,50€ — Lamb in curry sauce flavoured with cumins and coriander 🐑
+- 5. SHRIMPS BUTTER MASALA (L) 🌶️ 13,50€ — Shrimps in tomato cream- masala sauce. 🍤 🍅
+- 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
+- 7.TODAY’S SPECIAL-CHICKEN TIKKA MASALA (G) 🌶️🌶️ 15,50€ — Yoghurt marinated & tandoori grilled chicken breast pieces in onion & tomato masala sauce 🐔 🔥
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
