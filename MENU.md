@@ -2,7 +2,7 @@
 
 **Maanantai 07.09.2026** (Monday)
 
-_Last updated: 2026-09-07 03:16 (Europe/Helsinki)_
+_Last updated: 2026-09-07 08:14 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -18,7 +18,7 @@ _Last updated: 2026-09-07 03:16 (Europe/Helsinki)_
 
 ## 3. 🇳🇵 [Kathmandu Palace](http://kathmandupalace.fi/en/lunch/?lang=en)
 
-- Closed today — see website for details
+- ⚠️ Menu unavailable right now — see the [website](http://kathmandupalace.fi/en/lunch/?lang=en) directly. (403 Client Error: Forbidden for url: http://kathmandupalace.fi/en/lunch/?lang=en)
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
@@ -50,9 +50,6 @@ _Last updated: 2026-09-07 03:16 (Europe/Helsinki)_
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
-- Salad and soup
-    - Lunch Soup: Creamy Broccoli Soup 🍲
-    - My Salad: Plentiful salad buffet 🥗
 - Lounas
     - Cozy: Breaded Flounder Fillet, Pea and potato puree, Tartar Sauce 🥔
     - Cozy: Sausage Stroganoff 🌭
@@ -60,3 +57,6 @@ _Last updated: 2026-09-07 03:16 (Europe/Helsinki)_
     - Sides: Roasted Sweet Potato Wedges, Champignon, Mixed Salad 🍠 🥗 🔥
 - My Plate
     - Easy Plate: Halloumi Burger, Lemon Aioli 🍔 🍋
+- Salad and soup
+    - Lunch Soup: Creamy Broccoli Soup 🍲
+    - My Salad: Plentiful salad buffet 🥗
