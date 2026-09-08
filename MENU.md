@@ -2,7 +2,7 @@
 
 **Tiistai 08.09.2026** (Tuesday)
 
-_Last updated: 2026-09-08 03:38 (Europe/Helsinki)_
+_Last updated: 2026-09-08 08:17 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -57,6 +57,9 @@ _Last updated: 2026-09-08 03:38 (Europe/Helsinki)_
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
+- Salad and soup
+    - Lunch Soup: Minced Meat Soup 🍲 🍖
+    - My Salad: Plentiful salad buffet 🥗
 - Lounas
     - Breakfast: Ryeflake Porridge
     - Cozy: Chicken, Fennel and Orange, Jasmin Rice, Yoghurt Sauce with Herbs 🐔 🍚
@@ -65,6 +68,3 @@ _Last updated: 2026-09-08 03:38 (Europe/Helsinki)_
     - Dessert: Banana and Blackcurrant Smoothie 🍰
 - My Plate
     - Easy Plate: Halloumi Burger, Lemon Aioli 🍔 🍋
-- Salad and soup
-    - Lunch Soup: Minced Meat Soup 🍲 🍖
-    - My Salad: Plentiful salad buffet 🥗
