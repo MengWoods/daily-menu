@@ -1,38 +1,45 @@
 # 🍱 Daily Lunch Menu — Leppävaara, Espoo
 
-**Maanantai 07.09.2026** (Monday)
+**Tiistai 08.09.2026** (Tuesday)
 
-_Last updated: 2026-09-07 08:14 (Europe/Helsinki)_
+_Last updated: 2026-09-08 03:38 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
-- Lihapullia kermaisessa sienikastikkeessa (L, G) Kasviskoftia VE, G ja minttu-jogurttikastiketta (L, G)  Valkosipuli-kermaperunoita (L, G) — 14,00 € 🥬 🍖 🍄‍🟫
+- Kalkkuna-Cordon bleu (L) Halloumi-punajuuripihvejä (L, G) ja Ranch-kastiketta (L, G) Paahdettuja yrtti-valkosipuliperunoita (M, G) — 14,00 € 🐔
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
-- Paahdettu kurpitsakeitto (L+G+VS) kurpitsansiemeniä (VE+G) 🍲
-- Pintasavustettua uunilohta (M+G) tilliperunat (VE+G) tzatziki (L+G+VS) 🐟 🥔
-- Italialainen lasagne tuoreella basilikalla (L+VS) parmesanjuustomuru (L+G) 🧀
-- Härkiksellä höystetty chili sin carne (VE+G+VS) basmatiriisi (VE+G) 🍚
-- Rocky Road -suklaamousse (L+G+sis.pähkinää) 🍫 🌰
+- Koskenlaskijan savuporokeitto (L+G) 🍲
+- Factoryn pannupihvit bearnaisekastikkeessa (VL+G+VS) perunamuhennos (L+G) 🥔
+- Talon paneroitua kanan paistileikettä (M+VS) basmatiriisi (VE+G) sweet chili -dippi (VE+G+VS) 🐔 🍚 🔥
+- Itse paistetut pinaattiletut (L) puolukkahillo (VE+G) 🥞
+- Grillattuja herkkusieniä, kasviksia ja tofua chimichurrilla (VE+G+VS) 🥬 🍄‍🟫 🔥
+- Factoryn jäätelöbaari (L+G) 🍦
 
 ## 3. 🇳🇵 [Kathmandu Palace](http://kathmandupalace.fi/en/lunch/?lang=en)
 
-- ⚠️ Menu unavailable right now — see the [website](http://kathmandupalace.fi/en/lunch/?lang=en) directly. (403 Client Error: Forbidden for url: http://kathmandupalace.fi/en/lunch/?lang=en)
+- 1.TOFU CHANA MASALA (L,G) 🌶️ 12,50€ — Tofu and chickpeas in spicy masala sauce 🫘
+- 2.PALAK PNEER (G) 13,00€ — Spinach, paneer & onion in creamy curry sauce
+- 3.MANGO CHICKEN (L,G) 13,50€ — Chicken breast & mango in tomato butter cream sauce 🐔 🥭
+- 4.LAMB KOFTA CHILLI (L) 🌶️🌶️🌶️ 13,50€ — Lamb meatballs with leek, tomato-onion-soy chilli sauce 🐑 🧆 🍅
+- 5.SHRIMPS KORMA (L,G) 13,50€ — Shrimps with tomato in curry sauce and coconut with cashew nuts 🍤 🌰
+- 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
+- 7.TODAY’S SPECIAL – KATHMANDU HOT MIX (G) 🌶️🌶️ 15,50€ — Tandoori grilled lamb tenderloin, chicken, king prawns, cottage cheese and capsicum cashew nuts with yogurt-garlic peper sauce. 🐔 🍤 🐑 🧀 🔥 🌰
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://vermo.fi/fi-fi/ravintolat/lounas/174/) directly. (no dishes parsed)
+- ⚠️ Menu unavailable right now — see the [website](https://vermo.fi/fi-fi/ravintolat/lounas/174/) directly. (today's day heading not found)
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
 - Lautasannos
-    - Pasta Primavera ja kanaa L (L) — 14,00 € 🐔 🍝
-    - Kylmä kalalautanen, varhaisperunaa ja salaattia (L, G) — 14,00 € 🐟 🥗 🥔
+    - "Juustoburger"-pasta (L, G*) — 14,00 € 🍔 🍝 🧀
+    - Vuohenjuustosalaatti (VL, G) — 14,00 € 🥗 🧀
 - Keittolounas
-    - Lehtikaalisosekeittoa ja fetamurua (L, G) — 12,00 € 🍲
+    - Kermaista lohikeittoa (L, G) — 12,00 € 🐟 🍲
 - Buffetlounas
-    - Jauhelihamureketta, sienikastiketta ja yrttiperunaa (L) — 14,00 € 🥔 🥩 🍖 🍄‍🟫
+    - Tandoorimaustettua kanaa, kasvisriisiä ja hunaja-jugurttia (L, G) — 14,00 € 🐔 🍚 🥬
 - A la carte - alkuruoka
     - Vihersalaatti — 8,00 € 🥗
     - Kermainen rapukeitto — 13,00 € 🍲
@@ -51,12 +58,13 @@ _Last updated: 2026-09-07 08:14 (Europe/Helsinki)_
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
 - Lounas
-    - Cozy: Breaded Flounder Fillet, Pea and potato puree, Tartar Sauce 🥔
-    - Cozy: Sausage Stroganoff 🌭
-    - Roots: Smoked tofu and Potato Casserole 🥔
-    - Sides: Roasted Sweet Potato Wedges, Champignon, Mixed Salad 🍠 🥗 🔥
+    - Breakfast: Ryeflake Porridge
+    - Cozy: Chicken, Fennel and Orange, Jasmin Rice, Yoghurt Sauce with Herbs 🐔 🍚
+    - Roots: Omelette roll wit feta and pulled oat 🍞
+    - Sides: Marinated Zucchini
+    - Dessert: Banana and Blackcurrant Smoothie 🍰
 - My Plate
     - Easy Plate: Halloumi Burger, Lemon Aioli 🍔 🍋
 - Salad and soup
-    - Lunch Soup: Creamy Broccoli Soup 🍲
+    - Lunch Soup: Minced Meat Soup 🍲 🍖
     - My Salad: Plentiful salad buffet 🥗
