@@ -212,21 +212,21 @@ def parse_vermo(cfg: dict, today: datetime) -> list[str]:
     date_str = f"{today.day}.{today.month}."
     target = f"{fi_day} {date_str}"
     container = soup.select_one(".element-text") or soup
-    paragraphs = container.find_all("p")
-    start = None
-    for i, p in enumerate(paragraphs):
-        text = p.get_text(" ", strip=True)
-        if text.lower().startswith(target.lower()):
-            start = i
+    # The whole week lives in one <p>: <strong>Day D.M.</strong><br>dish<br>...<br>****<br><strong>...
+    heading = None
+    for strong in container.find_all("strong"):
+        if strong.get_text(" ", strip=True).lower().startswith(target.lower()):
+            heading = strong
             break
-    if start is None:
+    if heading is None:
         raise ValueError("today's day heading not found")
     lines = []
-    for p in paragraphs[start + 1:]:
-        text = p.get_text(" ", strip=True)
-        if not text or set(text) == {"*"}:
+    for sib in heading.next_siblings:
+        text = sib.get_text(" ", strip=True) if hasattr(sib, "get_text") else str(sib).strip()
+        if sib.name == "strong" or (text and set(text) == {"*"}):
             break
-        lines.append(text)
+        if text:
+            lines.append(text)
     if not lines:
         raise ValueError("no dishes parsed")
     return lines

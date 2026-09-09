@@ -2,7 +2,7 @@
 
 **Keskiviikko 09.09.2026** (Wednesday)
 
-_Last updated: 2026-09-09 03:29 (Europe/Helsinki)_
+_Last updated: 2026-09-09 07:42 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -29,7 +29,11 @@ _Last updated: 2026-09-09 03:29 (Europe/Helsinki)_
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://vermo.fi/fi-fi/ravintolat/lounas/174/) directly. (today's day heading not found)
+- Kasvissosekeittoa L, G 🍲 🥬
+- Chorizokiusausta L, G
+- Korianteri-lime paneroitua kalaa M 🐟 🍋
+- Höyrytettyä tilliperunaa L, G 🥔
+- Suklaamannaa L ja vaniljakastiketta L, G 🍫
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
