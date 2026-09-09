@@ -2,7 +2,7 @@
 
 **Keskiviikko 09.09.2026** (Wednesday)
 
-_Last updated: 2026-09-09 07:42 (Europe/Helsinki)_
+_Last updated: 2026-09-09 08:18 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -61,13 +61,13 @@ _Last updated: 2026-09-09 07:42 (Europe/Helsinki)_
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
-- Salad and soup
-    - Lunch Soup: Tomato and Cream Cheese Soup 🍲 🧀 🍅
-    - My Salad: Plentiful salad buffet 🥗
 - Lounas
     - Breakfast: Organic Oatmeal
     - Cozy: Garlic Beef, Fresh Herb Cream Potatoes 🥩
     - Sides: Caramelized carrot 🥕
     - Dessert: Vanilla Kissel with Jam 🍰
+- Salad and soup
+    - Lunch Soup: Tomato and Cream Cheese Soup 🍲 🧀 🍅
+    - My Salad: Plentiful salad buffet 🥗
 - My Plate
     - Easy Plate: Halloumi Burger, Lemon Aioli 🍔 🍋
