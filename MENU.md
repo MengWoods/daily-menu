@@ -2,7 +2,7 @@
 
 **Torstai 10.09.2026** (Thursday)
 
-_Last updated: 2026-09-10 03:30 (Europe/Helsinki)_
+_Last updated: 2026-09-10 08:19 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -18,7 +18,13 @@ _Last updated: 2026-09-10 03:30 (Europe/Helsinki)_
 
 ## 3. 🇳🇵 [Kathmandu Palace](http://kathmandupalace.fi/en/lunch/?lang=en)
 
-- ⚠️ Menu unavailable right now — see the [website](http://kathmandupalace.fi/en/lunch/?lang=en) directly. (403 Client Error: Forbidden for url: http://kathmandupalace.fi/en/lunch/?lang=en)
+- 1.TOFU CURRY (L,G) 🌶️ 12,50€ — Tofu in tomato curry sauce.
+- 2.VEG KOFTA (L,G) 13,00€ — Vegetable balls (cauliflower, potato and paneer) in creamy curry sauce 🥬 🥔
+- 3.BUTTER CHICKEN (L,G) 13,50€ — Tandoori oven grilled chicken fillet in tomato, butter and cream sauce 🐔 🍅 🔥
+- 4.MUTTON CHILLI (G,L) 🌶️🌶️🌶️ 13,50€ — Lamb and capsicum, onion, tomato in cumin soy-chilli sauce. 🐑 🍅
+- 5.FISH CURRY (L,G) 🌶️ 13,50€ — Fried pangasius fillets in curry sauce. 🐟
+- 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
+- 7.TODAY’S SPECIAL – CHICKEN TIKKA (G) 🌶️🌶️ 15,50€ — Yoghurt marinated & tandoori grilled chicken in tomato and yoghurt sauce 🐔 🔥
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
