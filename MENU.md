@@ -2,7 +2,7 @@
 
 **Keskiviikko 16.09.2026** (Wednesday)
 
-_Last updated: 2026-09-16 03:43 (Europe/Helsinki)_
+_Last updated: 2026-09-16 08:18 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -62,14 +62,14 @@ _Last updated: 2026-09-16 03:43 (Europe/Helsinki)_
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
+- Salad and soup
+    - Lunch Soup: Clear Rainbow Trout Soup 🐟 🍲
+    - My Salad: Plentiful salad buffet 🥗
 - Lounas
     - Breakfast: Four Grain Porridge
     - Cozy: Roasted Pork Neck, BBQ Cream Sauce, Barbecue Potatoes 🐖 🔥
     - Roots: Härkis and Cabbage Casserole, Lingonberry 🫘
     - Sides: Smoke-marinated beetroot
     - Dessert: Milkshake With Mango And Vanilla 🥭 🍰
-- Salad and soup
-    - Lunch Soup: Clear Rainbow Trout Soup 🐟 🍲
-    - My Salad: Plentiful salad buffet 🥗
 - My Plate
-    - Easy Plate: Cheese and Bacon Burger, French Fries 🍟 🥓 🍔 🧀
+    - Easy Plate: French Fries 🍟
