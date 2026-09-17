@@ -2,7 +2,7 @@
 
 **Torstai 17.09.2026** (Thursday)
 
-_Last updated: 2026-09-17 03:50 (Europe/Helsinki)_
+_Last updated: 2026-09-17 08:26 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
