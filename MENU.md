@@ -1,44 +1,51 @@
 # 🍱 Daily Lunch Menu — Leppävaara, Espoo
 
-**Tiistai 22.09.2026** (Tuesday)
+**Keskiviikko 23.09.2026** (Wednesday)
 
-_Last updated: 2026-09-22 08:24 (Europe/Helsinki)_
+_Last updated: 2026-09-23 03:52 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
-- Rapeaa kanaa (G), valkosipulikermaperunat (L,G) ja ranch-kastike (L,G) Fetakasvispihvit (L,G) — 14,00 € 🐔 🥬 🥔
+- Riistakäristys (M,G),  perunamuusi (L,G) ja puolukkahillo (M,G) Pinaatti-raejuustonapit (L,G) — 14,00 € 🥔 🧀
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
-- Thaimaalainen Tom Yam -katkarapukeitto (M+G+VS) 🍤 🍲
-- Factoryn pannupihvit metsästäjän sienikastikkeessa (L+G+VS) perunamuhennos (L+G) 🥔 🍄‍🟫
-- Meksikolaiset kanaburritot cheddarjuustohunnulla (L+VS) crème fraîche (L+G+VS) paahdettu sipuli (VE+G) 🐔 🧀
-- Itse paistetut pinaattiletut (L) puolukkahillo (VE+G) 🥞
-- Gold & Green -kasvis-kaurasuikaleilla höystetty herkkusienirisotto (VE+G+VS) 🥬 🍄‍🟫
-- Factoryn jäätelöbaari (L+G) ananas-sorbetti (VE+G) 🍦
+- Koskenlaskijan savuporo-pekonikeitto (L+G) 🍲 🥓
+- Paneroitua kanan sisäfilettä inkivääri-glaseerauksella (M+VS) basmatiriisi (VE+G) sweet chili -dippi (L+G+VS) 🐔 🍚
+- Kermainen härkäpata herkkusienillä ja hillosipulilla (L+G) basmatiriisi (VE+G) 🍚 🥩 🍄‍🟫
+- Kinkku-ananaspizza sinihomejuustolla ja tuoreella rucolalla (L) 🐖 🍕 🧀
+- Vegaaninen Härkis-biryani kikherneillä ja tuoreella korianterilla (VE+G+VS+sis. pähkinää) 🫘 🌰
+- Kahden suklaan mousse (G) 🍫
 
 ## 3. 🇳🇵 [Kathmandu Palace](http://kathmandupalace.fi/en/lunch/?lang=en)
 
-- ⚠️ Menu unavailable right now — see the [website](http://kathmandupalace.fi/en/lunch/?lang=en) directly. (403 Client Error: Forbidden for url: http://kathmandupalace.fi/en/lunch/?lang=en)
+- 1.TOFU MASALA (G,L) 🌶️ 12,50€ — Tofu, tomato and ginger in curry masala sauce. 🍅
+- 2.MALAI KOFTA (L) 13,00€ — Soft vegetable balls with cashew nuts, paneer & honey in creamy tomato sauce 🥬 🌰
+- 3.CHICKEN CHILLI (L,G) 🌶️🌶️🌶️ 13,50€ — Chicken breast, onion and capsicum in spicy tomato, garlic, chili and soya sauce 🐔 🍅
+- 4.LAMB BUTTER MASALA (L,G) 🌶️ 13,50€ — Stewed lamb with tomato in butter & masala sauce. 🐑 🍅
+- 5.FISH KORMA (L,G) 13,50€ — Fried pangasius fillets and cashew nuts in creamy coconut tomato curry sauce 🐟 🌰
+- 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
+- 7.TODAY’S SPECIAL – KATHMANDU SPECIAL KARAI (G) 15,50€ — Tandoori chicken fillet, cottage cheese, cheese, coconut, honey & cashew in cream & tomato sauce 🐔 🧀 🌰
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
-- Linssikeittoa VE, G 🍲
-- Kermaista tonnikala-pastavuokaa L 🐟 🍝
-- Mehevää porsaan kylkeä sweetchili-kastikkeessa M, G 🐖
-- Kasvis-nuudeliwokkia M 🥬 🍜
-- No chicken wokkia M 🐔
-- Mustikkakakkua VL 🍰
+- Siskonmakkarakeittoa L, G 🍲 🌭
+- Ravillan merimiespataa L, G
+- Aurajuustokanaa L, G 🐔 🧀
+- Palak paneer L, G
+- Riisiä VE, G 🍚
+- Snickersmoussea VL
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
 - Lautasannos
-    - Perinteiset lihapelmenit ja valkosipulismetanaa (L) — 14,00 € 🍖
-    - Vuohenjuusto-caesarsalaatti (L, G*) — 14,00 € 🥗 🧀
+    - Avokado-kanapasta (L, G*) — 14,00 € 🐔 🥑 🍝
+    - Raikas feta-melonisalaatti (L, G) — 14,00 € 🥗
 - Keittolounas
-    - Kermaista lohikeittoa (L, G) — 12,00 € 🐟 🍲
+    - Meksikolainen kasviskeitto (L, G, K) — 12,00 € 🍲 🥬
 - Buffetlounas
-    - Kanaa hunaja-pippurikastikkeessa (L, G) — 14,00 € 🐔
+    - Paneroitua kampelaa ( gluteeniton ) ja ranskankermakastiketta (L, G) — 14,00 €
+    - Täyteläinen jauhelihakiusaus (L, G) — 14,00 € 🥩 🍖
 - A la carte - alkuruoka
     - Suppilovahverokeittoa ja sherryvaahtoa — 10,00 € 🍲
     - Paistettua kampasimpukkaa ja chorizoa — 13,00 €
@@ -56,13 +63,13 @@ _Last updated: 2026-09-22 08:24 (Europe/Helsinki)_
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
+- Lounas
+    - Breakfast: Barley Porridge
+    - Cozy: Chicken Meatball Kiev Style, Limeaioli 🐔 🧆
+    - Roots: Vegansk Bolognesesås, Spaghetti 🍝
+    - Sides: Roasted Carrots and Red Cabbage 🔥
 - My Plate
     - Favourite Plate: Minute Stake of Pork with Bearnaise Sauce, Coleslaw, French Fries 🍟 🐖 🌰
-- Lounas
-    - Breakfast: Ryeflake Porridge
-    - Cozy: Tandoor Chicken, Basmati Rice 🐔 🍚
-    - Roots: Dal Makhani, black lentil stew, Basmati Rice, Dream Fraiche 🍚
-    - Dessert: Chocolate Mousse 🍫 🍰
 - Salad and soup
-    - Lunch Soup: Sausage Soup 🍲 🌭
+    - Lunch Soup: Salad Cheese 🍲 🥗 🧀
     - My Salad: Plentiful salad buffet 🥗
