@@ -2,7 +2,7 @@
 
 **Tiistai 29.09.2026** (Tuesday)
 
-_Last updated: 2026-09-29 05:14 (Europe/Helsinki)_
+_Last updated: 2026-09-29 09:14 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
