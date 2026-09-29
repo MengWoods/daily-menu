@@ -1,25 +1,31 @@
 # 🍱 Daily Lunch Menu — Leppävaara, Espoo
 
-**Maanantai 28.09.2026** (Monday)
+**Tiistai 29.09.2026** (Tuesday)
 
-_Last updated: 2026-09-28 08:54 (Europe/Helsinki)_
+_Last updated: 2026-09-29 05:14 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
-- Lasagne (L) Kasvislasagne (L) — 14,00 € 🥬
+- Kievin kana, parmesaani perunat (L, G) ja yrttinen kermaviilikastike (L, G)  Jalapeno-kasvisnugetit (M, G) — 14,00 € 🐔 🥬 🥔
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
-- Vuohenjuustolla höystetty punajuurikeitto (L+G) 🍲 🧀
-- Siemenpestolla kuorrutettua uunilohta (M+G+VS) tilliperunat (VE+G) feta-jogurttikastike (L+G) 🐟 🥔
-- Grillattua kanan paistileikettä choronkastikkeessa (VL+G+VS) basmatiriisi (VE+G) 🐔 🍚 🔥
-- Salami-herkkusienipizza tuoreella rucolalla (L+VS) 🍕 🍄‍🟫
-- Paahdettua rakuuna-porkkanaa, kesäkurpitsaa ja Oumph! -suikaleita balsamicokastikkeella (VE+G) 🥕
-- Mangolassi kardemummalla ja mintulla (L+G) 🥭
+- Lempeän tulinen chili-bataattikeitto (L+G+VS) 🍲 🍠
+- Paahdettua terva porsaankylkeä BBQ-kastikkeessa (M+G+VS) uunilohkoperunat (VE+G) 🥔 🐖
+- Tempura-paneroitua seitiä tilli-vinegretellä (M) uunilohkoperunat (VE+G) kermaviilikastike (L+G) 🐟 🥔
+- Itse paistetut pinaattiletut (L) puolukkahillo (VE+G) 🥞
+- Thaimaalainen pad thai -riisinuudeli-kasviswokki tofulla ja suolapähkinöillä (VE+G+VS+sis. pähkinää) 🍚 🥬 🍜 🌰
+- Factoryn jäätelöbaari (L+G) 🍦
 
 ## 3. 🇳🇵 [Kathmandu Palace](http://kathmandupalace.fi/en/lunch/?lang=en)
 
-- Closed today — see website for details
+- 1.TOFU CHANA MASALA (L,G) 🌶️ 12,50€ — Tofu and chickpeas in spicy masala sauce 🫘
+- 2.PALAK PNEER (G) 13,00€ — Spinach, paneer & onion in creamy curry sauce
+- 3.MANGO CHICKEN (L,G) 13,50€ — Chicken breast & mango in tomato butter cream sauce 🐔 🥭
+- 4.LAMB KOFTA CHILLI (L) 🌶️🌶️🌶️ 13,50€ — Lamb meatballs with leek, tomato-onion-soy chilli sauce 🐑 🧆 🍅
+- 5.SHRIMPS KORMA (L,G) 13,50€ — Shrimps with tomato in curry sauce and coconut with cashew nuts 🍤 🌰
+- 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
+- 7.TODAY’S SPECIAL – KATHMANDU HOT MIX (G) 🌶️🌶️ 15,50€ — Tandoori grilled lamb tenderloin, chicken, king prawns, cottage cheese and capsicum cashew nuts with yogurt-garlic peper sauce. 🐔 🍤 🐑 🧀 🔥 🌰
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
@@ -28,12 +34,12 @@ _Last updated: 2026-09-28 08:54 (Europe/Helsinki)_
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
 - Lautasannos
-    - Hunaja-porkkanarisottoa ja pariloitua vuohenjuustoa (L, G) — 14,00 € 🥕 🧀
-    - Teriyaki-seesamilla maustettua kanasalaattia (L, G) — 14,00 € 🐔 🥗
+    - Gnoccheja ruskistettua salviavoita ja mozzarellaa (L, K) — 14,00 €
+    - Paahtopaistisalaatti, piparjuurimajoneesia (L, G) — 14,00 € 🥗 🔥
 - Keittolounas
-    - Samettista parsakeittoa (L, G, K) — 12,00 € 🍲
+    - Kermaista lohikeittoa (L, G) — 12,00 € 🐟 🍲
 - Buffetlounas
-    - Jauhelihapyörykät kermaisella tomaatti-yrttikastikkeella L ja perunamuhennosta L, G — 14,00 € 🥔 🥩 🍖 🍅
+    - Broileria paholaisen kastikkeessa ja riisiä (L, G) — 14,00 € 🐔 🍚
 - A la carte - alkuruoka
     - Juuripersiljakeittoa ja rapeita linssejä — 10,00 € 🍲
     - Bresaola kinkkua ja burratajuustoa — 15,00 € 🐖 🧀
@@ -51,14 +57,15 @@ _Last updated: 2026-09-28 08:54 (Europe/Helsinki)_
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
+- Lounas
+    - Breakfast: Barley Porridge
+    - Cozy: Salmon Loaf, Boiled Potatoes, Dill Sourcream Sauce 🐟
+    - Cozy: Minced Meat and Macaroni Casserole 🍖
+    - Roots: Korean Bbq Vegetable Casserole 🥬
+    - Sides: Fried Eggplant, Broccoli and Red Onions
+    - Dessert: Apple Quark 🍰
+- Salad and soup
+    - Lunch Soup: Chicken Soup with Cheese 🐔 🍲 🧀
+    - My Salad: Plentiful salad buffet 🥗
 - My Plate
     - Favourite Plate: Basmati Rice, Pak Choi 🍚
-- Lounas
-    - Breakfast: Organic Oatmeal
-    - Cozy: Jasmin Rice 🍚
-    - Roots: Broad Beans and Black Beans BBQ, Wild Rice Mix 🍚 🫘
-    - Sides: Roasted Zucchini 🔥
-    - Dessert: Coffee Panna Cotta 🍰
-- Salad and soup
-    - Lunch Soup: Artichoke and Cauliflower Soup 🍲
-    - My Salad: Plentiful salad buffet 🥗
