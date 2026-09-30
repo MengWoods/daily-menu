@@ -34,7 +34,7 @@ restaurants:
 
   - name: "Kathmandu Palace"
     emoji: "🇳🇵"
-    url: "http://kathmandupalace.fi/en/lunch/?lang=en"
+    url: "https://kathmandupalace.fi/en/lunch/?lang=en"
     parser: "kathmandu"
 
   - name: "Ravintola Vermo (Ravilla)"

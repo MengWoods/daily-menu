@@ -212,7 +212,6 @@ def parse_vermo(cfg: dict, today: datetime) -> list[str]:
     date_str = f"{today.day}.{today.month}."
     target = f"{fi_day} {date_str}"
     container = soup.select_one(".element-text") or soup
-    # The whole week lives in one <p>: <strong>Day D.M.</strong><br>dish<br>...<br>****<br><strong>...
     heading = None
     for strong in container.find_all("strong"):
         if strong.get_text(" ", strip=True).lower().startswith(target.lower()):
@@ -221,9 +220,10 @@ def parse_vermo(cfg: dict, today: datetime) -> list[str]:
     if heading is None:
         raise ValueError("today's day heading not found")
     lines = []
-    for sib in heading.next_siblings:
+    start = heading.parent if heading.parent.name == "p" and heading.parent.get_text(" ", strip=True) == heading.get_text(" ", strip=True) else heading
+    for sib in start.next_siblings:
         text = sib.get_text(" ", strip=True) if hasattr(sib, "get_text") else str(sib).strip()
-        if sib.name == "strong" or (text and set(text) == {"*"}):
+        if sib.name == "strong" or (sib.name == "p" and sib.find("strong")) or (text and set(text) == {"*"}):
             break
         if text:
             lines.append(text)
