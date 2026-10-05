@@ -2,7 +2,7 @@
 
 **Maanantai 05.10.2026** (Monday)
 
-_Last updated: 2026-10-05 04:10 (Europe/Helsinki)_
+_Last updated: 2026-10-05 09:14 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
