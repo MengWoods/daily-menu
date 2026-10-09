@@ -2,7 +2,7 @@
 
 **Perjantai 09.10.2026** (Friday)
 
-_Last updated: 2026-10-09 05:28 (Europe/Helsinki)_
+_Last updated: 2026-10-09 09:45 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
