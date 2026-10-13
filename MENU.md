@@ -1,8 +1,8 @@
 # 🍱 Daily Lunch Menu — Leppävaara, Espoo
 
-**Maanantai 12.10.2026** (Monday)
+**Tiistai 13.10.2026** (Tuesday)
 
-_Last updated: 2026-10-12 09:33 (Europe/Helsinki)_
+_Last updated: 2026-10-13 06:08 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -10,35 +10,41 @@ _Last updated: 2026-10-12 09:33 (Europe/Helsinki)_
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
-- Pehmeä sienikeitto (L+G) 🍲 🍄‍🟫
-- Pintasavustettua uunilohta (M+G) tilliperunat (VE+G) tzatziki (L+G+VS) 🐟 🥔
-- Kanan paistileikettä Lyonin tapaan kirsikkatomaateilla ja tuoreella basilikalla (L+G+VS) basmatiriisi (VE+G) 🐔 🍚 🔥
-- Kermainen kinkku-pekonikiusaus tuoreella rucolalla (L+G) 🥓 🐖
-- Thaimaalainen pad thai -nuudeli-kasviswokki tofulla ja suolapähkinöillä (VE+VS+sis. pähkinää) 🥬 🍜 🌰
+- Tomaatti-basilikakeitto (L+G) krutongit (VE) 🍲 🍅
+- Grillattua kanan rintafilettä bearnaisekastikkeessa (VL+G) paahdetut perunat (VE+G) 🐔 🥔 🔥
+- Ranskalainen härkäpata punaviinikastikkeessa (M+G+VS) paahdetut perunat (VE+G) 🥔 🥩
+- Sinihomejuustolla gratinoituja herkkusieniä ja kasviksia (L+G) 🥬 🧀 🍄‍🟫
+- Vegaaninen ratatouille tuoreilla kasviksilla ja tofulla (VE+G+VS) 🥬
 - Factoryn letut (L) talon mansikkahillo (M+G) vaniljavaahto (L+G) jäätelö (L+G) 🥞 🍦
 
 ## 3. 🇳🇵 [Kathmandu Palace](https://kathmandupalace.fi/en/lunch/?lang=en)
 
-- Closed today — see website for details
+- 1.TOFU CHANA MASALA (L,G) 🌶️ 12,50€ — Tofu and chickpeas in spicy masala sauce 🫘
+- 2.PALAK PNEER (G) 13,00€ — Spinach, paneer & onion in creamy curry sauce
+- 3.MANGO CHICKEN (L,G) 13,50€ — Chicken breast & mango in tomato butter cream sauce 🐔 🥭
+- 4.LAMB KOFTA CHILLI (L) 🌶️🌶️🌶️ 13,50€ — Lamb meatballs with leek, tomato-onion-soy chilli sauce 🐑 🧆 🍅
+- 5.SHRIMPS KORMA (L,G) 13,50€ — Shrimps with tomato in curry sauce and coconut with cashew nuts 🍤 🌰
+- 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
+- 7.TODAY’S SPECIAL – KATHMANDU HOT MIX (G) 🌶️🌶️ 15,50€ — Tandoori grilled lamb tenderloin, chicken, king prawns, cottage cheese and capsicum cashew nuts with yogurt-garlic peper sauce. 🐔 🍤 🐑 🧀 🔥 🌰
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
-- Samettista kasvissosekeittoa (L, G) 🍲 🥬
-- Kermaista uunilohta (L, G) 🐟
-- Perinteistä makkarakastiketta (L, G) 🌭
-- Herne-punajuuripihvejä (VE, G) ja minttujogurttia (L, G)
-- Keitettyjä perunoita (L, G)
-- Mansikkarahkaa (L, G)
+- Makkarakeittoa (M, G) 🍲 🌭
+- Täyteläistä Koskenlaskija-makaronilaatikkoa (VL)
+- Juustoista soijarouhemakaronilaatikkoa (VE) 🧀
+- Rapeaksi paneroitua kalaa & remouladea (L, G) 🐟
+- Paistettuja perunoita (VE, G)
+- Lämmintä omena-kaurapaistosta (L) & vaniljakastiketta (L, G)
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
 - Lautasannos
-    - Kalalautanen, kananmunaa, perunaa ja salaattia (L, G) — 14,00 € 🐟 🥗 🥔 🥚
-    - Tomaattinen risotto ja portobelloa (L, G) — 14,00 € 🍅
+    - Halloumi-nektariinisalaatti (L, G) — 14,00 € 🥗
+    - Cafona; Pepperoni-gorgonzolapasta (L, G*) — 14,00 € 🍝
 - Keittolounas
-    - Kasvis-borssikeittoa (L, G, K) — 12,00 € 🍲 🥬
+    - Kermaista lohikeittoa (L, G) — 12,00 € 🐟 🍲
 - Buffetlounas
-    - Jauhelihapihvit, cheddarkastiketta ja sipuli-perunamuhennosta (L) — 14,00 € 🥔 🥩 🍖
+    - Butter chicken ja pilahviriisiä (L, G) — 14,00 € 🐔 🍚
 - A la carte - alkuruoka
     - Vihersalaatti — 8,00 € 🥗
     - Kermaista suppilovahverokeittoa — 12,00 € 🍲
@@ -57,11 +63,10 @@ _Last updated: 2026-10-12 09:33 (Europe/Helsinki)_
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
 - Lounas
-    - Breakfast: Organic Oatmeal
-    - Cozy: Igors Chicken, Whole Grain Rice 🐔 🍚
-    - Roots: Broad Bean and Macaroni Casserole 🫘
-    - Sides: Pea
-    - Dessert: Apple Tiramisu 🍰
+    - Breakfast: Barley Porridge
+    - Cozy: Tuscan Meatloaf, Yogurt Pesto Sauce, Roasted Potatoes 🔥
+    - Roots: Zucchini  Patties with Cheese, Yogurt Pesto Sauce, Roasted Potatoes 🧀 🔥
+    - Sides: Roasted Sweet Potatoes 🍠 🔥
+    - Dessert: Berry Quark 🍰
 - Salad and soup
-    - Lunch Soup: Cauliflower Soup 🍲
     - My Salad: Plentiful salad buffet 🥗
