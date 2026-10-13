@@ -2,7 +2,7 @@
 
 **Tiistai 13.10.2026** (Tuesday)
 
-_Last updated: 2026-10-13 06:08 (Europe/Helsinki)_
+_Last updated: 2026-10-13 10:07 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -31,7 +31,7 @@ _Last updated: 2026-10-13 06:08 (Europe/Helsinki)_
 
 - Makkarakeittoa (M, G) 🍲 🌭
 - Täyteläistä Koskenlaskija-makaronilaatikkoa (VL)
-- Juustoista soijarouhemakaronilaatikkoa (VE) 🧀
+- Juustoista soijarouhemakaronilaatikkoa (VL) 🧀
 - Rapeaksi paneroitua kalaa & remouladea (L, G) 🐟
 - Paistettuja perunoita (VE, G)
 - Lämmintä omena-kaurapaistosta (L) & vaniljakastiketta (L, G)
