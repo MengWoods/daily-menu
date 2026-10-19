@@ -1,58 +1,52 @@
 # 🍱 Daily Lunch Menu — Leppävaara, Espoo
 
-**Perjantai 16.10.2026** (Friday)
+**Maanantai 19.10.2026** (Monday)
 
-_Last updated: 2026-10-16 08:03 (Europe/Helsinki)_
+_Last updated: 2026-10-19 03:25 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
-- ⚠️ Menu unavailable right now — see the [website](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola) directly. (today's menu block not found)
+- Pannupihvejä, pippurikastiketta(L,G ja paahdettua perunaa (M,G) — 14,00 € 🥔
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
-- New Orleansin gumbokeitto (M+G+VS) crème fraîche (L+G) 🍲
-- Rapeat porsaanleikkeet (M) grilli-ranskalaiset (VE+G+VS) BBQ-dippi (M+G+VS) 🍟 🐖 🔥
-- Igorin kanapata smetanalla ja suolakurkulla (L+G+VS) basmatiriisi (VE+G) 🐔 🍚
-- Salami-paprikapizza tuoreella rucolalla (L+VS) 🍕
-- Paahdettua porkkanaa, kesäkurpitsaa ja Oumph! -suikaleita balsamicokastikkeella (VE+G) 🥕
-- Factoryn letut (L) talon mansikkahillo (M+G) vaniljavaahto (L+G) jäätelö (L+G) 🥞 🍦
+- Vuohenjuustolla höystetty punajuurikeitto (L+G) 🍲 🧀
+- Siemenpestolla kuorrutettua uunilohta (M+G+VS) keitetyt perunat (VE+G) 🐟 🥔
+- Dijon-uunimakkarat juustokuorrutuksella (L+G) keitetyt perunat (VE+G) 🥔 🌭 🧀
+- Kana-paprika-punasipulipizza tuoreella rucolalla (L) 🐔 🍕
+- Valkoviinillä höystetty kasvis-herkkusienirisotto (VE+G+VS) 🥬 🍄‍🟫
+- Pappilan hätävara mansikkahillolla ja suklaakastikkeella (L) 🍫
 
 ## 3. 🇳🇵 [Kathmandu Palace](https://kathmandupalace.fi/en/lunch/?lang=en)
 
-- 1.TOFU CHILLI (L,G) 🌶️🌶️🌶️ 12,50€ — Tofu and capsicum, onion, tomato in cumin soy-chilli sauce. 🍅
-- 2.SAHI PANEER (G) 13,00€ — Paneer and honey in creamy tomato sauce
-- 3.CHICKEN KORMA  (L,G) 13,50€ — Chicken fillet and cashew nuts in creamy coconut tomato curry sauce 🐔 🌰
-- 4.LAMB CURRY (L,G) 🌶️ 13,50€ — Lamb in curry sauce flavoured with cumins and coriander 🐑
-- 5. SHRIMPS BUTTER MASALA (L) 🌶️ 13,50€ — Shrimps in tomato cream- masala sauce. 🍤 🍅
-- 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
-- 7.TODAY’S SPECIAL-CHICKEN TIKKA MASALA (G) 🌶️🌶️ 15,50€ — Yoghurt marinated & tandoori grilled chicken breast pieces in onion & tomato masala sauce 🐔 🔥
+- Closed today — see website for details
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
-- Kermaista lohikeittoa (L, G) 🐟 🍲
-- Lihapullia kermakastikkeessa (L) & puolukkahilloa (VE, G) 🍖
-- Rapeaa Kievin kanaa (VL) & kurkkumajoneesia (M, G) 🐔
-- Fetajuusto-tomaattitäytteisiä kikhernepihvejä (VL, G) 🧀 🍅
-- Perunamuusia (L, G) 🥔
-- Ravillan mokkapaloja (L)
+- Kermaista metsäsienikeittoa (L, G) 🍲 🍄‍🟫
+- Kala Wallenbergiä (VL) & remouladea (L, G) 🐟
+- Meheviä pannupihvejä sipulikermakastikkeessa (L, G) & puolukkahilloa (VE, G)
+- Härkistä sipulikermakastikkeessa (L, G) 🫘
+- Keitettyjä perunoita (VE, G)
+- Samettista hedelmärahkaa (L, G)
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
 - Lautasannos
-    - Jauhelihatäytteinen uuniperuna ja salaattia (L, G) — 14,00 € 🥗 🥔 🥩 🍖
-    - Romesco vuohenjuustopasta (L, G*) — 14,00 € 🍝 🧀
+    - Tonnikala Nizzansalaatti (L, G) — 14,00 € 🐟 🥗
+    - Täyteläinen yrtti-oliivirisotto ja paahdettua fetaa (VL, G) — 14,00 € 🫒
 - Keittolounas
-    - Kukkakaalikeitto (L, G, K) — 12,00 € 🍲
+    - Sipulikeittoa (L, G) — 12,00 € 🍲
 - Buffetlounas
-    - Maissileivitettyä kanaa, paahdettuja kasviksia ja ranskalaisia (L) — 14,00 € 🐔 🥬 🌽
+    - Lihapullat kermapippurikastikkeessa ja perunamuhennosta (L) — 14,00 € 🥔 🧆 🍖
 - A la carte - alkuruoka
     - Vihersalaatti — 8,00 € 🥗
     - Kermaista suppilovahverokeittoa — 12,00 € 🍲
     - Paistettuja kampasimpukoita ja sieniä, rapuvaahtoa — 14,00 € 🍄‍🟫
 - A la carte - pääruoka
-    - Caesar-salaatit: Pariloitua kanaa / Vuohenjuustoa / Halloumijuustoa / Scampit — 18,00 € 🐔 🧀
     - Ruislohiburgeri: pehmeä ruissämpylä, paistettua lohta, salaattia, tomaattia, pikkelöityä punasipulia, mummon kurkkuja, tillimajoneesia ja ranskalaiset — 18,00 € 🐟 🍟 🥗 🍔 🍞 🍅
-    - Hiillostettua lohta, kermaista palsternakka-porkkanapyreetä, haudutettua fenkolia ja beurre blanc -kastiketta — 27,00 € 🐟 🥕
+    - Caesar-salaatit: Pariloitua kanaa / Vuohenjuustoa / Halloumijuustoa / Scampit — 16,00 € 🐔 🧀
+    - Hiillostettua siikaa, kermaista palsternakka-porkkanapyreetä, haudutettua fenkolia ja beurre blanc -kastiketta — 29,00 € 🐟 🥕
     - Ankankoipi confit, tummaa appelsiinikastiketta ja ankanrasvassa paistettuja kuminaperunoita — 29,00 € 🍕
 - A la carte - jälkiruoka
     - Jäätelö tai sorbettipallo — 6,00 € 🍦
@@ -64,7 +58,13 @@ _Last updated: 2026-10-16 08:03 (Europe/Helsinki)_
 
 - Lounas
     - Breakfast: Semolina Porridge
-    - Cozy: Nachos with Taco seasoned Minced Meat, Cheddar Sauce, Jalapeño 🍖 🌮
-    - Roots: Cheddar Sauce
-    - Sides: Roasted Tomatoes 🔥
-    - Dessert: Pancake, Apple Jam, Vanilla Sauce 🥞 🍰
+    - Cozy: Cappelli Pasta 🍝
+    - Roots: Cappelli Pasta 🍝
+    - Sides: Roasted butternut squash blocks 🔥 🌰
+    - Dessert: Blackcurrant, Caramel Sauce 🍰
+- My Plate
+    - Easy Plate: Halloumi Burger 🍔
+    - Favourite Plate: Grilled Rainbow Salmon in a Lemon Marinade, Potato Hash Browns, Marinated Seasonal Vegetables, Dill Fraiche 🐟 🥬 🥔 🍋 🔥
+- Salad and soup
+    - Lunch Soup: Creamy Champignon Soup 🍲
+    - My Salad: Plentiful salad buffet 🥗
