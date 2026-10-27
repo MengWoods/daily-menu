@@ -1,44 +1,50 @@
 # 🍱 Daily Lunch Menu — Leppävaara, Espoo
 
-**Maanantai 26.10.2026** (Monday)
+**Tiistai 27.10.2026** (Tuesday)
 
-_Last updated: 2026-10-26 07:20 (Europe/Helsinki)_
+_Last updated: 2026-10-27 03:35 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
-- Rapeaa kanaa (M, G), kermaisia juustoperunoita (L, G) ja paprikamajoneesia (M, G)Kukkakaaliwingsejä (VE, G) — 14,00 € 🐔 🧀
+- Lihapullia Koskenlaskija-kastikkeessa (L, G) ja perunamuusia (L, G)Paahdettua punajuurta ja aurajuustoa (L, G) — 14,00 € 🥔 🍖 🧀
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
-- Pinaattikeitto (L+G) keitetyt kananmunat (M+G) 🍲 🥚
-- Pintasavustettua lohta (M+G) tilliperunat (VE+G) tzatziki (L+G+VS) 🐟 🥔
-- Karamelli-porsaan noisetteja teriyakikastikkeessa (M+G+VS) basmatiriisi (VE+G) 🍚 🐖
-- Sweet chilillä höystetty kana-mac & cheese cheddarkastikkeella (L+VS) 🐔 🧀
-- Vegaaninen kaalilaatikko soijarouheella (VE+G) puolukkahillo (VE+G)
-- Porkkanakakku (L) 🥕 🍰
+- Pehmeä katkarapukeitto (L+G+VS) krutongit (VE) 🍤 🍲
+- Paahdettua kebabia chili-tomaattikastikkeessa (M+G+VS) basmatiriisi (VE+G) turkkilaista jogurttia (L+G) 🍚
+- Talon paneroitua kanan paistileikettä (M+VS) basmatiriisi (VE+G) curry-appelsiinidippi (M+G+VS) 🐔 🍚 🔥
+- Itse paistetut pinaattiletut (L) puolukkahillo (VE+G) 🥞
+- Nepalilainen Dal Makhani – linssi-papupata tofulla (VE+G+VS) basmatiriisi (VE+G) 🍚 🫘
+- Factoryn jäätelöbaari (L+G) 🍦
 
 ## 3. 🇳🇵 [Kathmandu Palace](https://kathmandupalace.fi/en/lunch/?lang=en)
 
-- Closed today — see website for details
+- 1.TOFU CHANA MASALA (L,G) 🌶️ 12,50€ — Tofu and chickpeas in spicy masala sauce 🫘
+- 2.PALAK PNEER (G) 13,00€ — Spinach, paneer & onion in creamy curry sauce
+- 3.MANGO CHICKEN (L,G) 13,50€ — Chicken breast & mango in tomato butter cream sauce 🐔 🥭
+- 4.LAMB KOFTA CHILLI (L) 🌶️🌶️🌶️ 13,50€ — Lamb meatballs with leek, tomato-onion-soy chilli sauce 🐑 🧆 🍅
+- 5.SHRIMPS KORMA (L,G) 13,50€ — Shrimps with tomato in curry sauce and coconut with cashew nuts 🍤 🌰
+- 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
+- 7.TODAY’S SPECIAL – KATHMANDU HOT MIX (G) 🌶️🌶️ 15,50€ — Tandoori grilled lamb tenderloin, chicken, king prawns, cottage cheese and capsicum cashew nuts with yogurt-garlic peper sauce. 🐔 🍤 🐑 🧀 🔥 🌰
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
-- Samettista punajuuri-borschkeittoa (M, G) ja smetanaa (L, G) 🍲
-- Kalaa kermaisessa sienikastikkeessa (L, G) 🐟 🍄‍🟫
-- Rapeita kalkkunanleikkeitä (M) ja currymajoneesia (M, G) 🐔
-- Vegaanisia No chicken -pihvejä (VE) ja currymajoneesia (VE, G) 🐔
-- Rapeaksi paahdettua perunaa (L, G) 🥔
-- Raikasta mangorahkaa (L, G) 🥭
+- Tomaattista vuohenjuustokeittoa (L, G) 🍲 🧀 🍅
+- Ranskalaistyylistä Lyonin kanapataa (L, G) 🐔
+- Lyonin tofupataa (L, G)
+- Riisiä (VE, G) 🍚
+- Klassista pasta carbonaraa (L) 🍝
+- Perinteistä marjakiisseliä (M, G) ja kermavaahtoa (L, G)
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
 - Lautasannos
-    - Katkarapu-avokadowrap ja salaattia (L) — 14,00 € 🍤 🥗 🥑
-    - Porkkana-rakuunarisotto ja paistettua vuohenjuustoa (L, G) — 14,00 € 🥕 🧀
+    - Kinkkutäytteinen uuniperuna ja salaattia (L, G) — 14,00 € 🥗 🥔 🐖
+    - Sienipastaa ja paahdettua pekonia (L, G*) — 14,00 € 🥓 🍝 🍄‍🟫
 - Keittolounas
-    - Mustajuurikeittoa ja aurajuustocréme (L, G) — 12,00 € 🍲 🧀
+    - Kermaista lohikeittoa (L, G) — 12,00 € 🐟 🍲
 - Buffetlounas
-    - Jauhelihapihvit Café de Paris-kastikkeella L ja perunamuhennosta L, G (L) — 14,00 € 🥔 🥩 🍖
+    - Broileria lempeällä tomaattikastikkeella, riisiä (L, G) — 14,00 € 🐔 🍚
 - A la carte - alkuruoka
     - Vihersalaatti — 8,00 € 🥗
     - Palsternakkakeittoa ja pikkelöityä omenaa — 11,00 € 🍲
@@ -57,14 +63,14 @@ _Last updated: 2026-10-26 07:20 (Europe/Helsinki)_
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
 - Lounas
-    - Breakfast: Organic Oatmeal
-    - Cozy: Chicken Fillet Strip, Sweet & Sour sauce, Jasmin Rice 🐔 🍚
-    - Roots: Beetroot-goat cheese balls, Tarragon Sour Cream Sauce, Roasted Potatoes 🧀 🔥
-    - Sides: Roasted Vegetables of the Season 🥬 🔥
-    - Dessert: Turkish pepper quark 🍰
-- Salad and soup
-    - Lunch Soup: Spinach soup, Boiled Egg 🍲 🥚
-    - My Salad: Plentiful salad buffet 🥗
+    - Breakfast: Barley Porridge
+    - Cozy: Bolognese Sauce, Spaghetti, Parmesan cheese chips 🍝 🧀
+    - Roots: Härkis Sweet Potato Casserole, Aioli 🍠 🫘
+    - Sides: Roasted Carrots and Parsnips 🔥
+    - Dessert: Berry Kissel, Vanilla Whipped Cream 🍰
 - My Plate
     - Easy Plate: Club Sandwich, French Fries 🍟
     - Favourite Plate: Roasted Monkfish, Lemon Risotto 🍋 🔥
+- Salad and soup
+    - Lunch Soup: Pureed Leek and Potato Soup 🍲 🥔
+    - My Salad: Plentiful salad buffet 🥗
