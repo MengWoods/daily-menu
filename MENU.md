@@ -1,50 +1,50 @@
 # 🍱 Daily Lunch Menu — Leppävaara, Espoo
 
-**Keskiviikko 04.11.2026** (Wednesday)
+**Torstai 05.11.2026** (Thursday)
 
-_Last updated: 2026-11-04 08:59 (Europe/Helsinki)_
+_Last updated: 2026-11-05 04:42 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
-- Pannupihvejä sienikastikkeessa (L, G) Kermaperunat (L, G)Pinaatti-raejuustonapit ja paahdettua parsakaalia (L, G) — 14,00 € 🥔 🧀 🍄‍🟫
+- Riistakäristys (L, G), perunamuusia (L, G) ja puolukoita (VE, G)Riistakäristys (L, G), perunamuusia (L, G) ja puolukoita (VE, G) — 14,00 € 🥔
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
-- Koskenlaskijan tomaatti-basilikakeitto (L+G) 🍲 🍅
-- Grillattua kanan rintafilettä kermaisessa dijon-kastikkeessa (L+G) perunamuhennos (L+G) 🐔 🥔 🔥
-- Tempura-paneroitua seitiä (M) perunamuhennos (L+G) kermaviilikastike (L+G) 🐟 🥔
-- Kinkku-ananaspizza tuoreella rucolalla (L) 🐖 🍕
-- Vegaaninen ratatouille tuoreilla kasviksilla ja tofulla (VE+G+VS) 🥬
-- Filipino mango float (L) 🥭
+- Hernekeitto (M+G) 🍲
+- Factoryn lihapullat mummon ruskeassa kastikkeessa (L+G+VS) valkosipuliperunat (L+G+VS) 🥔 🧆 🍖
+- Kievin kanaa yrtti-valkosipulivoilla (L+VS) riisi (VE+G) paprikadippi (M+G+VS) 🐔 🍚
+- Munakoiso-täytteisiä tortellineja ja grillattuja kasviksia tomaattikastikkeessa (VE+VS) 🥬 🔥
+- Factoryn letut (L) talon mansikkahillo (M+G) vaniljavaahto (L+G) jäätelö (L+G) 🥞 🍦
 
 ## 3. 🇳🇵 [Kathmandu Palace](https://kathmandupalace.fi/en/lunch/?lang=en)
 
-- 1.TOFU MASALA (G,L) 🌶️ 12,50€ — Tofu, tomato and ginger in curry masala sauce. 🍅
-- 2.MALAI KOFTA (L) 13,00€ — Soft vegetable balls with cashew nuts, paneer & honey in creamy tomato sauce 🥬 🌰
-- 3.CHICKEN CHILLI (L,G) 🌶️🌶️🌶️ 13,50€ — Chicken breast, onion and capsicum in spicy tomato, garlic, chili and soya sauce 🐔 🍅
-- 4.LAMB BUTTER MASALA (L,G) 🌶️ 13,50€ — Stewed lamb with tomato in butter & masala sauce. 🐑 🍅
-- 5.FISH KORMA (L,G) 13,50€ — Fried pangasius fillets and cashew nuts in creamy coconut tomato curry sauce 🐟 🌰
+- 1.TOFU CURRY (L,G) 🌶️ 12,50€ — Tofu in tomato curry sauce.
+- 2.VEG KOFTA (L,G) 13,00€ — Vegetable balls (cauliflower, potato and paneer) in creamy curry sauce 🥬 🥔
+- 3.BUTTER CHICKEN (L,G) 13,50€ — Tandoori oven grilled chicken fillet in tomato, butter and cream sauce 🐔 🍅 🔥
+- 4.MUTTON CHILLI (G,L) 🌶️🌶️🌶️ 13,50€ — Lamb and capsicum, onion, tomato in cumin soy-chilli sauce. 🐑 🍅
+- 5.FISH CURRY (L,G) 🌶️ 13,50€ — Fried pangasius fillets in curry sauce. 🐟
 - 6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.
-- 7.TODAY’S SPECIAL – KATHMANDU SPECIAL KARAI (G) 15,50€ — Tandoori chicken fillet, cottage cheese, cheese, coconut, honey & cashew in cream & tomato sauce 🐔 🧀 🌰
+- 7.TODAY’S SPECIAL – CHICKEN TIKKA (G) 🌶️🌶️ 15,50€ — Yoghurt marinated & tandoori grilled chicken in tomato and yoghurt sauce 🐔 🔥
 
 ## 4. 🏇 [Ravintola Vermo (Ravilla)](https://vermo.fi/fi-fi/ravintolat/lounas/174/)
 
-- Chili-bataattikeittoa L, G 🍲 🍠
-- Rapeita porsaanleikkeitä L, ja sitruuna aiolia M, G 🐖 🍋
-- Kermaista savulohikiusausta L, G 🐟
-- Härkis-kasviskiusausta L, G 🥬 🫘
-- Paahdettua yrttiperunaa VE, G 🥔
-- Churroja M, suklaa ja kinuskikastiketta G 🍫
+- Perinteistä hernekeittoa L, G 🍲
+- Vermon pyttipannua L, G
+- Mehevää kanaa sitruunaisessa kermakastikkeessa L, G 🐔 🍋
+- Aasialaista mapo tofu pataa VE
+- Jasminriisiä VE, G 🍚
+- Rahkapannukakkuja L, hilloa VE, G ja kermavaahtoa L, G 🥞 🍰
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
 
 - Lautasannos
-    - Uunipaahdettua lohta, tomaattia ja pestoperunaa (L, G) — 14,00 € 🐟 🥔 🍅
-    - Cajun-kanasalaatti (L, G) — 14,00 € 🐔 🥗
+    - Kevätsipuli-rapupasta (L, G*) — 14,00 € 🍝
+    - Paahtopaistisalaatti ja kaprismajoneesia (L, G) — 14,00 € 🥗 🔥
 - Keittolounas
-    - Savujuureskeittoa (L, G) — 12,00 € 🍲
+    - Hernekeittoa LG, Pannari L sisältyy keittolounaaseen, muille +2 € — 12,00 € 🍲
 - Buffetlounas
-    - Neljän pippurin lihapataa ja perunamuhennosta (L, G) — 14,00 € 🥔 🍖
+    - Soijarouhetäytteiset uunipaprikat (L, G, K) — 14,00 €
+    - Fish and chips (L) — 14,00 € 🐟
 - A la carte - alkuruoka
     - Vihersalaatti — 8,00 € 🥗
     - Palsternakkakeittoa ja pikkelöityä omenaa — 11,00 € 🍲
@@ -62,14 +62,13 @@ _Last updated: 2026-11-04 08:59 (Europe/Helsinki)_
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
+- Lounas
+    - Breakfast: Organic Four Grain Porridge
+    - Cozy: Minced Meat Lasagne 🍖
+    - Roots: Homemade Spinach Crepes, Boiled potatoes, Cottage Cheese, Mashed Lingonberries 🧀
+    - Sides: Caramelized carrot 🥕
 - My Plate
     - Favourite Plate: Coleslaw, French Fries 🍟
-- Lounas
-    - Breakfast: Rice Porridge 🍚
-    - Cozy: Blackcurrant Jam, Rice 🍚
-    - Roots: Omelette roll wit feta and pulled oat 🍞
-    - Sides: Broccoli, Arugula Orange Salad 🥗
-    - Dessert: Coffee Panna Cotta 🍰
 - Salad and soup
-    - Lunch Soup: Tomato and Cream Cheese Soup 🍲 🧀 🍅
+    - Lunch Soup: Beetroot Soup with Goat Cheese 🍲 🧀
     - My Salad: Plentiful salad buffet 🥗
