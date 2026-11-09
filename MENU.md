@@ -2,7 +2,7 @@
 
 **Maanantai 09.11.2026** (Monday)
 
-_Last updated: 2026-11-09 03:54 (Europe/Helsinki)_
+_Last updated: 2026-11-09 09:13 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -56,14 +56,14 @@ _Last updated: 2026-11-09 03:54 (Europe/Helsinki)_
 
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
+- My Plate
+    - Easy Plate: Caesar Salad with Chicken 🐔 🥗
 - Lounas
     - Breakfast: Barley Porridge
     - Cozy: Potato Hash Browns, Chicken with Bacon Mushroom Sauce 🐔 🥔 🥓 🍄‍🟫
     - Roots: Vegetable Lasagne with Spinich and Feta Cheese 🥬 🧀
     - Sides: Couliflower and Onion Gratin
     - Dessert: Blackcurrant Quark 🍰
-- My Plate
-    - Easy Plate: Caesar Salad with Chicken 🐔 🥗
 - Salad and soup
     - Lunch Soup: Minced Meat Soup 🍲 🍖
     - My Salad: Plentiful salad buffet 🥗
