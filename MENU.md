@@ -2,11 +2,11 @@
 
 **Tiistai 10.11.2026** (Tuesday)
 
-_Last updated: 2026-11-10 06:15 (Europe/Helsinki)_
+_Last updated: 2026-11-10 09:45 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
-- Paahdettu kanaa romescokastikkeessa – sis mantelia (L, G) ja riisiä (L, G) Kasvis-papukroketti  ja yrtti-sitruuna kermaviiliä (L) — 14,00 € 🐔 🍚 🥬 🫘 🍋
+- Rapea kanaa romescokastikkeessa – sis mantelia (L, G) ja riisiä (L, G) Kasvis-papukroketti  ja yrtti-sitruuna kermaviiliä (L) — 14,00 € 🐔 🍚 🥬 🫘 🍋
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
