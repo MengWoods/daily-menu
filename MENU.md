@@ -2,7 +2,7 @@
 
 **Keskiviikko 11.11.2026** (Wednesday)
 
-_Last updated: 2026-11-11 09:10 (Europe/Helsinki)_
+_Last updated: 2026-11-11 10:27 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -72,3 +72,43 @@ _Last updated: 2026-11-11 09:10 (Europe/Helsinki)_
 - Salad and soup
     - Lunch Soup: Wild Mushroom Soup 🍲 🍄‍🟫
     - My Salad: Plentiful salad buffet 🥗
+
+## 7. 🥗 [Dylan Lepuski](https://www.dylan.fi/lepuski)
+
+- ⚠️ Menu unavailable right now — see the [website](https://www.dylan.fi/lepuski) directly. (manual entry — see website)
+
+## 8. 🏰 [Ravintola Fortezza](https://ravintolapalvelut.iss.fi/fortezza/)
+
+- Keitto & Verde — 11,90 €
+    - Karamellisoitua porkkanasosekeittoa M, G 🍲 🥕
+    - Runsas ja raikas Fortezzan salaattipöytä 🥗
+- Lämmin pöytä — 13,90 €
+    - Ylikypsää porsaan kasleria pippurikastikkeessa L, G 🐖
+    - Paistettuja muikkuja & perunamuusia L 🥔
+    - Kasvispihvit & kylmä valkosipulikastike L 🥬
+- Jälkiruoka
+    - Pannukakkua, kermavaahtoa ja hilloa L 🥞 🍰
+
+## 9. 🧆 [Mezza Restaurant](https://mezza.fi/lounas/)
+
+- ⚠️ Menu unavailable right now — see the [website](https://mezza.fi/lounas/) directly. (today's menu not published on the website)
+
+## 10. 🎻 [Food & Co Quartetto Plus](https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/)
+
+- Lounas buffet — 13,70 €
+    - Porkkanaohukaisia (*, A, ILM, L) ja raejuusto skagenia (A, G, L) 🥕 🧀
+    - Juustoista savukirjolohikastiketta (*, A, ILM, L) ja cappellipastaa (A, ILM, L, M, Veg) 🐟 🍝 🧀
+    - Nokkospestoa (A, G, L, VS)
+
+## 11. 🏢 [Tastory Q4A](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/)
+
+- Kukkakaalisosekeittoa (*, A, G, ILM, L, M, Veg) 🍲
+- Paneer Koseli -leipäjuustokastiketta (*, A, G, ILM, L, VS), intialaista mausteriisiä (G, L, M, Veg, VS) ja pitaleipä (A, L, M, Veg) 🍚 🍞 🧀
+- Makean tulista broileria - Korean Chicken (A, L, M, VS) ja paahdettua perunaa (*, G, ILM, L, M, Veg) 🐔 🥔
+- Paistettua muikkua (A, L), hyrskypottua (A, G, L) ja sitruuna-aiolia (A, G, ILM, L, M, Veg, VS) 🍋
+- Satokauden kasviksia (G, L, M, Veg) 🥬
+- Mansikkasmoothie (A, G, L)
+
+## 12. 🏔️ [Nepal Palace](https://nepalpalace.fi/en/lunch/)
+
+- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
