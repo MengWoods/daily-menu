@@ -9,12 +9,17 @@
 # Supported parser values:
 #   comfort_sello     - sello.fi restaurant pages (date-keyed HTML blocks)
 #   ravintola_factory - ravintolafactory.com lounasravintolat pages
-#   kathmandu         - kathmandupalace.fi Elementor accordion (fixed weekly menu)
+#   kathmandu         - Elementor accordion/toggle with weekday titles (fixed weekly
+#                        menu), e.g. kathmandupalace.fi, nepalpalace.fi
 #   vermo             - vermo.fi restaurant sub-pages (day headings in one text block)
 #   lounastaja        - sites using the lounastaja.app widget (e.g. ravintolabase.fi)
 #                        requires extra fields: widget_id, api_key
 #   jamix             - sites using the Jamix Aromi menu widget (e.g. juvenes.fi)
 #                        requires extra fields: jamix_customer, jamix_kitchen
+#   compass           - Compass Group sites (Food & Co, Tastory, ...) via their JSON feed
+#                        requires extra field: compass_cost_number (optional: compass_language)
+#   iss               - ravintolapalvelut.iss.fi restaurant pages
+#   mezza             - mezza.fi lounas page
 #   manual            - fallback: just show the link, no scraping
 #
 # If a restaurant's website changes layout, its parser may need updating in
@@ -55,3 +60,35 @@ restaurants:
     parser: "jamix"
     jamix_customer: 93077
     jamix_kitchen: 66
+
+  - name: "Dylan Lepuski"
+    emoji: "🥗"
+    url: "https://www.dylan.fi/lepuski"
+    parser: "manual"
+
+  - name: "Ravintola Fortezza"
+    emoji: "🏰"
+    url: "https://ravintolapalvelut.iss.fi/fortezza/"
+    parser: "iss"
+
+  - name: "Mezza Restaurant"
+    emoji: "🧆"
+    url: "https://mezza.fi/lounas/"
+    parser: "mezza"
+
+  - name: "Food & Co Quartetto Plus"
+    emoji: "🎻"
+    url: "https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/"
+    parser: "compass"
+    compass_cost_number: 3114
+
+  - name: "Tastory Q4A"
+    emoji: "🏢"
+    url: "https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/"
+    parser: "compass"
+    compass_cost_number: 3115
+
+  - name: "Nepal Palace"
+    emoji: "🏔️"
+    url: "https://nepalpalace.fi/en/lunch/"
+    parser: "kathmandu"

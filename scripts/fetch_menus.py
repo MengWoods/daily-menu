@@ -301,6 +301,103 @@ def parse_jamix(cfg: dict, today: datetime) -> list[tuple[str | None, list[str]]
     return groups
 
 
+def _add_group(groups: list, index: dict, category: str, line: str) -> None:
+    if category not in index:
+        index[category] = len(groups)
+        groups.append((category, []))
+    groups[index[category]][1].append(line)
+
+
+def parse_compass(cfg: dict, today: datetime) -> list[tuple[str | None, list[str]]]:
+    """Compass Group (Food & Co, Tastory, ...) JSON menu feed, keyed by cost number.
+    Returns dishes grouped by SetMenu name (e.g. Lounas buffet) with its price."""
+    lang = cfg.get("compass_language", "fi")
+    api_url = f"https://www.compass-group.fi/menuapi/feed/json?costNumber={cfg['compass_cost_number']}&language={lang}"
+    data = fetch_json(api_url)
+    date_str = today.strftime("%Y-%m-%d")
+    day = next((d for d in data.get("MenusForDays", []) if (d.get("Date") or "").startswith(date_str)), None)
+    if day is None:
+        raise ValueError("today's menu day not found")
+    groups: list[tuple[str | None, list[str]]] = []
+    for set_menu in day.get("SetMenus", []):
+        dishes = [" ".join(c.split()) for c in set_menu.get("Components", []) if c and c.strip()]
+        if not dishes:
+            continue
+        name = (set_menu.get("Name") or "").strip()
+        price = (set_menu.get("Price") or "").strip()
+        label = " — ".join(p for p in (name, price) if p) or None
+        groups.append((label, dishes))
+    if not groups:
+        raise ValueError("no lunches listed for today")
+    if len(groups) == 1 and groups[0][0] is None:
+        return groups[0][1]
+    return groups
+
+
+def parse_iss(cfg: dict, today: datetime) -> list[tuple[str | None, list[str]]]:
+    """ravintolapalvelut.iss.fi restaurant pages: one div.day_menu_container per
+    date (data-date=YYYY-MM-DD), with category headings + prices followed by dish
+    rows. A category with an empty heading continues the previous one.
+    Breakfast categories (Aamiainen) are skipped."""
+    html = fetch(cfg["url"])
+    soup = BeautifulSoup(html, "html.parser")
+    day = soup.select_one(f'div.day_menu_container[data-date="{today.strftime("%Y-%m-%d")}"]')
+    if day is None:
+        raise ValueError("today's menu block not found")
+    groups: list[tuple[str, list[str]]] = []
+    index: dict[str, int] = {}
+    category = "Lounas"
+    for node in day.find_all("div", recursive=False):
+        classes = node.get("class", [])
+        if "name_price_container" in classes:
+            heading = node.find("h3")
+            title = heading.get_text(" ", strip=True) if heading else ""
+            if title:
+                price_el = node.select_one(".price")
+                price = price_el.get_text("", strip=True).replace("\xa0", " ") if price_el else ""
+                price = re.sub(r"(\d)€", r"\1 €", price)
+                category = f"{title} — {price}" if price else title
+        elif "menu_item_container" in classes:
+            if category.lower().startswith("aamiainen"):
+                continue
+            name_el = node.select_one(".menu_item_name")
+            line = name_el.get_text(" ", strip=True) if name_el else ""
+            if line:
+                _add_group(groups, index, category, line)
+    if not groups:
+        raise ValueError("no dishes parsed")
+    return groups
+
+
+def parse_mezza(cfg: dict, today: datetime) -> list[tuple[str | None, list[str]]]:
+    """mezza.fi/lounas: one article.mlm-front-day per day, with a date span
+    (e.g. "11.11.") and sections (soup, mains, sides, ...) each with an h4."""
+    html = fetch(cfg["url"])
+    soup = BeautifulSoup(html, "html.parser")
+    date_str = f"{today.day}.{today.month}."
+    day = None
+    for article in soup.select("article.mlm-front-day"):
+        date_el = article.select_one(".mlm-date")
+        if date_el and date_el.get_text(strip=True) == date_str:
+            day = article
+            break
+    if day is None:
+        raise ValueError("today's menu not published on the website")
+    groups: list[tuple[str | None, list[str]]] = []
+    for section in day.select("section.mlm-front-section"):
+        heading = section.find("h4")
+        title = heading.get_text(" ", strip=True).capitalize() if heading else None
+        items = [li.get_text(" ", strip=True) for li in section.find_all("li")]
+        if not items:
+            items = [p.get_text(" ", strip=True) for p in section.find_all("p")]
+        items = [i for i in items if i]
+        if items:
+            groups.append((title, items))
+    if not groups:
+        raise ValueError("no dishes parsed")
+    return groups
+
+
 def parse_manual(cfg: dict, today: datetime) -> list[str]:
     raise ValueError("manual entry — see website")
 
@@ -312,6 +409,9 @@ PARSERS = {
     "vermo": parse_vermo,
     "lounastaja": parse_lounastaja,
     "jamix": parse_jamix,
+    "compass": parse_compass,
+    "iss": parse_iss,
+    "mezza": parse_mezza,
     "manual": parse_manual,
 }
 
