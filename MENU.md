@@ -2,7 +2,7 @@
 
 **Keskiviikko 11.11.2026** (Wednesday)
 
-_Last updated: 2026-11-11 04:09 (Europe/Helsinki)_
+_Last updated: 2026-11-11 09:10 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -31,9 +31,9 @@ _Last updated: 2026-11-11 04:09 (Europe/Helsinki)_
 
 - Täyteläistä kasvissosekeittoa (L, G) 🍲 🥬
 - Perinteistä makaronilaatikkoa (L)
-- Vegaanista soijarouhemakaronilaatikkoa (VE)
+- Soijarouhemakaronilaatikkoa (L)
 - Rapeaa paneroitua kampelaa (M) ja raikasta limemajoneesia (M, G)
-- Höyrytettyä tilliperunaa (VE, G) 🥔
+- Valkosipuli kermaperunaa (L, G) 🥔
 - Samettista suklaamannaa (L) ja vaniljakastiketta (L, G) 🍫
 
 ## 5. 🍽️ [Ravintola Base](https://ravintolabase.fi/lounas/)
