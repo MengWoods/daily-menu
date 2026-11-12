@@ -2,7 +2,7 @@
 
 **Torstai 12.11.2026** (Thursday)
 
-_Last updated: 2026-11-12 05:17 (Europe/Helsinki)_
+_Last updated: 2026-11-12 09:44 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -65,7 +65,6 @@ _Last updated: 2026-11-12 05:17 (Europe/Helsinki)_
 - Lounas
     - Breakfast: Organic Oatmeal
     - Cozy: Home Made Meatballs with Bbq Sauce, Mac`n Cheese 🧆 🧀
-    - Roots: Vegetarian Gratin with Tofu
     - Sides: Butternut Squash and Sweet Potato 🍠 🌰
 - Salad and soup
     - Lunch Soup: Smoked Game and Cream Cheese Soup 🍲 🧀
