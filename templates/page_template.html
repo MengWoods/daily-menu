@@ -306,7 +306,7 @@
      shrink it to icons only (the active chip keeps its label) and hide the
      status/sort row so the menus get the vertical space. */
   @media (max-width: 600px) {
-    .diet-bar { padding: 8px 16px; transition: padding 0.2s; }
+    .diet-bar { padding: 8px 16px; }
     .chips {
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -336,7 +336,7 @@
   }
   @media (prefers-reduced-motion: reduce) {
     li.flash { animation: none; }
-    .chip, li[data-course], .diet-bar { transition: none; }
+    .chip, li[data-course] { transition: none; }
   }
   footer {
     margin-top: 36px;
@@ -527,12 +527,22 @@
   var divider = document.createElement("div");
   divider.className = "grid-divider";
 
-  // Shadow on the sticky bar once it is stuck to the top.
+  // Shadow on the sticky bar once it is stuck to the top (on phones it also
+  // shrinks). A spacer after the bar makes up the height it loses, so the page
+  // layout doesn't move — otherwise scroll anchoring nudges the page back up,
+  // un-sticks the bar and it flips between the two sizes while scrolling slowly.
   if ("IntersectionObserver" in window) {
     var sentinel = document.createElement("div");
+    var spacer = document.createElement("div");
+    spacer.setAttribute("aria-hidden", "true");
     bar.parentNode.insertBefore(sentinel, bar);
+    bar.parentNode.insertBefore(spacer, bar.nextSibling);
     new IntersectionObserver(function (entries) {
-      bar.classList.toggle("stuck", !entries[0].isIntersecting);
+      var stuck = !entries[0].isIntersecting;
+      if (stuck === bar.classList.contains("stuck")) return;
+      var before = bar.offsetHeight;
+      bar.classList.toggle("stuck", stuck);
+      spacer.style.height = stuck ? Math.max(0, before - bar.offsetHeight) + "px" : "";
       revealActiveChip();
     }).observe(sentinel);
   }
