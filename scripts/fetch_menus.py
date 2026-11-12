@@ -100,6 +100,141 @@ _ALL_EMOJI = sorted({emoji for _, emoji in EMOJI_RULES}, key=len, reverse=True)
 TRAILING_EMOJI_RE = re.compile(r"(?:\s*(?:" + "|".join(re.escape(e) for e in _ALL_EMOJI) + r"))+\s*$")
 
 
+# ---------------------------------------------------------------------------
+# Diet classification for the website's filter chips. Heuristic: based on the
+# Finnish diet codes the menus print (VE/Veg/V = vegan, G = gluten-free) and
+# ingredient keywords. Tags are written into the HTML as data attributes.
+# ---------------------------------------------------------------------------
+
+# Words for plant-based "meat" (kasvis-härkäpapumakkara, Härkis, ...) are removed
+# before looking for meat, so they don't count as meat.
+PLANT_BASED_RE = re.compile(r"\b(?:kasvis|kasvik|vege|vegaani|vegan|soija|härkäpapu|härkis|kaura|nyhtö)[\w-]*")
+MEAT_RE = re.compile(
+    r"(?<!k)kana(?!nmun)|chicken|broiler|kalkkuna|turkey|koipi|drumstick|pekoni|bacon|"
+    r"porsa\w*|possu|kink[ku]|\bham\b|\bpork\b|nauta|naudan|jauheliha|vasika|\bveal\b|"
+    r"härkä(?!is|pap)|\bbeef\b|lammas|lampaan|karitsa|\blamb\b|mutton|lihapull|meatball|"
+    r"liha(?!ndon)|\bmeat\b|makkara|sausage|nakki|salsiccia|bratv?wurst|bratvurst|chorizo|"
+    r"salami|pepperoni|kebab|riista|\bporo|hirve|hirvi|ankka|\bduck\b|keema"
+)
+RED_MEAT_RE = re.compile(r"nauta|naudan|härkä|\bbeef\b|lammas|lampaan|karitsa|\blamb\b|mutton|riista|\bporo|hirv|pihvi|steak|burger")
+FISH_RE = re.compile(
+    r"(?<!rans)kala(?!kkuna|mata)|\bfish\b|lohi|lohta|lohen|salmon|taimen|trout|siika|seiti|\bcod\b|silli|"
+    r"herring|tonnikala|\btuna\b|kuha|ahven(?!anmaa)|muikku|pangasius|tilapia|katkarap|shrimp|prawn|äyriäi|"
+    r"seafood|\brapu|rapu(?:keit|pasta|paella|salaat)|scampi|simpuk|mussel|kalmar|squid|mustekala|anjovis|sardiini"
+)
+# Finnish pea soup is traditionally made with pork unless it says otherwise.
+MAYBE_MEAT_RE = re.compile(r"hernekeit|pea soup")
+VEGAN_WORD_RE = re.compile(r"vegaan|\bvegan|\bvege\b")
+VEG_WORD_RE = re.compile(
+    r"kasvis|kasvik|vege|vegetar|veggie|vegetable|tofu|falafel|paneer|halloumi|härkis|jauhis|"
+    r"nyhtökaura|kukkakaali|cauliflower|kesäkurpitsa|zucchini|kurpitsa|pumpkin|bataat|sweet potato|"
+    r"\baloo|gobi|chana|\bdal\b|palak|kofta|pinaatti|spinach|sieni|mushroom|juusto|cheese|feta|"
+    r"risotto|salaatti|\bsalad|kikherne|linssi|lentil|\bveg\b"
+)
+SOUP_RE = re.compile(r"keitto|keittoa|\bsoup\b")
+SPICY_RE = re.compile(
+    r"🌶|chili|chilli|tulinen|tulise|spicy|\bjerk\b|sriracha|kimchi|vindaloo|rendang|rengdang|"
+    r"gochujang|korean maustekastike|harissa|jalape|wasabi|chipotle"
+)
+BASIC_RE = re.compile(r"salaattipöytä|salad bar|salaattibuffet|vihersalaatti|my salad")
+MINOR_CATEGORY_RE = re.compile(r"jälkiruoka|dessert|lisuke|\bsides?\b|aamiainen|breakfast|alkuruoka|starter|juoma|drink|punnittava")
+DESSERT_RE = re.compile(
+    r"pannukak|lettu|letut|lettuja|jäätelö|kakku|cupcake|puuro|paistos|kiisseli|rahka|piirak|"
+    r"\bpulla|leivos|sorbet|mousse|kahvi|coffee|pancake|ice cream|dessert|aamiainen"
+)
+SIDE_ONLY_RE = re.compile(r"^(?:\w+\s+){0,2}(?:perunamuusi\w*|riisi\w*|ranskalaiset|keitettyjä perunoita)$")
+PRICE_RE = re.compile(r"(\d{1,3}[,.]\d{2})\s*€(?!\s*/)")
+PAREN_RE = re.compile(r"\(([^()]*)\)")
+CODE_TOKEN_RE = re.compile(r"^(?:\*|[A-ZÄÖ]{1,4}|Veg|Mu|SIS\.LUOMUA)$")
+TRAILING_CODES_RE = re.compile(r"((?:\s*(?:\*|[A-ZÄÖ]{1,4}|Veg|Mu|SIS\.LUOMUA)\s*,)+\s*(?:\*|[A-ZÄÖ]{1,4}|Veg|Mu|SIS\.LUOMUA))\s*$")
+VEGAN_CODES = {"VE", "VEG", "Veg", "V"}
+
+
+def _code_groups(text: str) -> list[set[str]]:
+    """Diet-code lists in a dish line, e.g. '(L, G)' or a trailing 'G, M, VEG'.
+    Dishes with several components have one list per component."""
+    groups = []
+    for inner in PAREN_RE.findall(text):
+        tokens = [t for t in re.split(r"[,+\s]+", inner.strip()) if t]
+        if tokens and all(CODE_TOKEN_RE.match(t) for t in tokens):
+            groups.append(set(tokens))
+    no_price = re.sub(r"—.*$", "", PAREN_RE.sub(" ", text)).strip()
+    trailing = TRAILING_CODES_RE.search(no_price)
+    if trailing:
+        groups.append({t for t in re.split(r"[,\s]+", trailing.group(1)) if t})
+    return groups
+
+
+def parse_price(text: str) -> float | None:
+    match = PRICE_RE.search(text)
+    return float(match.group(1).replace(",", ".")) if match else None
+
+
+def clean_dish_name(text: str) -> str:
+    """Dish text without diet codes and price, for the 'Today's picks' list."""
+    name = PAREN_RE.sub(lambda m: "" if not m.group(1).strip() or _code_groups(m.group(0)) else m.group(0), text)
+    name = re.sub(r"\s+—\s+.*$", "", name)  # price and/or trailing description
+    name = PRICE_RE.sub("", name)
+    name = TRAILING_CODES_RE.sub("", name)
+    name = re.sub(r"^\d+\.\s*", "", name)  # "3.BUTTER CHICKEN"
+    name = re.sub(r"\s+", " ", name).strip(" ,-–")
+    name = re.sub(r"\s+([,.])", r"\1", name)
+    return name if len(name) <= 90 else name[:87].rstrip() + "…"
+
+
+def classify_dish(text: str, category: str | None = None) -> dict:
+    """Guess diet tags, course and price for one dish line."""
+    lowered = text.lower()
+    cat = (category or "").lower()
+    codes = _code_groups(text)
+
+    meat_text = PLANT_BASED_RE.sub(" ", lowered)
+    has_meat = bool(MEAT_RE.search(meat_text))
+    has_fish = bool(FISH_RE.search(meat_text))
+    vegan_code = bool(codes) and all(group & VEGAN_CODES for group in codes)
+
+    tags = set()
+    if has_meat:
+        tags.add("meat")
+        if RED_MEAT_RE.search(meat_text):
+            tags.add("redmeat")
+    if has_fish:
+        tags.add("fish")
+    if not has_meat and not has_fish:
+        maybe_meat = bool(MAYBE_MEAT_RE.search(meat_text))
+        if vegan_code or VEGAN_WORD_RE.search(lowered):
+            tags.update({"vegan", "veg"})
+        elif VEG_WORD_RE.search(lowered) and not maybe_meat:
+            tags.add("veg")
+    if (codes and all("G" in group for group in codes)) or re.search(r"gluteeniton|gluten.free", lowered):
+        tags.add("gf")
+    if SOUP_RE.search(lowered) or (SOUP_RE.search(cat) and not re.search(r"salaatti|salad", lowered)):
+        tags.add("soup")
+    if SPICY_RE.search(lowered):
+        tags.add("spicy")
+    if BASIC_RE.search(lowered):
+        tags.add("basic")  # salad bars etc. -- ranked lower as a recommendation
+
+    name_only = clean_dish_name(text).lower()
+    # Some feeds put the sub-category in the dish line itself: "Sides: Myskikurpitsaa ..."
+    prefix = lowered.split(":", 1)[0] if ":" in lowered[:30] else ""
+    minor = bool(
+        MINOR_CATEGORY_RE.search(cat)
+        or MINOR_CATEGORY_RE.search(prefix)
+        or DESSERT_RE.search(lowered)
+        or SIDE_ONLY_RE.match(name_only)
+        or name_only == "menu"
+    )
+
+    return {
+        "tags": sorted(tags),
+        "course": "minor" if minor else "main",
+        "price": parse_price(text) or parse_price(category or ""),
+        "heat": text.count("🌶"),
+        "name": clean_dish_name(text),
+    }
+
+
 def now_helsinki() -> datetime:
     return datetime.now(TZ)
 
@@ -439,6 +574,11 @@ def normalize_groups(result: list) -> list[tuple[str | None, list[str]]]:
     return [(None, result)]
 
 
+def md_escape(text: str) -> str:
+    """Keep '*' in diet codes like '(*, G, L)' literal instead of turning into italics."""
+    return text.replace("*", r"\*")
+
+
 def build_markdown(restaurants: list[dict], today: datetime) -> str:
     fi_day = FI_WEEKDAYS[today.weekday()]
     en_day = EN_WEEKDAYS[today.weekday()]
@@ -469,10 +609,10 @@ def build_markdown(restaurants: list[dict], today: datetime) -> str:
                 if category:
                     lines.append(f"- {category}")
                     for dish in dish_lines:
-                        lines.append(f"    - {add_emojis(dish)}")
+                        lines.append(f"    - {md_escape(add_emojis(dish))}")
                 else:
                     for dish in dish_lines:
-                        lines.append(f"- {add_emojis(dish)}")
+                        lines.append(f"- {md_escape(add_emojis(dish))}")
         except Exception as exc:  # noqa: BLE001 - best effort per restaurant
             lines.append(f"- ⚠️ Menu unavailable right now — see the [website]({url}) directly. ({exc})")
         lines.append("")
@@ -521,6 +661,28 @@ def restructure_html(body_html: str) -> str:
         nested_ul["class"] = nested_ul.get("class", []) + ["sub-list"]
         li.append(nested_ul)
 
+    # Diet tags for the filter chips (see classify_dish).
+    for li in soup.find_all("li"):
+        if "category-item" in li.get("class", []):
+            continue
+        dish_span = li.find("span", class_="dish")
+        if dish_span is None:
+            continue
+        text = dish_span.get_text(" ", strip=True)
+        if text.startswith("⚠️"):
+            li["data-course"] = "none"
+            continue
+        parent = li.find_parent("li", class_="category-item")
+        category = parent.find("span", class_="category-label").get_text() if parent else None
+        info = classify_dish(text, category)
+        li["data-tags"] = " ".join(info["tags"])
+        li["data-course"] = info["course"]
+        li["data-name"] = info["name"]
+        if info["price"] is not None:
+            li["data-price"] = f"{info['price']:.2f}"
+        if info["heat"]:
+            li["data-heat"] = str(info["heat"])
+
     top_level_tags = soup.find_all(recursive=False)
     grid = soup.new_tag("div", **{"class": "restaurants-grid"})
     i = 0
@@ -528,6 +690,13 @@ def restructure_html(body_html: str) -> str:
         tag = top_level_tags[i]
         if tag.name == "h2":
             card = soup.new_tag("section", **{"class": "restaurant-card"})
+            card["data-order"] = str(len(grid.find_all("section", recursive=False)))
+            link = tag.find("a")
+            card["data-restaurant"] = link.get_text(strip=True) if link else tag.get_text(strip=True)
+            # Drop the "1. " numbering from the markdown; the page re-sorts cards.
+            first = tag.contents[0] if tag.contents else None
+            if isinstance(first, str):
+                first.replace_with(re.sub(r"^\s*\d+\.\s*", "", first))
             card.append(tag.extract())
             if i + 1 < len(top_level_tags) and top_level_tags[i + 1].name == "ul":
                 card.append(top_level_tags[i + 1].extract())

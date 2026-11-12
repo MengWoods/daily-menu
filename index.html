@@ -20,6 +20,8 @@
     --tag-bg: #ffe7bd;
     --border: #ecd6b8;
     --shadow: rgba(118, 73, 35, 0.12);
+    --chip-on-text: #ffffff;
+    --bar-bg: rgba(255, 244, 223, 0.86);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -35,6 +37,8 @@
       --tag-bg: #43331f;
       --border: #3f5242;
       --shadow: rgba(0, 0, 0, 0.28);
+      --chip-on-text: #1d1408;
+      --bar-bg: rgba(23, 35, 29, 0.86);
     }
   }
   * { box-sizing: border-box; }
@@ -156,6 +160,152 @@
     background: transparent;
     padding: 4px 0 4px 16px;
   }
+  /* ---- Diet filter bar, picks and re-sorting (driven by the script below) ---- */
+  .diet-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin: 4px -16px 0;
+    padding: 10px 16px;
+    background: var(--bar-bg);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid transparent;
+  }
+  .diet-bar.stuck { border-bottom-color: var(--border); box-shadow: 0 8px 20px var(--shadow); }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font: inherit;
+    font-size: 0.92rem;
+    line-height: 1.2;
+    padding: 7px 12px;
+    color: var(--text);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  }
+  .chip:hover { border-color: var(--accent); }
+  .chip:active { transform: scale(0.97); }
+  .chip:focus-visible, .sort select:focus-visible, .pick-btn:focus-visible {
+    outline: 2px solid var(--accent-2);
+    outline-offset: 2px;
+  }
+  .chip[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--chip-on-text);
+    font-weight: 600;
+  }
+  .chip .count {
+    font-size: 0.78rem;
+    min-width: 1.4em;
+    padding: 0 6px;
+    border-radius: 999px;
+    background: var(--tag-bg);
+    color: var(--text);
+    text-align: center;
+    font-weight: 600;
+  }
+  .chip[aria-pressed="true"] .count { background: rgba(255, 255, 255, 0.28); color: inherit; }
+  .chip.empty { opacity: 0.55; }
+  .bar-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 12px;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .sort select {
+    font: inherit;
+    color: var(--text);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px 6px;
+    margin-left: 4px;
+  }
+  .picks {
+    margin: 16px 0 4px;
+    padding: 12px 14px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--accent-2);
+    border-radius: 10px;
+    box-shadow: 0 10px 26px var(--shadow);
+  }
+  .picks h3 { margin: 0 0 8px; font-size: 1rem; color: var(--accent-2); }
+  .picks ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+  .picks li { all: unset; display: block; }
+  .picks li::before { content: none; }
+  .pick-btn {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    width: 100%;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 6px;
+    line-height: 1.4;
+  }
+  .pick-btn:hover { background: var(--tag-bg); }
+  .pick-btn .badge { flex-shrink: 0; }
+  .pick-btn .where { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
+  .pick-btn .what { flex: 1 1 auto; min-width: 0; }
+  li[data-course].dimmed, li.category-item.dimmed > .category-label { opacity: 0.35; }
+  li[data-course] { transition: opacity 0.2s; }
+  li.pick::before { content: "★"; color: var(--accent); }
+  li.pick .dish { font-weight: 600; }
+  li.flash { animation: flash 1.4s ease-out; }
+  @keyframes flash { 0%, 30% { background: var(--tag-bg); } 100% { background: var(--card-bg); } }
+  ul.sub-list li.flash { animation-name: flash-sub; }
+  @keyframes flash-sub { 0%, 30% { background: var(--tag-bg); } 100% { background: transparent; } }
+  .match-note {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 0 8px;
+    border-radius: 999px;
+    background: var(--tag-bg);
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .match-note[hidden] { display: none; }
+  @media (max-width: 600px) {
+    .pick-btn { flex-wrap: wrap; row-gap: 0; }
+    .pick-btn .what { flex-basis: calc(100% - 2.5em); }
+    .pick-btn .where { flex-basis: 100%; padding-left: 2em; white-space: normal; }
+  }
+  .grid-divider {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 28px 0 0;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .grid-divider::after { content: ""; flex: 1; border-top: 1px dashed var(--border); }
+  .restaurant-card.no-match h2 { opacity: 0.6; box-shadow: none; }
+  @media (prefers-reduced-motion: reduce) {
+    li.flash { animation: none; }
+    .chip, li[data-course] { transition: none; }
+  }
   footer {
     margin-top: 36px;
     color: var(--muted);
@@ -201,134 +351,461 @@
 
 
 
-<div class="restaurants-grid"><section class="restaurant-card"><h2>1. 🏨 <a href="https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola">Comfort Hotel Sello</a></h2><ul>
-<li><span class="dish">Porsaanleike  (L) perunamuusi (L,G) Chipotle majoneesia (L,G) Vuohenjuustotäytteisiä punajuuripihvejä (L,G) — 14,00 €</span><span class="tags">🥔 🐖 🧀</span></li>
-</ul></section><section class="restaurant-card"><h2>2. 🏭 <a href="https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/">Ravintola Factory Leppävaara</a></h2><ul>
-<li><span class="dish">Hernekeitto (M+G)</span><span class="tags">🍲</span></li>
-<li><span class="dish">Factoryn lihapullia cafe de paris -kastikkeessa (L+G+VS) valkosipuliperunat (L+G+VS)</span><span class="tags">🥔 🍖</span></li>
-<li><span class="dish">Rapea kana Cordon Bleu juustotäytteellä (L) basmatiriisi (VE+G) curry-ananasdippi (M+G+VS)</span><span class="tags">🐔 🍚 🧀</span></li>
-<li><span class="dish">Espanjalainen rapupaella sitrusvinegretellä ja rucolalla (M+G+VS) creme fraiche (L+G)</span></li>
-<li><span class="dish">Paahdettuja uunijuureksia ja Härkistä tryffeliöljyllä (VE+G)</span><span class="tags">🫘</span></li>
-<li><span class="dish">Factoryn letut (L) talon mansikkahillo (M+G) vaniljavaahto (L+G) jäätelö (L+G)</span><span class="tags">🥞 🍦</span></li>
-</ul></section><section class="restaurant-card"><h2>3. 🇳🇵 <a href="https://kathmandupalace.fi/en/lunch/?lang=en">Kathmandu Palace</a></h2><ul>
-<li><span class="dish">1.TOFU CURRY (L,G) 🌶️ 12,50€ — Tofu in tomato curry sauce.</span></li>
-<li><span class="dish">2.VEG KOFTA (L,G) 13,00€ — Vegetable balls (cauliflower, potato and paneer) in creamy curry sauce</span><span class="tags">🥬 🥔</span></li>
-<li><span class="dish">3.BUTTER CHICKEN (L,G) 13,50€ — Tandoori oven grilled chicken fillet in tomato, butter and cream sauce</span><span class="tags">🐔 🍅 🔥</span></li>
-<li><span class="dish">4.MUTTON CHILLI (G,L) 🌶️🌶️🌶️ 13,50€ — Lamb and capsicum, onion, tomato in cumin soy-chilli sauce.</span><span class="tags">🐑 🍅</span></li>
-<li><span class="dish">5.FISH CURRY (L,G) 🌶️ 13,50€ — Fried pangasius fillets in curry sauce.</span><span class="tags">🐟</span></li>
-<li><span class="dish">6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.</span></li>
-<li><span class="dish">7.TODAY’S SPECIAL – CHICKEN TIKKA (G) 🌶️🌶️ 15,50€ — Yoghurt marinated &amp; tandoori grilled chicken in tomato and yoghurt sauce</span><span class="tags">🐔 🔥</span></li>
-</ul></section><section class="restaurant-card"><h2>4. 🏇 <a href="https://vermo.fi/fi-fi/ravintolat/lounas/174/">Ravintola Vermo (Ravilla)</a></h2><ul>
-<li><span class="dish">Perinteistä hernekeittoa (M, G)</span><span class="tags">🍲</span></li>
-<li><span class="dish">Ravillan makkaralajitelma (VL, G)</span><span class="tags">🌭</span></li>
-<li><span class="dish">Meheviä lohipyöryköitä hollandaisekastikkeessa (L, G)</span><span class="tags">🐟</span></li>
-<li><span class="dish">Falafelpyöryköitä kasvispedillä (VE, G) ja raikasta tzatzikia (L, G)</span><span class="tags">🥬</span></li>
-<li><span class="dish">Kuohkeaa perunamuusia (L, G)</span><span class="tags">🥔</span></li>
-<li><span class="dish">Paistettuja lettuja (L), hilloa (VE, G) ja kermavaahtoa (L, G)</span><span class="tags">🥞</span></li>
-</ul></section><section class="restaurant-card"><h2>5. 🍽️ <a href="https://ravintolabase.fi/lounas/">Ravintola Base</a></h2><ul>
+<div class="restaurants-grid"><section class="restaurant-card" data-order="0" data-restaurant="Comfort Hotel Sello"><h2>🏨 <a href="https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola">Comfort Hotel Sello</a></h2><ul>
+<li data-course="main" data-name="Porsaanleike perunamuusi Chipotle majoneesia Vuohenjuustotäytteisiä punajuuripihvejä" data-price="14.00" data-tags="meat spicy"><span class="dish">Porsaanleike  (L) perunamuusi (L,G) Chipotle majoneesia (L,G) Vuohenjuustotäytteisiä punajuuripihvejä (L,G) — 14,00 €</span><span class="tags">🥔 🐖 🧀</span></li>
+</ul></section><section class="restaurant-card" data-order="1" data-restaurant="Ravintola Factory Leppävaara"><h2>🏭 <a href="https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/">Ravintola Factory Leppävaara</a></h2><ul>
+<li data-course="main" data-name="Hernekeitto" data-tags="gf soup"><span class="dish">Hernekeitto (M+G)</span><span class="tags">🍲</span></li>
+<li data-course="main" data-name="Factoryn lihapullia cafe de paris -kastikkeessa valkosipuliperunat" data-tags="gf meat"><span class="dish">Factoryn lihapullia cafe de paris -kastikkeessa (L+G+VS) valkosipuliperunat (L+G+VS)</span><span class="tags">🥔 🍖</span></li>
+<li data-course="main" data-name="Rapea kana Cordon Bleu juustotäytteellä basmatiriisi curry-ananasdippi" data-tags="meat"><span class="dish">Rapea kana Cordon Bleu juustotäytteellä (L) basmatiriisi (VE+G) curry-ananasdippi (M+G+VS)</span><span class="tags">🐔 🍚 🧀</span></li>
+<li data-course="main" data-name="Espanjalainen rapupaella sitrusvinegretellä ja rucolalla creme fraiche" data-tags="fish gf"><span class="dish">Espanjalainen rapupaella sitrusvinegretellä ja rucolalla (M+G+VS) creme fraiche (L+G)</span></li>
+<li data-course="main" data-name="Paahdettuja uunijuureksia ja Härkistä tryffeliöljyllä" data-tags="gf veg vegan"><span class="dish">Paahdettuja uunijuureksia ja Härkistä tryffeliöljyllä (VE+G)</span><span class="tags">🫘</span></li>
+<li data-course="minor" data-name="Factoryn letut talon mansikkahillo vaniljavaahto jäätelö" data-tags=""><span class="dish">Factoryn letut (L) talon mansikkahillo (M+G) vaniljavaahto (L+G) jäätelö (L+G)</span><span class="tags">🥞 🍦</span></li>
+</ul></section><section class="restaurant-card" data-order="2" data-restaurant="Kathmandu Palace"><h2>🇳🇵 <a href="https://kathmandupalace.fi/en/lunch/?lang=en">Kathmandu Palace</a></h2><ul>
+<li data-course="main" data-heat="1" data-name="TOFU CURRY 🌶️" data-price="12.50" data-tags="gf spicy veg"><span class="dish">1.TOFU CURRY (L,G) 🌶️ 12,50€ — Tofu in tomato curry sauce.</span></li>
+<li data-course="main" data-name="VEG KOFTA" data-price="13.00" data-tags="gf veg"><span class="dish">2.VEG KOFTA (L,G) 13,00€ — Vegetable balls (cauliflower, potato and paneer) in creamy curry sauce</span><span class="tags">🥬 🥔</span></li>
+<li data-course="main" data-name="BUTTER CHICKEN" data-price="13.50" data-tags="gf meat"><span class="dish">3.BUTTER CHICKEN (L,G) 13,50€ — Tandoori oven grilled chicken fillet in tomato, butter and cream sauce</span><span class="tags">🐔 🍅 🔥</span></li>
+<li data-course="main" data-heat="3" data-name="MUTTON CHILLI 🌶️🌶️🌶️" data-price="13.50" data-tags="gf meat redmeat spicy"><span class="dish">4.MUTTON CHILLI (G,L) 🌶️🌶️🌶️ 13,50€ — Lamb and capsicum, onion, tomato in cumin soy-chilli sauce.</span><span class="tags">🐑 🍅</span></li>
+<li data-course="main" data-heat="1" data-name="FISH CURRY 🌶️" data-price="13.50" data-tags="fish gf spicy"><span class="dish">5.FISH CURRY (L,G) 🌶️ 13,50€ — Fried pangasius fillets in curry sauce.</span><span class="tags">🐟</span></li>
+<li data-course="main" data-name="MIXED LUNCH" data-price="14.50" data-tags=""><span class="dish">6.MIXED LUNCH 14,50€ — You can choose any two above dishes to make a single dish.</span></li>
+<li data-course="main" data-heat="2" data-name="TODAY’S SPECIAL – CHICKEN TIKKA 🌶️🌶️" data-price="15.50" data-tags="gf meat spicy"><span class="dish">7.TODAY’S SPECIAL – CHICKEN TIKKA (G) 🌶️🌶️ 15,50€ — Yoghurt marinated &amp; tandoori grilled chicken in tomato and yoghurt sauce</span><span class="tags">🐔 🔥</span></li>
+</ul></section><section class="restaurant-card" data-order="3" data-restaurant="Ravintola Vermo (Ravilla)"><h2>🏇 <a href="https://vermo.fi/fi-fi/ravintolat/lounas/174/">Ravintola Vermo (Ravilla)</a></h2><ul>
+<li data-course="main" data-name="Perinteistä hernekeittoa" data-tags="gf soup"><span class="dish">Perinteistä hernekeittoa (M, G)</span><span class="tags">🍲</span></li>
+<li data-course="main" data-name="Ravillan makkaralajitelma" data-tags="gf meat"><span class="dish">Ravillan makkaralajitelma (VL, G)</span><span class="tags">🌭</span></li>
+<li data-course="main" data-name="Meheviä lohipyöryköitä hollandaisekastikkeessa" data-tags="fish gf"><span class="dish">Meheviä lohipyöryköitä hollandaisekastikkeessa (L, G)</span><span class="tags">🐟</span></li>
+<li data-course="main" data-name="Falafelpyöryköitä kasvispedillä ja raikasta tzatzikia" data-tags="gf veg"><span class="dish">Falafelpyöryköitä kasvispedillä (VE, G) ja raikasta tzatzikia (L, G)</span><span class="tags">🥬</span></li>
+<li data-course="minor" data-name="Kuohkeaa perunamuusia" data-tags="gf"><span class="dish">Kuohkeaa perunamuusia (L, G)</span><span class="tags">🥔</span></li>
+<li data-course="minor" data-name="Paistettuja lettuja, hilloa ja kermavaahtoa" data-tags=""><span class="dish">Paistettuja lettuja (L), hilloa (VE, G) ja kermavaahtoa (L, G)</span><span class="tags">🥞</span></li>
+</ul></section><section class="restaurant-card" data-order="4" data-restaurant="Ravintola Base"><h2>🍽️ <a href="https://ravintolabase.fi/lounas/">Ravintola Base</a></h2><ul>
 <li class="category-item"><span class="category-label">Lautasannos</span><ul class="sub-list">
-<li><span class="dish">Savufeta-persimonsalaatti (L, G) — 14,00 €</span><span class="tags">🥗</span></li>
-<li><span class="dish">Aurajuustorisotto ja paahdettua kanaa (L, G) — 14,00 €</span><span class="tags">🐔 🧀</span></li>
+<li data-course="main" data-name="Savufeta-persimonsalaatti" data-price="14.00" data-tags="gf veg"><span class="dish">Savufeta-persimonsalaatti (L, G) — 14,00 €</span><span class="tags">🥗</span></li>
+<li data-course="main" data-name="Aurajuustorisotto ja paahdettua kanaa" data-price="14.00" data-tags="gf meat"><span class="dish">Aurajuustorisotto ja paahdettua kanaa (L, G) — 14,00 €</span><span class="tags">🐔 🧀</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Keittolounas</span><ul class="sub-list">
-<li><span class="dish">Hernekeittoa LG, Pannari L sisältyy keittolounaaseen, muille +2 € — 12,00 €</span><span class="tags">🍲</span></li>
+<li data-course="main" data-name="Hernekeittoa LG, Pannari L sisältyy keittolounaaseen, muille +2 €" data-price="12.00" data-tags="soup"><span class="dish">Hernekeittoa LG, Pannari L sisältyy keittolounaaseen, muille +2 € — 12,00 €</span><span class="tags">🍲</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Buffetlounas</span><ul class="sub-list">
-<li><span class="dish">Perinteistä jauhelihakastiketta ja keitettyjä perunoita (L, G) — 14,00 €</span><span class="tags">🥩 🍖</span></li>
+<li data-course="main" data-name="Perinteistä jauhelihakastiketta ja keitettyjä perunoita" data-price="14.00" data-tags="gf meat"><span class="dish">Perinteistä jauhelihakastiketta ja keitettyjä perunoita (L, G) — 14,00 €</span><span class="tags">🥩 🍖</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">A la carte - alkuruoka</span><ul class="sub-list">
-<li><span class="dish">Vihersalaatti — 8,00 €</span><span class="tags">🥗</span></li>
-<li><span class="dish">Kermaista rapukeittoa ja paahdettua saaristolaisleipämurua — 12,00 €</span><span class="tags">🍲 🍞</span></li>
-<li><span class="dish">Härkä-carpaccio ja piparjuurimajoneesia — 13,00 €</span><span class="tags">🥩</span></li>
+<li data-course="minor" data-name="Vihersalaatti" data-price="8.00" data-tags="basic veg"><span class="dish">Vihersalaatti — 8,00 €</span><span class="tags">🥗</span></li>
+<li data-course="minor" data-name="Kermaista rapukeittoa ja paahdettua saaristolaisleipämurua" data-price="12.00" data-tags="fish soup"><span class="dish">Kermaista rapukeittoa ja paahdettua saaristolaisleipämurua — 12,00 €</span><span class="tags">🍲 🍞</span></li>
+<li data-course="minor" data-name="Härkä-carpaccio ja piparjuurimajoneesia" data-price="13.00" data-tags="meat redmeat"><span class="dish">Härkä-carpaccio ja piparjuurimajoneesia — 13,00 €</span><span class="tags">🥩</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">A la carte - pääruoka</span><ul class="sub-list">
-<li><span class="dish">Caesar-salaatit: Pariloitua kanaa / Vuohenjuustoa / Halloumijuustoa / Scampit — 16,00 €</span><span class="tags">🐔 🧀</span></li>
-<li><span class="dish">Comte-juustoburgeri: Naudan täyslihapihvi, comte-juustoa, salaattia, tomaattia, chilimajoneesia ja ranskalaiset — 18,00 €</span><span class="tags">🍟 🥗 🥩 🍖 🍔 🧀 🍅</span></li>
-<li><span class="dish">Paistettua kuhaa, fenkoli-voikastiketta ja duchesse-perunaa — 29,00 €</span><span class="tags">🥔</span></li>
-<li><span class="dish">Naudan marmorifileepihvi, valkosipulivoita ja gratinoitua uuniperunaa — 37,00 €</span><span class="tags">🥔 🥩</span></li>
+<li data-course="main" data-name="Caesar-salaatit: Pariloitua kanaa / Vuohenjuustoa / Halloumijuustoa / Scampit" data-price="16.00" data-tags="fish meat"><span class="dish">Caesar-salaatit: Pariloitua kanaa / Vuohenjuustoa / Halloumijuustoa / Scampit — 16,00 €</span><span class="tags">🐔 🧀</span></li>
+<li data-course="main" data-name="Comte-juustoburgeri: Naudan täyslihapihvi, comte-juustoa, salaattia, tomaattia, chilima…" data-price="18.00" data-tags="meat redmeat spicy"><span class="dish">Comte-juustoburgeri: Naudan täyslihapihvi, comte-juustoa, salaattia, tomaattia, chilimajoneesia ja ranskalaiset — 18,00 €</span><span class="tags">🍟 🥗 🥩 🍖 🍔 🧀 🍅</span></li>
+<li data-course="main" data-name="Paistettua kuhaa, fenkoli-voikastiketta ja duchesse-perunaa" data-price="29.00" data-tags="fish"><span class="dish">Paistettua kuhaa, fenkoli-voikastiketta ja duchesse-perunaa — 29,00 €</span><span class="tags">🥔</span></li>
+<li data-course="main" data-name="Naudan marmorifileepihvi, valkosipulivoita ja gratinoitua uuniperunaa" data-price="37.00" data-tags="meat redmeat"><span class="dish">Naudan marmorifileepihvi, valkosipulivoita ja gratinoitua uuniperunaa — 37,00 €</span><span class="tags">🥔 🥩</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">A la carte - jälkiruoka</span><ul class="sub-list">
-<li><span class="dish">Tyrni-valkosuklaaleivos ja kinuskia — 10,00 €</span><span class="tags">🍫</span></li>
-<li><span class="dish">Jäätelö tai sorbettipallo — 6,00 €</span><span class="tags">🍦</span></li>
+<li data-course="minor" data-name="Tyrni-valkosuklaaleivos ja kinuskia" data-price="10.00" data-tags=""><span class="dish">Tyrni-valkosuklaaleivos ja kinuskia — 10,00 €</span><span class="tags">🍫</span></li>
+<li data-course="minor" data-name="Jäätelö tai sorbettipallo" data-price="6.00" data-tags=""><span class="dish">Jäätelö tai sorbettipallo — 6,00 €</span><span class="tags">🍦</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Menu</span><ul class="sub-list">
-<li><span class="dish">Menu — 49,00 €</span></li>
+<li data-course="minor" data-name="Menu" data-price="49.00" data-tags=""><span class="dish">Menu — 49,00 €</span></li>
 </ul></li>
-</ul></section><section class="restaurant-card"><h2>6. ☕ <a href="https://juvenes.fi/en/restaurant-cafe-soos/">Restaurant &amp; Café SooS</a></h2><ul>
+</ul></section><section class="restaurant-card" data-order="5" data-restaurant="Restaurant &amp; Café SooS"><h2>☕ <a href="https://juvenes.fi/en/restaurant-cafe-soos/">Restaurant &amp; Café SooS</a></h2><ul>
 <li class="category-item"><span class="category-label">Lounas</span><ul class="sub-list">
-<li><span class="dish">Aamiainen: Luomu kaurapuuroa M, Mu, VEG, *, SIS.LUOMUA</span></li>
-<li><span class="dish">Cozy: Talon Jättilihapullia Bbq-kastikkeessa G, M, Mu, Mac´n Cheese</span><span class="tags">🍖 🧀</span></li>
-<li><span class="dish">Roots: Kasvispelti jauhismurulla M,G,Veg</span><span class="tags">🥬</span></li>
-<li><span class="dish">Sides: Myskikurpitsaa  ja bataattia G, M, Mu, VEG</span><span class="tags">🍠</span></li>
-<li><span class="dish">Jälkiruoka: Choko Cupcake L</span><span class="tags">🧁 🍰</span></li>
+<li data-course="minor" data-name="Aamiainen: Luomu kaurapuuroa" data-tags="veg vegan"><span class="dish">Aamiainen: Luomu kaurapuuroa M, Mu, VEG, *, SIS.LUOMUA</span></li>
+<li data-course="main" data-name="Cozy: Talon Jättilihapullia Bbq-kastikkeessa G, M, Mu, Mac´n Cheese" data-tags="meat"><span class="dish">Cozy: Talon Jättilihapullia Bbq-kastikkeessa G, M, Mu, Mac´n Cheese</span><span class="tags">🍖 🧀</span></li>
+<li data-course="main" data-name="Roots: Kasvispelti jauhismurulla" data-tags="gf veg vegan"><span class="dish">Roots: Kasvispelti jauhismurulla M,G,Veg</span><span class="tags">🥬</span></li>
+<li data-course="minor" data-name="Sides: Myskikurpitsaa ja bataattia" data-tags="gf veg vegan"><span class="dish">Sides: Myskikurpitsaa  ja bataattia G, M, Mu, VEG</span><span class="tags">🍠</span></li>
+<li data-course="minor" data-name="Jälkiruoka: Choko Cupcake L" data-tags=""><span class="dish">Jälkiruoka: Choko Cupcake L</span><span class="tags">🧁 🍰</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Salad and soup</span><ul class="sub-list">
-<li><span class="dish">Keittolounas: Tuorejuusto-savuriistakeittoa G, L, Mu, SIS.LUOMUA</span><span class="tags">🍲 🧀</span></li>
-<li><span class="dish">My Salad: Runsas salaattipöytä</span><span class="tags">🥗</span></li>
+<li data-course="main" data-name="Keittolounas: Tuorejuusto-savuriistakeittoa" data-tags="gf meat redmeat soup"><span class="dish">Keittolounas: Tuorejuusto-savuriistakeittoa G, L, Mu, SIS.LUOMUA</span><span class="tags">🍲 🧀</span></li>
+<li data-course="main" data-name="My Salad: Runsas salaattipöytä" data-tags="basic veg"><span class="dish">My Salad: Runsas salaattipöytä</span><span class="tags">🥗</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">My Plate</span><ul class="sub-list">
-<li><span class="dish">Easy Plate: Rapupasta vihreällä pestolla L</span><span class="tags">🍝</span></li>
-<li><span class="dish">Favourite Plate: Ylikypsää nautaa, polentaa ja punaviinikastiketta</span><span class="tags">🥩</span></li>
+<li data-course="main" data-name="Easy Plate: Rapupasta vihreällä pestolla L" data-tags="fish"><span class="dish">Easy Plate: Rapupasta vihreällä pestolla L</span><span class="tags">🍝</span></li>
+<li data-course="main" data-name="Favourite Plate: Ylikypsää nautaa, polentaa ja punaviinikastiketta" data-tags="meat redmeat"><span class="dish">Favourite Plate: Ylikypsää nautaa, polentaa ja punaviinikastiketta</span><span class="tags">🥩</span></li>
 </ul></li>
-</ul></section><section class="restaurant-card"><h2>7. 🥗 <a href="https://www.dylan.fi/lepuski">Dylan Lepuski</a></h2><ul>
+</ul></section><section class="restaurant-card" data-order="6" data-restaurant="Dylan Lepuski"><h2>🥗 <a href="https://www.dylan.fi/lepuski">Dylan Lepuski</a></h2><ul>
 <li class="category-item"><span class="category-label">Keitto ja salaatti</span><ul class="sub-list">
-<li><span class="dish">Dylanin legendaarinen runsas salaattipöytä, päivän keitto ja Lepuskin hapanjuurifocaccia — 12,50 €</span><span class="tags">🍲 🥗</span></li>
+<li data-course="main" data-name="Dylanin legendaarinen runsas salaattipöytä, päivän keitto ja Lepuskin hapanjuurifocaccia" data-price="12.50" data-tags="basic soup veg"><span class="dish">Dylanin legendaarinen runsas salaattipöytä, päivän keitto ja Lepuskin hapanjuurifocaccia — 12,50 €</span><span class="tags">🍲 🥗</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Keitto</span><ul class="sub-list">
-<li><span class="dish">Hernekeittoa, sipulia ja sinappia, sekä halutessasi lisähöysteeksi kinkkua (G, V) — 10,50 €</span><span class="tags">🍲 🐖</span></li>
+<li data-course="main" data-name="Hernekeittoa, sipulia ja sinappia, sekä halutessasi lisähöysteeksi kinkkua" data-price="10.50" data-tags="gf meat soup"><span class="dish">Hernekeittoa, sipulia ja sinappia, sekä halutessasi lisähöysteeksi kinkkua (G, V) — 10,50 €</span><span class="tags">🍲 🐖</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Kasvisruoka</span><ul class="sub-list">
-<li><span class="dish">Kasvis-härkäpapumakkaraa vegefetalla gratinoituna (G, V) — 14,00 €</span><span class="tags">🥬 🌭 🫘</span></li>
+<li data-course="main" data-name="Kasvis-härkäpapumakkaraa vegefetalla gratinoituna" data-price="14.00" data-tags="gf veg vegan"><span class="dish">Kasvis-härkäpapumakkaraa vegefetalla gratinoituna (G, V) — 14,00 €</span><span class="tags">🥬 🌭 🫘</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Kotiruoka</span><ul class="sub-list">
-<li><span class="dish">Päivän vaaleaa kalaa ja karamellisoituja porkkanoita hollandaisekastikkeessa (L, G) — 14,00 €</span><span class="tags">🐟 🥕</span></li>
-<li><span class="dish">Ahvenanmaan uunimakkaraa ja emmental juustoa (L, G) — 14,00 €</span><span class="tags">🌭 🧀</span></li>
+<li data-course="main" data-name="Päivän vaaleaa kalaa ja karamellisoituja porkkanoita hollandaisekastikkeessa" data-price="14.00" data-tags="fish gf"><span class="dish">Päivän vaaleaa kalaa ja karamellisoituja porkkanoita hollandaisekastikkeessa (L, G) — 14,00 €</span><span class="tags">🐟 🥕</span></li>
+<li data-course="main" data-name="Ahvenanmaan uunimakkaraa ja emmental juustoa" data-price="14.00" data-tags="gf meat"><span class="dish">Ahvenanmaan uunimakkaraa ja emmental juustoa (L, G) — 14,00 €</span><span class="tags">🌭 🧀</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Lisuke</span><ul class="sub-list">
-<li><span class="dish">Perinteistä perunamuusia (L, G, Saatavilla V)</span><span class="tags">🥔</span></li>
+<li data-course="minor" data-name="Perinteistä perunamuusia (L, G, Saatavilla V)" data-tags=""><span class="dish">Perinteistä perunamuusia (L, G, Saatavilla V)</span><span class="tags">🥔</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Jälkiruoka</span><ul class="sub-list">
-<li><span class="dish">Perinteistä pannukakkua, hilloa ja kermavaahtoa (L, KM)</span><span class="tags">🥞 🍰</span></li>
-<li><span class="dish">Gluteenitonta pannukakkua ja hilloa (L, G, KM)</span><span class="tags">🥞 🍰</span></li>
-<li><span class="dish">Vegaanista ja gluteenitonta pannukakkua ja hilloa (G, V)</span><span class="tags">🥞 🍰</span></li>
-<li><span class="dish">Vastajauhettu kahvi</span></li>
+<li data-course="minor" data-name="Perinteistä pannukakkua, hilloa ja kermavaahtoa" data-tags=""><span class="dish">Perinteistä pannukakkua, hilloa ja kermavaahtoa (L, KM)</span><span class="tags">🥞 🍰</span></li>
+<li data-course="minor" data-name="Gluteenitonta pannukakkua ja hilloa" data-tags="gf"><span class="dish">Gluteenitonta pannukakkua ja hilloa (L, G, KM)</span><span class="tags">🥞 🍰</span></li>
+<li data-course="minor" data-name="Vegaanista ja gluteenitonta pannukakkua ja hilloa" data-tags="gf veg vegan"><span class="dish">Vegaanista ja gluteenitonta pannukakkua ja hilloa (G, V)</span><span class="tags">🥞 🍰</span></li>
+<li data-course="minor" data-name="Vastajauhettu kahvi" data-tags=""><span class="dish">Vastajauhettu kahvi</span></li>
 </ul></li>
-</ul></section><section class="restaurant-card"><h2>8. 🏰 <a href="https://ravintolapalvelut.iss.fi/fortezza/">Ravintola Fortezza</a></h2><ul>
+</ul></section><section class="restaurant-card" data-order="7" data-restaurant="Ravintola Fortezza"><h2>🏰 <a href="https://ravintolapalvelut.iss.fi/fortezza/">Ravintola Fortezza</a></h2><ul>
 <li class="category-item"><span class="category-label">Keitto &amp; Verde — 11,90 €</span><ul class="sub-list">
-<li><span class="dish">Savupaprikakeitto L, G</span><span class="tags">🍲</span></li>
-<li><span class="dish">Runsas ja raikas Fortezzan salaattipöytä</span><span class="tags">🥗</span></li>
+<li data-course="main" data-name="Savupaprikakeitto" data-price="11.90" data-tags="gf soup"><span class="dish">Savupaprikakeitto L, G</span><span class="tags">🍲</span></li>
+<li data-course="main" data-name="Runsas ja raikas Fortezzan salaattipöytä" data-price="11.90" data-tags="basic veg"><span class="dish">Runsas ja raikas Fortezzan salaattipöytä</span><span class="tags">🥗</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Lämmin pöytä — 13,90 €</span><ul class="sub-list">
-<li><span class="dish">Naudanliha-kasvispata Rengdang &amp; Riisiä L, G</span><span class="tags">🍚 🥬 🥩 🍖</span></li>
-<li><span class="dish">Fortezzan kasvistäytetyt kesäkurpitsat L, G</span><span class="tags">🥬</span></li>
+<li data-course="main" data-name="Naudanliha-kasvispata Rengdang &amp; Riisiä" data-price="13.90" data-tags="gf meat redmeat spicy"><span class="dish">Naudanliha-kasvispata Rengdang &amp; Riisiä L, G</span><span class="tags">🍚 🥬 🥩 🍖</span></li>
+<li data-course="main" data-name="Fortezzan kasvistäytetyt kesäkurpitsat" data-price="13.90" data-tags="gf veg"><span class="dish">Fortezzan kasvistäytetyt kesäkurpitsat L, G</span><span class="tags">🥬</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Jälkiruoka</span><ul class="sub-list">
-<li><span class="dish">Puolukkapaistos L &amp; vaniljakastiketta L, G</span></li>
+<li data-course="minor" data-name="Puolukkapaistos L &amp; vaniljakastiketta" data-tags="gf"><span class="dish">Puolukkapaistos L &amp; vaniljakastiketta L, G</span></li>
 </ul></li>
-</ul></section><section class="restaurant-card"><h2>9. 🧆 <a href="https://mezza.fi/lounas/">Mezza Restaurant</a></h2><ul>
-<li><span class="dish">⚠️ Menu unavailable right now — see the <a href="https://mezza.fi/lounas/">website</a> directly. (today's menu not published on the website)</span></li>
-</ul></section><section class="restaurant-card"><h2>10. 🎻 <a href="https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/">Food &amp; Co Quartetto Plus</a></h2><ul>
+</ul></section><section class="restaurant-card" data-order="8" data-restaurant="Mezza Restaurant"><h2>🧆 <a href="https://mezza.fi/lounas/">Mezza Restaurant</a></h2><ul>
+<li data-course="none"><span class="dish">⚠️ Menu unavailable right now — see the <a href="https://mezza.fi/lounas/">website</a> directly. (today's menu not published on the website)</span></li>
+</ul></section><section class="restaurant-card" data-order="9" data-restaurant="Food &amp; Co Quartetto Plus"><h2>🎻 <a href="https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/">Food &amp; Co Quartetto Plus</a></h2><ul>
 <li class="category-item"><span class="category-label">Lounas buffet — 13,70 €</span><ul class="sub-list">
-<li><span class="dish">Meidän keittiön kukkakaali-manchegopihvejä (A, ILM, L) ja chimichurri-paprikayrttikastiketta (A, G, L, M, Veg, VS)</span></li>
-<li><span class="dish">Porsaan grillipihvi (<em>, G, L, M), korean maustekastike (A, L, M, Veg, VS) ja chilillä ja kuminalla paahdettua perunaa (</em>, G, ILM, L, M, Veg)</span><span class="tags">🥔 🐖 🔥</span></li>
-<li><span class="dish">Päivän pizza ()</span><span class="tags">🍕</span></li>
+<li data-course="main" data-name="Meidän keittiön kukkakaali-manchegopihvejä ja chimichurri-paprikayrttikastiketta" data-price="13.70" data-tags="veg"><span class="dish">Meidän keittiön kukkakaali-manchegopihvejä (A, ILM, L) ja chimichurri-paprikayrttikastiketta (A, G, L, M, Veg, VS)</span></li>
+<li data-course="main" data-name="Porsaan grillipihvi, korean maustekastike ja chilillä ja kuminalla paahdettua perunaa" data-price="13.70" data-tags="meat redmeat spicy"><span class="dish">Porsaan grillipihvi (*, G, L, M), korean maustekastike (A, L, M, Veg, VS) ja chilillä ja kuminalla paahdettua perunaa (*, G, ILM, L, M, Veg)</span><span class="tags">🥔 🐖 🔥</span></li>
+<li data-course="main" data-name="Päivän pizza" data-price="13.70" data-tags=""><span class="dish">Päivän pizza ()</span><span class="tags">🍕</span></li>
 </ul></li>
 <li class="category-item"><span class="category-label">Punnittava Fresh buffet 18,90 €/kg — 18,90 €/kg</span><ul class="sub-list">
-<li><span class="dish">Kananmuna ()</span><span class="tags">🥚</span></li>
-<li><span class="dish">katkarapu ()</span><span class="tags">🍤</span></li>
-<li><span class="dish">Raejuusto ()</span><span class="tags">🧀</span></li>
+<li data-course="minor" data-name="Kananmuna" data-tags=""><span class="dish">Kananmuna ()</span><span class="tags">🥚</span></li>
+<li data-course="minor" data-name="katkarapu" data-tags="fish"><span class="dish">katkarapu ()</span><span class="tags">🍤</span></li>
+<li data-course="minor" data-name="Raejuusto" data-tags="veg"><span class="dish">Raejuusto ()</span><span class="tags">🧀</span></li>
 </ul></li>
-</ul></section><section class="restaurant-card"><h2>11. 🏢 <a href="https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/">Tastory Q4A</a></h2><ul>
-<li><span class="dish">Kasvishernekeittoa (<em>, A, G, ILM, L, M, Veg) ja hienonnettua sipulia (</em>, G, L, M, Veg)</span><span class="tags">🍲 🥬</span></li>
-<li><span class="dish">Currylla maustettuja kukkakaalipyöryköitä - Aloo Gobi (G, ILM, L, M, Veg, VS) ja limellä maustettua kurkku-soijagurttia (*, A, G, ILM, L, M, Veg, VS)</span></li>
-<li><span class="dish">Artesaanimakkaraa, salsiccia ja bratvurstia (G, L, M), perunamuusia (A, G, L) ja smetanassa haudutettua hapankaalia ja omenaa (A, G, ILM, L)</span><span class="tags">🥔 🌭</span></li>
-<li><span class="dish">Broileria Jamaican tapaan - Jerk Chicken (A, G, L, VS)</span><span class="tags">🐔</span></li>
-<li><span class="dish">Satokauden kasviksia (G, L, M, Veg)</span><span class="tags">🥬</span></li>
-<li><span class="dish">Omenavispipuuroa (A, L, M, Veg)</span></li>
-</ul></section><section class="restaurant-card"><h2>12. 🏔️ <a href="https://nepalpalace.fi/en/lunch/">Nepal Palace</a></h2><ul>
-<li><span class="dish">⚠️ Menu unavailable right now — see the <a href="https://nepalpalace.fi/en/lunch/">website</a> directly. (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))</span></li>
+</ul></section><section class="restaurant-card" data-order="10" data-restaurant="Tastory Q4A"><h2>🏢 <a href="https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/">Tastory Q4A</a></h2><ul>
+<li data-course="main" data-name="Kasvishernekeittoa ja hienonnettua sipulia" data-tags="gf soup veg vegan"><span class="dish">Kasvishernekeittoa (*, A, G, ILM, L, M, Veg) ja hienonnettua sipulia (*, G, L, M, Veg)</span><span class="tags">🍲 🥬</span></li>
+<li data-course="main" data-name="Currylla maustettuja kukkakaalipyöryköitä - Aloo Gobi ja limellä maustettua kurkku-soij…" data-tags="gf veg vegan"><span class="dish">Currylla maustettuja kukkakaalipyöryköitä - Aloo Gobi (G, ILM, L, M, Veg, VS) ja limellä maustettua kurkku-soijagurttia (*, A, G, ILM, L, M, Veg, VS)</span></li>
+<li data-course="main" data-name="Artesaanimakkaraa, salsiccia ja bratvurstia, perunamuusia ja smetanassa haudutettua hap…" data-tags="gf meat"><span class="dish">Artesaanimakkaraa, salsiccia ja bratvurstia (G, L, M), perunamuusia (A, G, L) ja smetanassa haudutettua hapankaalia ja omenaa (A, G, ILM, L)</span><span class="tags">🥔 🌭</span></li>
+<li data-course="main" data-name="Broileria Jamaican tapaan - Jerk Chicken" data-tags="gf meat spicy"><span class="dish">Broileria Jamaican tapaan - Jerk Chicken (A, G, L, VS)</span><span class="tags">🐔</span></li>
+<li data-course="main" data-name="Satokauden kasviksia" data-tags="gf veg vegan"><span class="dish">Satokauden kasviksia (G, L, M, Veg)</span><span class="tags">🥬</span></li>
+<li data-course="minor" data-name="Omenavispipuuroa" data-tags="veg vegan"><span class="dish">Omenavispipuuroa (A, L, M, Veg)</span></li>
+</ul></section><section class="restaurant-card" data-order="11" data-restaurant="Nepal Palace"><h2>🏔️ <a href="https://nepalpalace.fi/en/lunch/">Nepal Palace</a></h2><ul>
+<li data-course="none"><span class="dish">⚠️ Menu unavailable right now — see the <a href="https://nepalpalace.fi/en/lunch/">website</a> directly. (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))</span></li>
 </ul></section></div>
-    <footer>Generated automatically on weekday mornings.</footer>
+    <footer>Generated automatically on weekday mornings. Diet tags are guessed from the menu text and
+      diet codes (VE, G, …) — always check allergies with the restaurant.</footer>
   </div>
+<script>
+(function () {
+  "use strict";
+  var FILTERS = [
+    { id: "all", icon: "🍽️", label: "All" },
+    { id: "vegan", icon: "🌱", label: "Vegan" },
+    { id: "veg", icon: "🥬", label: "Vegetarian" },
+    { id: "meat", icon: "🥩", label: "Meat lover" },
+    { id: "fish", icon: "🐟", label: "Fish & seafood" },
+    { id: "gf", icon: "🌾", label: "Gluten-free" },
+    { id: "soup", icon: "🍲", label: "Soup" },
+    { id: "spicy", icon: "🌶️", label: "Spicy" }
+  ];
+  var SORTS = [
+    { id: "rec", label: "⭐ Recommended" },
+    { id: "original", label: "Original order" },
+    { id: "cheap", label: "Cheapest first" }
+  ];
+  var STORE_KEY = "daily-menu-filter";
+
+  var grid = document.querySelector(".restaurants-grid");
+  if (!grid) return;
+
+  // ---- Read the dish data written by fetch_menus.py --------------------------
+  var restaurants = Array.prototype.map.call(grid.querySelectorAll(".restaurant-card"), function (card) {
+    var r = { card: card, order: Number(card.dataset.order), name: card.dataset.restaurant || "" };
+    r.dishes = Array.prototype.filter.call(card.querySelectorAll("li[data-course]"), function (li) {
+      return li.dataset.course !== "none";
+    }).map(function (li) {
+      return {
+        li: li,
+        r: r,
+        tags: (li.dataset.tags || "").split(" ").filter(Boolean),
+        main: li.dataset.course === "main",
+        price: li.dataset.price ? Number(li.dataset.price) : null,
+        heat: Number(li.dataset.heat || 0),
+        name: li.dataset.name || li.textContent.trim()
+      };
+    });
+    r.available = r.dishes.length > 0;
+    var h2 = card.querySelector("h2");
+    r.note = document.createElement("span");
+    r.note.className = "match-note";
+    r.note.hidden = true;
+    if (h2) h2.appendChild(r.note);
+    return r;
+  });
+  var allDishes = [].concat.apply([], restaurants.map(function (r) { return r.dishes; }));
+
+  function matches(d, f) { return f === "all" || d.tags.indexOf(f) !== -1; }
+
+  // ---- Recommendation scoring -----------------------------------------------
+  // A matching main course is worth 10; sides/desserts much less. Small nudges
+  // for lunch-friendly prices, red meat (meat lovers) and chili count (spicy).
+  function dishScore(d, f) {
+    if (!matches(d, f)) return null;
+    var s = d.main ? 10 : 3;
+    if (d.main && d.price !== null) s += Math.max(-2, Math.min(2, (14 - d.price) * 0.5));
+    if (f === "meat" && d.tags.indexOf("redmeat") !== -1) s += 2;
+    if (f === "spicy") s += d.heat;
+    if (d.tags.indexOf("basic") !== -1) s -= 3;  // a salad bar is rarely the highlight
+    return s;
+  }
+
+  function restaurantScore(r, f) {
+    if (!r.available) return -1;
+    if (f === "all") {
+      // Variety: how many kinds of main course (veg / meat / fish / soup) are on offer.
+      var kinds = ["veg", "meat", "fish", "soup"].filter(function (k) {
+        return r.dishes.some(function (d) { return d.main && d.tags.indexOf(k) !== -1; });
+      }).length;
+      var mains = r.dishes.filter(function (d) { return d.main; }).length;
+      return kinds * 4 + Math.min(mains, 6) + avgPriceBonus(r);
+    }
+    var scores = r.dishes.map(function (d) { return dishScore(d, f); })
+      .filter(function (s) { return s !== null; })
+      .sort(function (a, b) { return b - a; });
+    // Best dish counts fully, then diminishing returns for more choice.
+    return (scores[0] || 0) + 0.5 * (scores[1] || 0) + 0.25 * (scores[2] || 0);
+  }
+
+  function avgPriceBonus(r) {
+    var prices = r.dishes.filter(function (d) { return d.main && d.price !== null && d.price < 25; })
+      .map(function (d) { return d.price; });
+    if (!prices.length) return 0;
+    var avg = prices.reduce(function (a, b) { return a + b; }, 0) / prices.length;
+    return Math.max(-2, Math.min(2, (14 - avg) * 0.5));
+  }
+
+  function cheapest(r, f) {
+    var prices = r.dishes.filter(function (d) { return d.main && d.price !== null && matches(d, f); })
+      .map(function (d) { return d.price; });
+    return prices.length ? Math.min.apply(null, prices) : Infinity;
+  }
+
+  function bestDish(dishes, f) {
+    var best = null, bestScore = -Infinity;
+    dishes.forEach(function (d) {
+      var s = dishScore(d, f);
+      if (s !== null && s > bestScore) { best = d; bestScore = s; }
+    });
+    return best;
+  }
+
+  // ---- Build the toolbar ----------------------------------------------------
+  var bar = document.createElement("div");
+  bar.className = "diet-bar";
+  var chipsEl = document.createElement("div");
+  chipsEl.className = "chips";
+  chipsEl.setAttribute("role", "group");
+  chipsEl.setAttribute("aria-label", "Filter dishes");
+  var chipEls = {};
+  FILTERS.forEach(function (f) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.dataset.filter = f.id;
+    var count = allDishes.filter(function (d) { return matches(d, f.id); }).length;
+    b.innerHTML = "<span aria-hidden=\"true\"></span><span class=\"label\"></span>";
+    b.firstChild.textContent = f.icon;
+    b.children[1].textContent = f.label;
+    if (f.id !== "all") {
+      var c = document.createElement("span");
+      c.className = "count";
+      c.textContent = count;
+      c.setAttribute("aria-label", count + " dishes");
+      b.appendChild(c);
+      if (!count) b.classList.add("empty");
+    }
+    b.addEventListener("click", function () { state.filter = f.id; update(true); });
+    chipsEl.appendChild(b);
+    chipEls[f.id] = b;
+  });
+  bar.appendChild(chipsEl);
+
+  var row = document.createElement("div");
+  row.className = "bar-row";
+  var status = document.createElement("span");
+  status.setAttribute("aria-live", "polite");
+  var sortLabel = document.createElement("label");
+  sortLabel.className = "sort";
+  sortLabel.textContent = "Sort:";
+  var select = document.createElement("select");
+  SORTS.forEach(function (s) {
+    var o = document.createElement("option");
+    o.value = s.id;
+    o.textContent = s.label;
+    select.appendChild(o);
+  });
+  select.addEventListener("change", function () { state.sort = select.value; update(true); });
+  sortLabel.appendChild(select);
+  row.appendChild(status);
+  row.appendChild(sortLabel);
+  bar.appendChild(row);
+
+  var picks = document.createElement("section");
+  picks.className = "picks";
+  picks.setAttribute("aria-label", "Today's picks");
+
+  grid.parentNode.insertBefore(bar, grid);
+  grid.parentNode.insertBefore(picks, grid);
+
+  var divider = document.createElement("div");
+  divider.className = "grid-divider";
+
+  // Shadow on the sticky bar once it is stuck to the top.
+  if ("IntersectionObserver" in window) {
+    var sentinel = document.createElement("div");
+    bar.parentNode.insertBefore(sentinel, bar);
+    new IntersectionObserver(function (entries) {
+      bar.classList.toggle("stuck", !entries[0].isIntersecting);
+    }).observe(sentinel);
+  }
+
+  // ---- State (URL hash > saved choice > default) ----------------------------
+  var state = { filter: "all", sort: "rec" };
+  var validFilter = function (id) { return FILTERS.some(function (f) { return f.id === id; }); };
+  var validSort = function (id) { return SORTS.some(function (s) { return s.id === id; }); };
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
+    if (validFilter(saved.filter)) state.filter = saved.filter;
+    if (validSort(saved.sort)) state.sort = saved.sort;
+  } catch (e) { /* storage unavailable: use defaults */ }
+  var fromHash = decodeURIComponent(location.hash.slice(1));
+  if (validFilter(fromHash)) state.filter = fromHash;
+
+  // ---- Render ---------------------------------------------------------------
+  function update(userAction) {
+    var f = state.filter;
+    var filterInfo = FILTERS.filter(function (x) { return x.id === f; })[0];
+    select.value = state.sort;
+    Object.keys(chipEls).forEach(function (id) {
+      chipEls[id].setAttribute("aria-pressed", String(id === f));
+    });
+
+    // Fade dishes that don't match, star the best dish per restaurant.
+    var matchCount = 0;
+    restaurants.forEach(function (r) {
+      var n = 0;
+      r.dishes.forEach(function (d) {
+        var m = matches(d, f);
+        if (m) n++;
+        d.li.classList.toggle("dimmed", !m);
+        d.li.classList.remove("pick");
+      });
+      r.matches = n;
+      matchCount += n;
+      r.score = restaurantScore(r, f);
+      if (f !== "all") {
+        var best = bestDish(r.dishes, f);
+        if (best) best.li.classList.add("pick");
+      }
+      r.card.querySelectorAll("li.category-item").forEach(function (cat) {
+        var leaves = cat.querySelectorAll("li[data-course]");
+        var allDim = leaves.length > 0 && Array.prototype.every.call(leaves, function (li) {
+          return li.classList.contains("dimmed");
+        });
+        cat.classList.toggle("dimmed", allDim);
+      });
+      var hasMatch = f === "all" ? r.available : n > 0;
+      r.card.classList.toggle("no-match", !hasMatch);
+      r.note.hidden = f === "all" || n === 0;
+      r.note.textContent = n === 1 ? "1 match" : n + " matches";
+    });
+
+    // Order: matching restaurants first (sorted), then the rest under a divider.
+    var cmp = {
+      rec: function (a, b) { return b.score - a.score || a.order - b.order; },
+      original: function (a, b) { return a.order - b.order; },
+      cheap: function (a, b) {
+        return cheapest(a, f) - cheapest(b, f) || b.score - a.score || a.order - b.order;
+      }
+    }[state.sort];
+    var hit = restaurants.filter(function (r) { return !r.card.classList.contains("no-match"); }).sort(cmp);
+    var miss = restaurants.filter(function (r) { return r.card.classList.contains("no-match"); })
+      .sort(function (a, b) { return Number(b.available) - Number(a.available) || a.order - b.order; });
+    hit.forEach(function (r) { grid.appendChild(r.card); });
+    if (miss.length) {
+      divider.textContent = f === "all" ? "Menu not available today" : "No " + filterInfo.label.toLowerCase() + " match today";
+      grid.appendChild(divider);
+      miss.forEach(function (r) { grid.appendChild(r.card); });
+    } else if (divider.parentNode) {
+      divider.parentNode.removeChild(divider);
+    }
+
+    status.textContent = f === "all"
+      ? allDishes.length + " dishes at " + restaurants.filter(function (r) { return r.available; }).length + " restaurants"
+      : matchCount + (matchCount === 1 ? " dish" : " dishes") + " at " + hit.length +
+        (hit.length === 1 ? " restaurant" : " restaurants");
+
+    renderPicks(f, filterInfo);
+
+    if (userAction) {
+      try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
+      var hash = f === "all" ? location.pathname + location.search : "#" + f;
+      history.replaceState(null, "", hash);
+    }
+  }
+
+  function renderPicks(f, filterInfo) {
+    var list = [];
+    if (f === "all") {
+      // One highlight for each kind of eater, from different restaurants when possible.
+      var used = [];
+      [["veg", "🥬 Veggie"], ["meat", "🥩 Meat"], ["fish", "🐟 Fish"]].forEach(function (k) {
+        var mains = allDishes.filter(function (x) { return x.main; });
+        var fresh = mains.filter(function (x) { return used.indexOf(x.r) === -1; });
+        var d = bestDish(fresh, k[0]) || bestDish(mains, k[0]);
+        if (d) { list.push({ d: d, badge: k[1] }); used.push(d.r); }
+      });
+    } else {
+      // Top 3 matching dishes, at most one per restaurant.
+      var seen = [];
+      allDishes.map(function (d) { return { d: d, s: dishScore(d, f) }; })
+        .filter(function (x) { return x.s !== null; })
+        .sort(function (a, b) { return b.s - a.s || a.d.r.order - b.d.r.order; })
+        .forEach(function (x) {
+          if (list.length < 3 && seen.indexOf(x.d.r) === -1) {
+            seen.push(x.d.r);
+            list.push({ d: x.d, badge: ["🥇", "🥈", "🥉"][list.length] });
+          }
+        });
+    }
+    picks.innerHTML = "";
+    picks.hidden = list.length === 0;
+    if (!list.length) return;
+    var h = document.createElement("h3");
+    h.textContent = f === "all" ? "⭐ Today's picks" : "⭐ Top " + filterInfo.label.toLowerCase() + " picks";
+    var ol = document.createElement("ol");
+    list.forEach(function (p) {
+      var li = document.createElement("li");
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "pick-btn";
+      [["badge", p.badge], ["what", p.d.name], ["where", p.d.r.name + (p.d.price !== null ? " · " + p.d.price.toFixed(2).replace(".", ",") + " €" : "")]]
+        .forEach(function (part) {
+          var s = document.createElement("span");
+          s.className = part[0];
+          s.textContent = part[1];
+          btn.appendChild(s);
+        });
+      btn.addEventListener("click", function () { jumpTo(p.d.li); });
+      li.appendChild(btn);
+      ol.appendChild(li);
+    });
+    picks.appendChild(h);
+    picks.appendChild(ol);
+  }
+
+  function jumpTo(li) {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var y = li.getBoundingClientRect().top + window.pageYOffset - bar.offsetHeight - 16;
+    window.scrollTo({ top: y, behavior: reduce ? "auto" : "smooth" });
+    li.classList.remove("flash");
+    void li.offsetWidth;
+    li.classList.add("flash");
+  }
+
+  window.addEventListener("hashchange", function () {
+    var id = decodeURIComponent(location.hash.slice(1));
+    if (validFilter(id) && id !== state.filter) { state.filter = id; update(false); }
+  });
+
+  update(false);
+})();
+</script>
 </body>
 </html>

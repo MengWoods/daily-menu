@@ -12,6 +12,11 @@ get a live URL), or read the plain-text [`MENU.md`](MENU.md).
 - [`scripts/fetch_menus.py`](scripts/fetch_menus.py) fetches each restaurant's lunch menu for
   today, tags noticeable ingredients (chicken 🐔, fish 🐟, soup 🍲, rice 🍚, vegetables 🥦, etc.)
   with an emoji, and writes [`MENU.md`](MENU.md) and [`index.html`](index.html).
+- The web page has **diet filters** (🌱 Vegan, 🥬 Vegetarian, 🥩 Meat lover, 🐟 Fish & seafood,
+  🌾 Gluten-free, 🍲 Soup, 🌶️ Spicy). Picking one fades the other dishes, stars the best dish per
+  restaurant, re-sorts restaurants by a recommendation score and shows today's top picks. Links like
+  `index.html#vegan` open with a filter pre-selected. Tags are guessed by `classify_dish()` from the
+  menus' diet codes (VE/Veg/V = vegan, G = gluten-free) and ingredient keywords, so they can be wrong.
 - A [GitHub Actions workflow](.github/workflows/update-menu.yml) runs the script automatically
   on weekday mornings (05:30 UTC) and commits the updated files, so the page is fresh before
   lunchtime. You can also trigger it manually from the *Actions* tab.
