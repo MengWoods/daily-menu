@@ -302,9 +302,41 @@
   }
   .grid-divider::after { content: ""; flex: 1; border-top: 1px dashed var(--border); }
   .restaurant-card.no-match h2 { opacity: 0.6; box-shadow: none; }
+  /* Phone: one swipeable row of chips; once the bar sticks while scrolling,
+     shrink it to icons only (the active chip keeps its label) and hide the
+     status/sort row so the menus get the vertical space. */
+  @media (max-width: 600px) {
+    .diet-bar { padding: 8px 16px; transition: padding 0.2s; }
+    .chips {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      margin: 0 -16px;
+      padding: 2px 16px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+      mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+    }
+    .chips::-webkit-scrollbar { display: none; }
+    .chip { flex-shrink: 0; }
+    .bar-row { margin-top: 6px; }
+    .diet-bar.stuck { padding: 5px 16px; }
+    .diet-bar.stuck .chips { gap: 6px; }
+    .diet-bar.stuck .chip { padding: 5px 9px; gap: 4px; }
+    .diet-bar.stuck .chip .count { display: none; }
+    .diet-bar.stuck .chip:not([aria-pressed="true"]) .label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+    .diet-bar.stuck .bar-row { display: none; }
+  }
   @media (prefers-reduced-motion: reduce) {
     li.flash { animation: none; }
-    .chip, li[data-course] { transition: none; }
+    .chip, li[data-course], .diet-bar { transition: none; }
   }
   footer {
     margin-top: 36px;
@@ -602,6 +634,7 @@
     b.innerHTML = "<span aria-hidden=\"true\"></span><span class=\"label\"></span>";
     b.firstChild.textContent = f.icon;
     b.children[1].textContent = f.label;
+    b.title = f.label;
     if (f.id !== "all") {
       var c = document.createElement("span");
       c.className = "count";
@@ -652,7 +685,20 @@
     bar.parentNode.insertBefore(sentinel, bar);
     new IntersectionObserver(function (entries) {
       bar.classList.toggle("stuck", !entries[0].isIntersecting);
+      revealActiveChip();
     }).observe(sentinel);
+  }
+
+  // Keep the selected chip visible in the swipeable chip row (phone layout).
+  function revealActiveChip() {
+    var chip = chipEls[state.filter];
+    if (!chip || chipsEl.scrollWidth <= chipsEl.clientWidth) return;
+    var left = chip.offsetLeft - chipsEl.offsetLeft;
+    var right = left + chip.offsetWidth;
+    if (left < chipsEl.scrollLeft + 16) chipsEl.scrollLeft = left - 16;
+    else if (right > chipsEl.scrollLeft + chipsEl.clientWidth - 28) {
+      chipsEl.scrollLeft = right - chipsEl.clientWidth + 28;
+    }
   }
 
   // ---- State (URL hash > saved choice > default) ----------------------------
@@ -732,6 +778,7 @@
         (hit.length === 1 ? " restaurant" : " restaurants");
 
     renderPicks(f, filterInfo);
+    revealActiveChip();
 
     if (userAction) {
       try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
