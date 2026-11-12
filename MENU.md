@@ -2,7 +2,7 @@
 
 **Torstai 12.11.2026** (Thursday)
 
-_Last updated: 2026-11-12 09:44 (Europe/Helsinki)_
+_Last updated: 2026-11-12 09:46 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -63,16 +63,36 @@ _Last updated: 2026-11-12 09:44 (Europe/Helsinki)_
 ## 6. ☕ [Restaurant & Café SooS](https://juvenes.fi/en/restaurant-cafe-soos/)
 
 - Lounas
-    - Breakfast: Organic Oatmeal
-    - Cozy: Home Made Meatballs with Bbq Sauce, Mac`n Cheese 🧆 🧀
-    - Sides: Butternut Squash and Sweet Potato 🍠 🌰
+    - Aamiainen: Luomu kaurapuuroa M, Mu, VEG, *, SIS.LUOMUA
+    - Cozy: Talon Jättilihapullia Bbq-kastikkeessa G, M, Mu, Mac´n Cheese 🍖 🧀
+    - Roots: Kasvispelti jauhismurulla M,G,Veg 🥬
+    - Sides: Myskikurpitsaa  ja bataattia G, M, Mu, VEG 🍠
+    - Jälkiruoka: Choko Cupcake L 🧁 🍰
 - Salad and soup
-    - Lunch Soup: Smoked Game and Cream Cheese Soup 🍲 🧀
-    - My Salad: Plentiful salad buffet 🥗
+    - Keittolounas: Tuorejuusto-savuriistakeittoa G, L, Mu, SIS.LUOMUA 🍲 🧀
+    - My Salad: Runsas salaattipöytä 🥗
+- My Plate
+    - Easy Plate: Rapupasta vihreällä pestolla L 🍝
+    - Favourite Plate: Ylikypsää nautaa, polentaa ja punaviinikastiketta 🥩
 
 ## 7. 🥗 [Dylan Lepuski](https://www.dylan.fi/lepuski)
 
-- ⚠️ Menu unavailable right now — see the [website](https://www.dylan.fi/lepuski) directly. (manual entry — see website)
+- Keitto ja salaatti
+    - Dylanin legendaarinen runsas salaattipöytä, päivän keitto ja Lepuskin hapanjuurifocaccia — 12,50 € 🍲 🥗
+- Keitto
+    - Hernekeittoa, sipulia ja sinappia, sekä halutessasi lisähöysteeksi kinkkua (G, V) — 10,50 € 🍲 🐖
+- Kasvisruoka
+    - Kasvis-härkäpapumakkaraa vegefetalla gratinoituna (G, V) — 14,00 € 🥬 🌭 🫘
+- Kotiruoka
+    - Päivän vaaleaa kalaa ja karamellisoituja porkkanoita hollandaisekastikkeessa (L, G) — 14,00 € 🐟 🥕
+    - Ahvenanmaan uunimakkaraa ja emmental juustoa (L, G) — 14,00 € 🌭 🧀
+- Lisuke
+    - Perinteistä perunamuusia (L, G, Saatavilla V) 🥔
+- Jälkiruoka
+    - Perinteistä pannukakkua, hilloa ja kermavaahtoa (L, KM) 🥞 🍰
+    - Gluteenitonta pannukakkua ja hilloa (L, G, KM) 🥞 🍰
+    - Vegaanista ja gluteenitonta pannukakkua ja hilloa (G, V) 🥞 🍰
+    - Vastajauhettu kahvi
 
 ## 8. 🏰 [Ravintola Fortezza](https://ravintolapalvelut.iss.fi/fortezza/)
 

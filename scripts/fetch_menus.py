@@ -34,7 +34,7 @@ TIMEOUT = 20
 EMOJI_RULES = [
     (r"(?<!k)kana(?!nmun)|chicken(?! leg)|broiler|kalkkuna|turkey", "🐔"),
     (r"koipi|drumstick|chicken leg", "🍕"),
-    (r"(?<!rans)kala(?!kkuna)|\bfish\b|lohi|lohta|salmon|taimen|trout|siika|seiti\w*|\bcod\b|silli|herring|tonnikala|tuna", "🐟"),
+    (r"(?<!rans)kala(?!kkuna)|\bfish\b|lohi|lohta|salmon|taimen|trout|siika|seiti\w*|\bcod\b|silli|herring|tonnikala|\btuna\b", "🐟"),
     (r"friteerattu katkarapu|fried shrimp|katkarapu|shrimp|prawn|äyriäis|seafood", "🍤"),
     (r"keitto|\bsoup\b", "🍲"),
     (r"riisi|\brice\b", "🍚"),
@@ -46,7 +46,7 @@ EMOJI_RULES = [
     (r"porkkan|\bcarrot\b", "🥕"),
     (r"pekoni|bacon", "🥓"),
     (r"porsa\w*|possu|kink[ku]|\bham\b|\bpork\b", "🐖"),
-    (r"nauta|naudan|jauheliha|vasikan|\bveal\b|härkä(?!is)|\bbeef\b", "🥩"),
+    (r"nauta|naudan|jauheliha|vasikan|\bveal\b|härkä(?!is|pap)|\bbeef\b", "🥩"),
     (r"lammas|lampaan|karitsa|\blamb\b", "🐑"),
     (r"lihapulla|meatball", "🧆"),
     (r"liha(?!ndon)|\bmeat\b", "🍖"),
@@ -272,7 +272,11 @@ def parse_jamix(cfg: dict, today: datetime) -> list[tuple[str | None, list[str]]
     """Returns dish lines grouped by the Jamix `menuTypeName` category
     (e.g. Salad and soup, Lounas, My Plate), preserving first-seen order.
     Options with no menu items (e.g. an empty breakfast slot) are skipped."""
-    api_url = f"https://fi.jamix.cloud/apps/menuservice/rest/haku/menu/{cfg['jamix_customer']}/{cfg['jamix_kitchen']}"
+    lang = cfg.get("jamix_language", "fi")
+    api_url = (
+        f"https://fi.jamix.cloud/apps/menuservice/rest/haku/menu/"
+        f"{cfg['jamix_customer']}/{cfg['jamix_kitchen']}?lang={lang}"
+    )
     kitchens = fetch_json(api_url)
     date_num = int(today.strftime("%Y%m%d"))
     groups: list[tuple[str, list[str]]] = []
@@ -286,8 +290,13 @@ def parse_jamix(cfg: dict, today: datetime) -> list[tuple[str | None, list[str]]
                         continue
                     for option in day.get("mealoptions", []):
                         opt_name = (option.get("name") or "").strip()
-                        item_names = [mi.get("name", "").strip() for mi in option.get("menuItems", [])]
-                        item_names = [n for n in item_names if n and n != "***"]
+                        item_names = []
+                        for mi in option.get("menuItems", []):
+                            name = (mi.get("name") or "").strip()
+                            if not name or name == "***":
+                                continue
+                            diets = (mi.get("diets") or "").strip()
+                            item_names.append(f"{name} {diets}" if diets else name)
                         if not item_names:
                             continue
                         prefix = f"{opt_name.title()}: " if opt_name else ""

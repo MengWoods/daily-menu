@@ -16,6 +16,8 @@
 #                        requires extra fields: widget_id, api_key
 #   jamix             - sites using the Jamix Aromi menu widget (e.g. juvenes.fi)
 #                        requires extra fields: jamix_customer, jamix_kitchen
+#                        (optional: jamix_language, default fi — the English feed misses
+#                        dishes that have no translation)
 #   compass           - Compass Group sites (Food & Co, Tastory, ...) via their JSON feed
 #                        requires extra field: compass_cost_number (optional: compass_language)
 #   iss               - ravintolapalvelut.iss.fi restaurant pages
@@ -60,11 +62,15 @@ restaurants:
     parser: "jamix"
     jamix_customer: 93077
     jamix_kitchen: 66
+    jamix_language: "fi"
 
   - name: "Dylan Lepuski"
     emoji: "🥗"
     url: "https://www.dylan.fi/lepuski"
-    parser: "manual"
+    parser: "lounastaja"
+    # From the Wix HTML embed on the page (www-dylan-fi.filesusr.com/html/a260f7_...html)
+    widget_id: "AQJSvE9J7uwRD40V2cGs"
+    api_key: "7e401791-d472-4ddb-bb11-bcdb9191ca92"
 
   - name: "Ravintola Fortezza"
     emoji: "🏰"
