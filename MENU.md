@@ -2,7 +2,7 @@
 
 **Perjantai 13.11.2026** (Friday)
 
-_Last updated: 2026-11-13 04:51 (Europe/Helsinki)_
+_Last updated: 2026-11-13 09:20 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -87,7 +87,7 @@ _Last updated: 2026-11-13 04:51 (Europe/Helsinki)_
 - Keitto
     - Mausteista miso-porkkanakeittoa (G, V) — 10,50 € 🍲 🥕
 - Kasvisruoka
-    - Friteerattua tofua, soijapapuja ja kevätsipulia seesam-kastikkeessa (V) — 14,00 € 🫘
+    - Friteerattua tofua, soijapapuja ja kevätsipulia seesam-kastikkeessa (G, V) — 14,00 € 🫘
 - Kotiruoka
     - Nyhtöpossua soija-karamellikastikkeella maustettuna (M, G) — 14,00 € 🐖
     - Chili-lime marinoituja jättikatkarapuja, paahdettua paprikaa ja punasipulia (M, G) — 14,00 € 🍤 🍋
