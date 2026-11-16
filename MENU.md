@@ -2,7 +2,7 @@
 
 **Maanantai 16.11.2026** (Monday)
 
-_Last updated: 2026-11-16 04:21 (Europe/Helsinki)_
+_Last updated: 2026-11-16 09:19 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -103,7 +103,18 @@ _Last updated: 2026-11-16 04:21 (Europe/Helsinki)_
 
 ## 10. 🎻 [Food & Co Quartetto Plus](https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/) directly. (today's menu day not found)
+- Lounas buffet — 13,70 €
+    - Tofua, kasviksia ja pähkinää -Tahu goreng Indonesia (A, G, ILM, L, M, Veg, VS) 🥬 🌰
+    - Lempeän tulista kebabkastiketta (A, G, L, M, VS)
+    - Hunaja-korianteriraitaa (A, G, ILM, L)
+    - Riisiä (G, L, M, Veg) 🍚
+    - Päivän pizza () 🍕
+    - Päivän jällkiruoka ()
+- Punnittava Fresh buffet 18,90 €/kg — 18,90 €/kg
+    - Choritzopyörykät ()
+    - Kinkkusuilale (AL, M, G)) 🐖
+    - Feta ()
+- Chilitofu (A, L, M, Veg, G)
 
 ## 11. 🏢 [Tastory Q4A](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/)
 
