@@ -2,7 +2,7 @@
 
 **Tiistai 17.11.2026** (Tuesday)
 
-_Last updated: 2026-11-17 06:43 (Europe/Helsinki)_
+_Last updated: 2026-11-17 10:30 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -133,4 +133,4 @@ _Last updated: 2026-11-17 06:43 (Europe/Helsinki)_
 
 ## 12. 🏔️ [Nepal Palace](https://nepalpalace.fi/en/lunch/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (today's tab not found)
+- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
