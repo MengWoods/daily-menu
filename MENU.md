@@ -2,7 +2,7 @@
 
 **Keskiviikko 18.11.2026** (Wednesday)
 
-_Last updated: 2026-11-18 05:49 (Europe/Helsinki)_
+_Last updated: 2026-11-18 09:57 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -85,7 +85,7 @@ _Last updated: 2026-11-18 05:49 (Europe/Helsinki)_
 - Kasvisruoka
     - Rapeaa seesamitofua ja wokattuja kasviksia teriyakikastikkeessa (G, V) — 14,00 € 🥬
 - Kotiruoka
-    - Paahdettua kanaa, paprikaa ja punasipulia mangochilikastikkeessa (M, G) — 14,00 € 🐔 🥭
+    - Paahdettua kanaa ja paprikaa mangochilikastikkeessa (M, G) — 14,00 € 🐔 🥭
     - Karamellisoitua porsaan kassleria ja juureksia tummassa rosmariinikastikkeessa (M, G) — 14,00 € 🐖
 - Lisuke
     - Höyrytettyä basmatiriisiä (G, V) 🍚
@@ -144,7 +144,7 @@ _Last updated: 2026-11-18 05:49 (Europe/Helsinki)_
     - Päivän jälkiruoka () 🍰
 - Punnittava Fresh buffet 18,90 €/kg — 18,90 €/kg
     - Katkarapuja () 🍤
-    - Feta ()
+    - Mozzarella (L, G)
     - Nyhtökaura ()
 
 ## 11. 🏢 [Tastory Q4A](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/)
@@ -162,4 +162,4 @@ _Last updated: 2026-11-18 05:49 (Europe/Helsinki)_
 
 ## 12. 🏔️ [Nepal Palace](https://nepalpalace.fi/en/lunch/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (today's tab not found)
+- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
