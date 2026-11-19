@@ -2,7 +2,7 @@
 
 **Torstai 19.11.2026** (Thursday)
 
-_Last updated: 2026-11-19 05:47 (Europe/Helsinki)_
+_Last updated: 2026-11-19 09:57 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -87,10 +87,10 @@ _Last updated: 2026-11-19 05:47 (Europe/Helsinki)_
 - Keitto
     - Hernekeittoa, sipulia ja sinappia, sekä halutessasi lisähöysteeksi kinkkua (G, V) — 10,50 € 🍲 🐖
 - Kasvisruoka
-    - Feta-kasvispihvejä ja minttutsatsikia L, G (KM, Saatavilla V) — 14,00 € 🥬
+    - Feta-kasvispihvejä (VL, G, saatavilla veg) ja minttutzazikia (L, G, saatavilla veg) — 14,00 € 🥬
 - Kotiruoka
-    - Lepuskin grillipihvit choronkastikkeessa (L, G) — 14,00 € 🔥
-    - Broilerin schnitzel (M) anjovista (M) ja kaprismajoneesia (M, KM) — 14,00 € 🐔
+    - Lepuskin grillipihvit choronkastikkeessa (L, G, KM) — 14,00 € 🔥
+    - Broilerin schnitzel (M) kaprismajoneesia (G, M, KM) ja anjovista — 14,00 € 🐔
 - Jälkiruoka
     - Kardemummalla maustettua pannukakkua, hilloa ja kermavaahtoa (L, KM) 🥞 🍰
     - Gluteenitonta pannukakkua ja hilloa (L, G, KM) 🥞 🍰
@@ -142,12 +142,12 @@ _Last updated: 2026-11-19 05:47 (Europe/Helsinki)_
 
 ## 11. 🏢 [Tastory Q4A](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/)
 
-- Mustajuurisosekeittoa (A, G, ILM, L, M, Veg, VS) 🍲
+- Palsternakkasosekeittoa (A, G, ILM, L, M, Veg, VS) 🍲
 - Paahdettua tofua, vegaanista Ndujaa ja rigatonipastaa (A, ILM, L, M, Veg, VS) 🍝
 - Naudanlihagulassikeittoa (\*, A, G, L, M, VS) ja smetanaa (A, G, L) 🍲 🥩 🍖
 - Pariloitu broilerinfilee (G, L, M), paprikahilloa (G, L, M, Veg), vuohenjuustokreemiä (A, G, VL, VS) ja paahdettua rosmariini-valkosipuliperunaa (G, L, M, Veg, VS) 🐔 🥔 🧀
 - Satokauden kasviksia (G, L, M, Veg) 🥬
-- Pullavanukasta (A, L)
+- Päivän pulla (A, L)
 
 ## 12. 🏔️ [Nepal Palace](https://nepalpalace.fi/en/lunch/)
 
