@@ -2,11 +2,11 @@
 
 **Perjantai 20.11.2026** (Friday)
 
-_Last updated: 2026-11-20 05:40 (Europe/Helsinki)_
+_Last updated: 2026-11-20 09:46 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
-- TGIBF! Burger buffet (L) (Saatavilla myös gluteeniton sekä kasvisvaihtoehto) — 14,00 € 🥬 🍔
+- ⚠️ Menu unavailable right now — see the [website](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola) directly. (HTTPSConnectionPool(host='www.sello.fi', port=443): Read timed out. (read timeout=20))
 
 ## 2. 🏭 [Ravintola Factory Leppävaara](https://ravintolafactory.com/lounasravintolat/ravintolat/espoo-leppavaara/)
 
@@ -88,9 +88,9 @@ _Last updated: 2026-11-20 05:40 (Europe/Helsinki)_
     - 🤩 ASIAKASTOIVE 🤩 - Lasagne alla bolognese (Saatavilla myös gluteenittomana) (L) — 14,00 €
     - Kermaista kanan paistileikettä yrtti-voikastikkeessa (L, G) — 14,00 € 🐔 🔥
 - Lisuke
-    - Valkosipuli-kermaperunoita (L, G)
+    - Perinteistä perunamuusia (L, G) 🥔
 - Jälkiruoka
-    - Suklaa-vadelmamoussea (L, G, KM) 🍫
+    - Mango-vaniljamoussea (L, G, KM) 🥭
     - Vastajauhettu kahvi
 
 ## 8. 🏰 [Ravintola Fortezza](https://ravintolapalvelut.iss.fi/fortezza/)
@@ -135,15 +135,14 @@ _Last updated: 2026-11-20 05:40 (Europe/Helsinki)_
 ## 10. 🎻 [Food & Co Quartetto Plus](https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/)
 
 - Lounas buffet — 13,70 €
-    - Vuustoburgeri (A, L, M, Veg) 🍔
-    - McCompass burgerikastiketta (A, G, L, VS) 🍔
-    - Lohkoperunoita (G, ILM, L, M, Veg)
+    - Tofuwokki (A, L, M, Veg)
     - Stroganoffia (\*, A, G, L, VS)
-    - Päivän kasvispizza () 🥬 🍕
+    - Lohkoperunoita (G, ILM, L, M, Veg)
+    - Päivän pizza () 🍕
 - Punnittava Fresh buffet 18,90 €/kg — 18,90 €/kg
-    - Kananmuna () 🥚
-    - Sitrus katkaravut ()
-    - Choritzopyörykät ()
+    - Tofu (A, M, L, Veg)
+    - Raejuusto (L, G) 🧀
+    - Broiler (L, M, G) 🐔
 
 ## 11. 🏢 [Tastory Q4A](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/)
 
