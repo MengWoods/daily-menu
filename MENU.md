@@ -2,7 +2,7 @@
 
 **Maanantai 23.11.2026** (Monday)
 
-_Last updated: 2026-11-23 05:01 (Europe/Helsinki)_
+_Last updated: 2026-11-23 10:16 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -99,12 +99,26 @@ _Last updated: 2026-11-23 05:01 (Europe/Helsinki)_
 
 ## 10. 🎻 [Food & Co Quartetto Plus](https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/) directly. (today's menu day not found)
+- Lounas buffet — 13,70 €
+    - Currylla maustettuja kukkakaalipyöryköitä - Aloo Gobi (G, ILM, L, M, Veg, VS)
+    - Bolognesekastiketta (\*, A, G, L, M, VS), rigatonipastaa (A, L, M, Veg) ja pastajuustoa (A, G, L) 🍝 🧀
+    - Silakkafileepihvejä (A, L, M) ja sinappirelish-kermaviiliä (A, G, ILM, L)
+    - Päivän pizza () 🍕
+    - Päivän jälkiruoka () 🍰
+- Punnittava Fresh buffet 18,90 €/kg — 18,90 €/kg
+    - Tonnikala () 🐟
+    - Raejuusto () 🧀
+    - Choritzopyörykkä ()
 
 ## 11. 🏢 [Tastory Q4A](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/) directly. (today's menu day not found)
+- Juustoista kasvissosekeittoa (\*, A, G, ILM, L) 🍲 🥬 🧀
+- Luomutofu-kasviscurrya (\*, A, G, ILM, L, M, Veg) 🥬
+- Rapeaa kanaa - Crispy chicken (G, L, M), murskattua perunaa, juustoa ja yrttejä (A, G, L) ja tzatsikia (A, G, ILM, L, VS) 🐔 🥔 🧀
+- Palvaajan pekonikastiketta ja rummopastaa (A, L, VS) ja pastajuustoa (A, G, L) 🥓 🍝 🧀
+- Satokauden kasviksia (G, L, M, Veg) 🥬
+- Mustikkarahkaa ja keksejä (A, L)
 
 ## 12. 🏔️ [Nepal Palace](https://nepalpalace.fi/en/lunch/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (today's tab not found)
