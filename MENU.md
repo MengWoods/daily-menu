@@ -2,7 +2,7 @@
 
 **Tiistai 24.11.2026** (Tuesday)
 
-_Last updated: 2026-11-24 08:18 (Europe/Helsinki)_
+_Last updated: 2026-11-24 12:26 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -64,12 +64,12 @@ _Last updated: 2026-11-24 08:18 (Europe/Helsinki)_
     - Roots: Kasvispaellaa espanjalaisittain M, Mu, VEG, \*, SIS.LUOMUA, Aiolia G, M 🥬
     - Sides: Paahdettua munakoisoa, parsakaalia ja punasipulia G, M, Mu, VEG, \*
     - Jälkiruoka: Ohukaisia L, Kermavaahtoa G, L, Mu, Omenasose G, M, Mu, VEG 🍰
-- Salad and soup
-    - Keittolounas: Juustoista kanakeittoa G, L, Mu, SIS.LUOMUA 🐔 🍲 🧀
-    - My Salad: Runsas salaattipöytä 🥗
 - My Plate
     - Easy Plate: Rapu bibimbap M,G
     - Favourite Plate: Vuohenjuustobroileria L,G,Mu, Tomaattista paholaisenhilloketta G, M, Mu, VEG, \* 🐔 🧀 🍅
+- Salad and soup
+    - Keittolounas: Juustoista kanakeittoa G, L, Mu, SIS.LUOMUA 🐔 🍲 🧀
+    - My Salad: Runsas salaattipöytä 🥗
 
 ## 7. 🥗 [Dylan Lepuski](https://www.dylan.fi/lepuski)
 
@@ -127,4 +127,4 @@ _Last updated: 2026-11-24 08:18 (Europe/Helsinki)_
 
 ## 12. 🏔️ [Nepal Palace](https://nepalpalace.fi/en/lunch/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+- ⚠️ Menu unavailable right now — see the [website](https://nepalpalace.fi/en/lunch/) directly. (today's tab not found)
