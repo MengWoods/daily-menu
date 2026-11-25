@@ -2,7 +2,7 @@
 
 **Keskiviikko 25.11.2026** (Wednesday)
 
-_Last updated: 2026-11-25 06:59 (Europe/Helsinki)_
+_Last updated: 2026-11-25 11:12 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -80,7 +80,7 @@ _Last updated: 2026-11-25 06:59 (Europe/Helsinki)_
 - Keitto ja salaatti
     - Dylanin legendaarinen runsas salaattipöytä, päivän keitto ja Lepuskin hapanjuurifocaccia — 12,50 € 🍲 🥗
 - Keitto
-    - Samettinen maa-artisokkakeitto (L, G, Saatavilla V) — 10,50 € 🍲
+    - Samettinen maa-artisokkakeitto (G, V) — 10,50 € 🍲
 - Kasvisruoka
     - Meheviä kasvispyöryköitä kaura-kermakastikkeessa (G, V) — 14,00 € 🥬
 - Kotiruoka
@@ -100,6 +100,8 @@ _Last updated: 2026-11-25 06:59 (Europe/Helsinki)_
     - Feta-kasvispihvejä G, Mojokastiketta L, G 🥬
 - Jälkiruoka
     - Omenakiisseli M, G, Veg, kanelikermaa L, G
+- Erityisruokavaliot
+    - Erityisruokavaliot ja allergiat huomioidaan keittiössä. Mikäli listalla ei ole suoraan sinulle sopivaa ruokaa, kysy rohkeasti.
 
 ## 9. 🧆 [Mezza Restaurant](https://mezza.fi/lounas/)
 
@@ -109,7 +111,7 @@ _Last updated: 2026-11-25 06:59 (Europe/Helsinki)_
 
 - Lounas buffet — 13,70 €
     - Meidän keittiön parmesani-kukkakaali- ja parsakaalipihvejä (\*, A, G, ILM, L) ja herneenversopistouta (A, G, L, M, Veg, VS)
-    - Mureaa possua punaviinikastikkeessa (G, L, M, VS) ja täyteläisiä valkosipuliperunoita (A, G, ILM, L, VS) 🐖
+    - Mureaa possua Kermapippurikastikkeessa (G, L, M, VS) ja täyteläisiä valkosipuliperunoita (A, G, ILM, L, VS) 🐖
     - Päivä pizza () 🍕
     - Päivän jälkiruoka () 🍰
 - Punnittava Fresh buffet 18,90 €/kg — 18,90 €/kg
