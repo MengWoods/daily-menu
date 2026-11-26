@@ -2,7 +2,7 @@
 
 **Torstai 26.11.2026** (Thursday)
 
-_Last updated: 2026-11-26 06:18 (Europe/Helsinki)_
+_Last updated: 2026-11-26 10:54 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -79,7 +79,7 @@ _Last updated: 2026-11-26 06:18 (Europe/Helsinki)_
 - Keitto
     - Hernekeittoa, sipulia ja sinappia, sekä halutessasi lisähöysteeksi kinkkua (G, V) — 10,50 € 🍲 🐖
 - Kasvisruoka
-    - Tortelliineja kirsikkatomaatti-basilikakastikkeessa ja paahdettuja kikherneitä (V) — 14,00 € 🍅
+    - Tortelliineja kirsikkatomaatti-basilikakastikkeessa ja paahdettuja kikherneitä (saatavilla gluteeniton) (V) — 14,00 € 🍅
 - Kotiruoka
     - Valkosipuli-inkiväärimaustettua possua ja parsakaalia seesami-soijakastikkeessa (M, sis. kalaa, KM) — 14,00 € 🐟 🐖
     - Sitruuna-timjamimarinoitua kanan paistileikettä valkoviini-voikastikkeessa (L, G) — 14,00 € 🐔 🍋 🔥
@@ -108,7 +108,30 @@ _Last updated: 2026-11-26 06:18 (Europe/Helsinki)_
 
 ## 9. 🧆 [Mezza Restaurant](https://mezza.fi/lounas/)
 
-- ⚠️ Menu unavailable right now — see the [website](https://mezza.fi/lounas/) directly. (today's menu not published on the website)
+- Päivän keitto
+    - Hernekeitto (G,L,V) 🍲
+- Salaattibuffet
+    - 16 raikasta salaattia, Mezzan välimerelliset herkkuleivät sekä 3 herkullista dippiä: tzatziki, harissa ja hummus. 🥗
+- Pääruoat
+    - Täyteläinen Chili con Carne (G, M)
+    - Rapeaksi friteerattu kanafilee (saatavilla myös gluteenittomana) 🐔
+    - Välimerellinen kasvispata (G, V) 🥬
+    - Mehevä kebabliha tomaattikastikkeessa (G,V) 🍖
+- Lisukkeet
+    - Jauheliha-makaronilaatikko (G,L) 🥩 🍖
+    - Kermainen valkosipuliperunagratiini (G, L) 🥔
+    - Rapeat falafelpyörykät (G, V)
+    - Kullanrapeat Yrttiperunat (V, G) 🥔
+    - Aromaattinen sahramibiryani (G, V)
+    - Kuohkea basmatiriisi (G, V) 🍚
+    - Rapeat pinaatti-fetarullat (V)
+- Saatavilla myös
+    - LIHAPIZZAT 🍖 🍕
+    - Umami - Kinkku, herkkusienet, mozzarellaa 🐖
+    - KASVISPIZZA 🥬 🍕
+    - Pizza Mediterranea - Grillattu munakoiso, kirsikkatomaatit, feta, punasipuli ja tuore rucola. 🍕 🔥
+- Jälkiruoka
+    - Mehevää kookosbaklavaa, herkullista kakkua sekä kuohkeita pannukakkuja makean hillon kera. 🥞 🍰
 
 ## 10. 🎻 [Food & Co Quartetto Plus](https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/espoo/quartetto-plus/)
 
@@ -119,7 +142,7 @@ _Last updated: 2026-11-26 06:18 (Europe/Helsinki)_
     - Päivän jälkiruoka () 🍰
 - Punnittava Fresh buffet 18,90 €/kg — 18,90 €/kg
     - Chili marinoitua tofua ()
-    - Marinoitua possua () 🐖
+    - Broileri (A.L.M.G) 🐔
     - Katkarapuja () 🍤
 
 ## 11. 🏢 [Tastory Q4A](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/)
