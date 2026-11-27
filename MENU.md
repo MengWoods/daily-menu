@@ -2,7 +2,7 @@
 
 **Perjantai 27.11.2026** (Friday)
 
-_Last updated: 2026-11-27 06:28 (Europe/Helsinki)_
+_Last updated: 2026-11-27 11:06 (Europe/Helsinki)_
 
 ## 1. 🏨 [Comfort Hotel Sello](https://www.sello.fi/ravintolat-espoo/comfort-hotel-sello-ravintola)
 
@@ -86,7 +86,7 @@ _Last updated: 2026-11-27 06:28 (Europe/Helsinki)_
     - Dijon-perunamuusia (L, G) 🥔
     - Mausteriisiä (G, V) 🍚
 - Jälkiruoka
-    - Talon omena-kanelipiirakkaa ja vaniljakastiketta (L)
+    - Talon omena-kanelipiirakkaa ja vaniljakastiketta (L, KM)
     - Vastajauhettu kahvi
 
 ## 8. 🏰 [Ravintola Fortezza](https://ravintolapalvelut.iss.fi/fortezza/)
@@ -136,8 +136,8 @@ _Last updated: 2026-11-27 06:28 (Europe/Helsinki)_
     - Päivän kasvispizza () 🥬 🍕
     - Päivän jälkiruoka () 🍰
 - Punnittava Fresh buffet 18,90 €/kg — 18,90 €/kg
-    - Tofua ()
-    - Broileria () 🐔
+    - Mozzarellajuusto () 🧀
+    - Katkarapu () 🍤
     - palvikinkkua () 🐖
 
 ## 11. 🏢 [Tastory Q4A](https://www.compass-group.fi/en/ravintolat-ja-ruokalistat/tastory/kaupungit/espoo/q4a/)
